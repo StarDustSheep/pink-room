@@ -2,7 +2,7 @@
 @import url("root.css");
 
 /* ----作者自用特色功能，打开后整个文章区域就和一张竖向的长卷轴一样，使用该功能需要开启自适应宽度---- */
-@import url("style/卷轴页面.css");
+/* @import url("style/卷轴页面.css"); */
 
 /* 背景图片可自行修改 */
 /* @import url("style/背景图片.css"); */
