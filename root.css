@@ -1,0 +1,178 @@
+:root {
+    /* 主色 */
+    --b3-theme-primary: #0969da;
+    --b3-theme-primary-light: rgba(9, 105, 218, 0.54);
+    --b3-theme-primary-lighter: rgba(9, 105, 218, 0.38);
+    --b3-theme-primary-lightest: rgba(9, 105, 218, 0.12);
+    --b3-theme-secondary: #f3a92f;
+    /* 修改主要的背景色，如果开启卷轴模式则将其设置为编辑区域旁边的背景色 */
+    --b3-theme-background: #fffafa;
+
+    /* 为了修改当前编辑中页面的页签的顶部阴影色做出修改 */
+    --b3-theme-background-light: #e86494;
+
+    /* 修改界面颜色为略有粉色的白色 */
+    --b3-theme-surface: #fef9f9; 
+
+    --b3-theme-surface-light: rgba(243, 243, 243, .86);
+    --b3-theme-error: #d83021;
+
+    /* 文字颜色 */
+    --b3-theme-on-primary: #fff;
+    --b3-theme-on-secondary: #fff;
+
+    /* 多级标题默认字色，修改以和米色背景搭配，黑色太难看了 */
+    --b3-theme-on-background: #743d57;
+
+    /* 此色影响顶部栏图标颜色和不少界面区域中的文字颜色，修改为暗红色以和粉色的界面整体色调匹配 */
+    --b3-theme-on-surface: #6f3748;
+
+    --b3-theme-on-surface-light: rgb(164 129 157 / 87%);
+    --b3-theme-on-error: #fff;
+
+    /* 字体 */
+    --b3-font-family: "思源黑体 CN","quote", "Helvetica Neue", "Luxi Sans", "DejaVu Sans", "Hiragino Sans GB", "Microsoft Yahei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
+    --b3-font-family-code: "Consolas","TsangerYuMo W02","JetBrainsMono-Regular", mononoki, Consolas, "Liberation Mono", Menlo, Courier, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
+    --b3-font-family-graph: mononoki;
+    --b3-font-family-emoji: "Segoe UI Emoji", "Segoe UI Symbol", "Segoe UI", "Apple Color Emoji", "Twemoji Mozilla", "Noto Color Emoji", "Android Emoji";
+    --b3-font-family-math: KaTeX_Math;
+    --b3-font-family-yinshu:"三极柴园简体";
+    --b3-font-family-button:"Consolas";    /*给按键kbd用的字体  */
+    --b3-font-family-strong:"思源黑体 CN","字体圈欣意冠黑体","Microsoft Yahei"; /* 添加了字色部分的字体
+
+    /* 线条 */
+    --b3-border-color: #9d2e2e55;
+
+    /* 滚动条 */
+    --b3-scroll-color: rgba(0, 0, 0, .2);
+
+    /* 列表 */
+    --b3-list-hover: #ffd7d9;
+
+    /* 菜单 */
+    --b3-menu-background: #f8f9fa;
+
+    /* 提示 */
+    --b3-tooltips-color: rgba(0, 0, 0, 0.54);
+
+    /* 遮罩 */
+    --b3-mask-background: rgba(0, 0, 0, 0.78);
+
+    /* 卡片背景 */
+    --b3-card-error-color: hsl(4deg 87% 34%);
+    --b3-card-error-background: rgb(253, 236, 234);
+    --b3-card-warning-color: rgb(160, 93, 0);
+    --b3-card-warning-background: rgb(255, 244, 229);
+    --b3-card-info-color: rgb(10, 103, 175);
+    --b3-card-info-background: rgb(232, 244, 253);
+    --b3-card-success-color: rgb(23, 120, 28);
+    --b3-card-success-background: rgb(237, 247, 237);
+
+    /* 自定义文字 */
+    --b3-font-color1: var(--b3-card-error-color);
+    --b3-font-color2: var(--b3-card-warning-color);
+    --b3-font-color3: var(--b3-card-info-color);
+    --b3-font-color4: var(--b3-card-success-color);
+    --b3-font-color5: var(--b3-theme-on-surface);
+    --b3-font-color6: var(--b3-theme-primary);
+    --b3-font-color7: var(--b3-theme-secondary);
+    --b3-font-color8: var(--b3-theme-error);
+    --b3-font-color9: #f55376;
+    --b3-font-color10: #a335a3;
+    --b3-font-color11: #6cad05;
+    --b3-font-color12: #f56f10;
+
+        /* 修改第十三种字色为透明色，以用来复习内容 */
+    --b3-font-color13: transparent;
+
+    --b3-font-background1: var(--b3-card-error-background);
+    --b3-font-background2: var(--b3-card-warning-background);
+    --b3-font-background3: var(--b3-card-info-background);
+    --b3-font-background4: var(--b3-card-success-background);
+    --b3-font-background5: var(--b3-theme-surface);
+    --b3-font-background6: var(--b3-theme-primary-light);
+    --b3-font-background7: rgba(217, 211, 215, 0.5);
+    --b3-font-background8: rgba(255, 193, 153, 0.5);
+    --b3-font-background9: rgba(189, 201, 255, 0.5);
+    --b3-font-background10: rgba(239, 218, 251, 0.5);
+    --b3-font-background11: rgba(234, 202, 220, 0.5);
+    --b3-font-background12: rgba(253, 198, 200, 0.5);
+    --b3-font-background13:var(--b3-theme-on-background);
+
+    /* 动画效果 */
+    --b3-transition: all .15s cubic-bezier(0, 0, .2, 1) 0ms;
+    --b3-width-transition: width .15s cubic-bezier(0, 0, .2, 1) 0ms;
+
+    /* 阴影 */
+    --b3-point-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    --b3-dialog-shadow: 0px 11px 11px 2px rgb(176 90 90 / 41%), 0px 24px 38px 4px rgb(0 0 0 / 14%), 0px 9px 46px 8px rgb(0 0 0 / 12%);
+
+    /* 图表颜色 */
+    --b3-graph-p-point: #076f7e;
+    --b3-graph-heading-point: #0e51af;
+    --b3-graph-math-point: #80FFA5;
+    --b3-graph-code-point: #00DDFF;
+    --b3-graph-table-point: #37A2FF;
+    --b3-graph-list-point: #FF0087;
+    --b3-graph-todo-point: #FFBF00;
+    --b3-graph-olist-point: #b3005f;
+    --b3-graph-listitem-point: #f65b00;
+    --b3-graph-bq-point: #8d48e3;
+    --b3-graph-super-point: #dd79ff;
+    --b3-graph-doc-point: #0ccadf;
+    --b3-graph-tag-point: #dbf32f;
+    --b3-graph-asset-point: #05c091;
+    --b3-graph-line: #5f6368;
+    --b3-graph-ref-line: #d23f31;
+    --b3-graph-tag-line: #5f6b06;
+    --b3-graph-tag-tag-line: #dbf32f;
+    --b3-graph-asset-line: #037457;
+    --b3-graph-hl-point: #f3a92f;
+    --b3-graph-hl-line: #4285f4;
+
+    /* 编辑器搜索颜色 */
+    --b3-protyle-search-background: #ffe955;
+    --b3-protyle-search-border-color: #f2e680;
+    --b3-protyle-search-current-background: #a5d3fe;
+
+    /* 代码片段背景 */
+    --b3-protyle-code-background: rgba(27, 31, 35, .05);
+    --b3-protyle-code-linenumber-hl: #b9d1f4;
+
+    /* 所见即所得行内元素颜色 */
+    /* 修改带删除线样式的字的字色，继承上级字色 */
+    --b3-protyle-inline-strong-color: inherit;
+    --b3-protyle-inline-em-color: inherit;
+    --b3-protyle-inline-s-color: inherit;
+
+    /* 超链接字色 */
+    --b3-protyle-inline-link-color: #4285f4;
+
+    --b3-protyle-inline-mark-background: #ffe955;
+    --b3-protyle-inline-mark-color: #202124;
+    --b3-protyle-inline-tag-color: #5f6368;
+
+    /* 块引用字色 */
+    --b3-protyle-inline-blockref-color: #960064;
+
+    /* PDF */
+    --b3-pdf-selection: #d0e9c8;
+    --b3-pdf-sidebar-width: 200px;
+    --b3-pdf-offset: 0;
+    --b3-pdf-background1: var(--b3-theme-error);
+    --b3-pdf-background2: #f5822e;
+    --b3-pdf-background3: var(--b3-theme-secondary);
+    --b3-pdf-background4: #65b84d;
+    --b3-pdf-background5: #f5539e;
+    --b3-pdf-background6: var(--b3-theme-primary);
+    --b3-pdf-background7: #944194;
+
+
+    /* 文档树辅助样式 */
+    --b3-list-item-background-color:#fff;
+
+
+
+    /* 为各类菜单和面板设置一个统一的边框颜色 */
+    --b3-pinkroom-border:#f9c1c5;
+}
