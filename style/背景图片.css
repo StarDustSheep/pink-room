@@ -1,0 +1,31 @@
+/* ----以整个界面为边界设置背景图片，但只显示在始质或者说编辑区域---- */
+/* 全屏动漫背景图 */
+body{
+    background-image: url("pic/pink-room主题背景图裁切说明.jpg");
+	background-position:center top;
+	background-size:cover;
+	z-index: -1;
+}
+
+/* 花纹背景图 */
+/* body {
+    background-image: url(pic/tex1.jpg);
+	background-position:center top;
+    background-repeat:repeat;
+	z-index: -1;
+} */
+
+/* 让始质\编辑区底色透明，以实现一种蒙板的效果 */
+.protyle{
+    background-color: transparent;    
+}
+
+/* 设置输入容器底色透明 */
+.layout-tab-container{
+    background-color: transparent;
+}
+
+/* 由于上面一段代码会让文档树和大纲透明，这里重新设置文档树和大纲底色 */
+.fn__flex-1.fn__flex-column.file-tree{
+    background-color: #fef9f9;
+}

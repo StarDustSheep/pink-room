@@ -1,0 +1,24 @@
+/* 为超级块设置边框、底色、顶部颜色识别区、底部间距*/
+.protyle-wysiwyg [data-node-id].sb {
+    background-color: #fffef9;
+    /* border: solid 1px #b36e3fd4; */
+    border-radius: 5px;
+    padding: 0.1em 0.2em 0.1em 0.2em;
+    margin-bottom: 15px !important;
+    border-top-style: solid;
+    border-top-color: #1ecde4cf;
+    border-top-width: 5px;
+    box-shadow: 0px 0px 0px 0.5px #b36e3fd4;
+}
+
+
+/* 使得超级块中的超级块不会有边框、边距等样式 */
+.protyle-wysiwyg [data-node-id].sb[data-sb-layout="col"] .sb, .protyle-wysiwyg [data-node-id].sb[data-sb-layout="row"] .sb {
+    margin: 0em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    border-radius: 0em;
+    box-shadow: none;
+    /* background-color: transparent; */
+    border: none;
+}

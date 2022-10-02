@@ -1,0 +1,93 @@
+/* -----让页面编辑区域变成固定宽度且固定在页面中部，以呈现一种竖卷轴式的编辑区  特色性功能----- */
+.protyle-content:not(#searchPreview.fn__flex-1.protyle>.protyle-content,.block__popover,.block__edit.fn__flex-1.protyle>.protyle-content){
+
+    width: 80em !important;
+    background-color: #faf5f5;
+    box-shadow: #5007134a 0px 0px 0.7em 0.3em, #b43e672b 0px 0px 3em 1em, #f5e4e7a3 0px 0px 2.5em;
+    border: 10px solid #f4c4d0;
+    border-bottom-width: 0px;
+    border-top-width: 0px;
+    margin: 0 0 0 0;
+    padding: 0 0 30rem 0;
+    min-height: 10rem;
+    /* margin: 0 40rem 40rem 30rem; */
+    /* left: 50%; */
+    /* align-self: center; */
+    /* 开启绝对定位后，在向下滑动页面的时候，面包屑依旧留在“上面”然后被挡住 */
+    /* position: absolute; */
+}
+
+.protyle{
+    background-color: #f3e3e3;
+}
+
+
+
+/* 为文档文字编辑区域设置较窄的内边距 */
+.protyle-wysiwyg.protyle-wysiwyg--attr{
+    padding: 34px 16px 16px 24px !important;
+}
+
+/* 修改题头图标的位置   此代码可能是为了适应主题的内容区域宽度固定而做的针对性修改 */
+.protyle-background__iconw{
+    left: 16px !important;
+}
+/* -----让页面编辑区域变成固定宽度且固定在页面中部  特色性功能----- */
+
+
+
+/* 为始质…或者说编辑区域，添加背景图片 */
+/* .protyle{
+    background-image:url(pic/bg3.jpg) ;    
+} */
+
+
+
+/* 此选择器元素内包括protyle-content protyle-breadcrumb等元素  此处主要功能是将这些元素居中放置 */
+.fn__flex-1.protyle{
+    align-items: center;
+}
+
+
+/* 使得protyle-content的box-shadow不遮挡面包屑 */
+.protyle-breadcrumb{
+    z-index: 1;
+    /* position: fixed; */
+}   
+
+/* 使得面包屑的宽度为父元素的100% */
+.protyle-breadcrumb{
+    width: 100%;
+}
+
+
+.protyle-background{
+    min-height: 20rem !important;
+    padding-bottom: 0px;
+}
+
+.protyle-background__img img{
+    height: 20rem !important;
+}
+
+/* 改变标题区域的样式 1版 */
+/* .protyle-title__input{
+    background: #ffefef;
+    border-bottom: 3px solid #dba9b9;
+    box-shadow: 0px 0px 1px #904971, 0px 2px 2px 1px #c57685ba, 0px 2px 15px 1px #e7a0a0ab;
+    border-radius: 0.2em;
+    color: #580000b5;
+} */
+
+/* 改变标题区域的样式 2版 */
+.protyle-title__input {
+    background: transparent;
+    border-bottom: 3px solid rgb(219, 169, 185);
+    color: rgba(88, 0, 0, 0.71);
+    line-height: 1.1em;
+}
+
+/* 修改标题的位置   此代码可能是为了适应主题的内容区域宽度固定而做的针对性修改 */
+.protyle-title{
+    margin: 34px 16px 0 24px !important;
+}

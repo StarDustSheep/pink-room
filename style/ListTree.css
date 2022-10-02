@@ -1,0 +1,173 @@
+/* 文档树引用数字的颜色,修改为淡色，避免过于显眼导致注意力容易从笔记本标题文字上分散到此*/
+.counter {
+    color: #55555a5d;
+}
+
+
+/* 无子文档的文档前面添加圆点符号 */
+.b3-list-item.b3-list-item--hide-action .b3-list-item__toggle.fn__hidden::before {
+    content: "◦";
+    font-size: 2em;
+    position: absolute;
+    visibility: visible;
+    margin-bottom: 2px;
+    color: #8080804d;
+}
+
+/* 设置文档树前面的＞符号颜色为灰色以不抢夺笔记本标题文字的视觉吸引力 */
+.fn__flex-1.fn__flex-column.file-tree .b3-list-item__arrow {
+    color: #8080804d;
+}
+
+/* 点击文档树emoji不弹出修改窗口（防止误触） */
+span.b3-list-item__icon.b3-tooltips.b3-tooltips__n {
+    pointer-events: none;
+}
+
+/* 笔记本之间的间隔 */
+.sy__file ul.b3-list.b3-list--background {
+    border-radius: 2px;
+    margin: 6px 10px 6px 14px;
+    outline: 1px solid rgba(178, 100, 100, 0.812);
+    background-color: white;
+    /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; */
+}
+
+[data-type="navigation-root"] {
+    height: 32px;
+}
+
+
+/* 设置反链面板图标位置（不设置对不齐） */
+.backlinkList.fn__flex-1 .b3-list-item .popover__block {
+    margin-left: 4px;
+}
+
+
+
+/* ------------------------------------文档树文字设置为灰色------------------------------- */
+.b3-list-item__text {
+    color: var(--b3-theme-on-surface);
+}
+
+/* -----------------------------文档树focus------------------------------- */
+
+/* 颜色 */
+.b3-list--background .b3-list-item--focus .b3-list-item__text,
+.b3-list--background .b3-list-item--focus .b3-list-item__graphic,
+.b3-list--background .b3-list-item--focus .b3-list-item__icon svg {
+    color: var(--b3-theme-primary);
+}
+
+/* 背景 */
+.b3-list--background .b3-list-item--focus {
+    background-color: var(--b3-theme-tm2) !important;
+}
+
+/* -----------------------------文档树hover-------------------------------- */
+
+/* 颜色 */
+.b3-list--background .b3-list-item:hover .b3-list-item__text,
+.b3-list--background .b3-list-item:hover .b3-list-item__graphic,
+.b3-list--background .b3-list-item:hover .b3-list-item__icon svg {
+    color: var(--b3-theme-on-surface);
+}
+
+/* 背景 */
+
+/* 文档树辅助线（来自于Rem Craft主题） */
+.b3-list:not(.b3-list--border) .b3-list-item+ul {
+    box-shadow: 13px 0px var(--b3-list-item-background-color) inset, 14px 0 rgba(231, 231, 231, 1) inset;
+}
+
+.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item {
+    margin-left: 6px
+}
+
+.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul {
+    box-shadow: 13px 0 var(--b3-list-item-background-color) inset, 14px 0 rgba(231, 231, 231, 1) inset, 35px 0 var(--b3-list-item-background-color) inset, 36px 0 rgba(231, 231, 231, 1) inset
+}
+
+.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item {
+    margin-left: 12px
+}
+
+.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul {
+    box-shadow: 13px 0 var(--b3-list-item-background-color) inset, 14px 0 rgba(231, 231, 231, 1) inset, 35px 0 var(--b3-list-item-background-color) inset, 36px 0 rgba(231, 231, 231, 1) inset, 57px 0 var(--b3-list-item-background-color) inset, 58px 0 rgba(231, 231, 231, 1) inset
+}
+
+.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item {
+    margin-left: 18px
+}
+
+.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul {
+    box-shadow: 13px 0 var(--b3-list-item-background-color) inset, 14px 0 rgba(231, 231, 231, 1) inset, 35px 0 var(--b3-list-item-background-color) inset, 36px 0 rgba(231, 231, 231, 1) inset, 57px 0 var(--b3-list-item-background-color) inset, 58px 0 rgba(231, 231, 231, 1) inset, 79px 0 var(--b3-list-item-background-color) inset, 80px 0 rgba(231, 231, 231, 1) inset
+}
+
+.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item {
+    margin-left: 24px
+}
+
+.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul {
+    box-shadow: 13px 0 var(--b3-list-item-background-color) inset, 14px 0 rgba(231, 231, 231, 1) inset, 35px 0 var(--b3-list-item-background-color) inset, 36px 0 rgba(231, 231, 231, 1) inset, 57px 0 var(--b3-list-item-background-color) inset, 58px 0 rgba(231, 231, 231, 1) inset, 79px 0 var(--b3-list-item-background-color) inset, 80px 0 rgba(231, 231, 231, 1) inset, 101px 0 var(--b3-list-item-background-color) inset, 102px 0 rgba(231, 231, 231, 1) inset
+}
+
+.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item {
+    margin-left: 30px
+}
+
+.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul {
+    box-shadow: 13px 0 var(--b3-list-item-background-color) inset, 14px 0 rgba(231, 231, 231, 1) inset, 35px 0 var(--b3-list-item-background-color) inset, 36px 0 rgba(231, 231, 231, 1) inset, 57px 0 var(--b3-list-item-background-color) inset, 58px 0 rgba(231, 231, 231, 1) inset, 79px 0 var(--b3-list-item-background-color) inset, 80px 0 rgba(231, 231, 231, 1) inset, 101px 0 var(--b3-list-item-background-color) inset, 102px 0 rgba(231, 231, 231, 1) inset, 123px 0 var(--b3-list-item-background-color) inset, 124px 0 rgba(231, 231, 231, 1) inset
+}
+
+.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item {
+    margin-left: 36px
+}
+
+.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul {
+    box-shadow: 13px 0 var(--b3-list-item-background-color) inset, 14px 0 rgba(231, 231, 231, 1) inset, 35px 0 var(--b3-list-item-background-color) inset, 36px 0 rgba(231, 231, 231, 1) inset, 57px 0 var(--b3-list-item-background-color) inset, 58px 0 rgba(231, 231, 231, 1) inset, 79px 0 var(--b3-list-item-background-color) inset, 80px 0 rgba(231, 231, 231, 1) inset, 101px 0 var(--b3-list-item-background-color) inset, 102px 0 rgba(231, 231, 231, 1) inset, 123px 0 var(--b3-list-item-background-color) inset, 124px 0 rgba(231, 231, 231, 1) inset, 145px 0 var(--b3-list-item-background-color) inset, 146px 0 rgba(231, 231, 231, 1) inset
+}
+
+.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item {
+    margin-left: 42px
+}
+
+.fn__flex-1.fn__flex-column.file-tree.sy__backlink{
+    background-color: #fff;
+}
+
+
+
+
+
+/* 将鼠标放置在文档树中笔记本右侧的引用数字上能打开一个窗口，下方代码将其中的元素正常放置而不是居中放置 */
+.block__edit.fn__flex-1.protyle{
+    align-items: normal;
+}
+
+/* 将鼠标放置在文档树中笔记本右侧的引用数字上能打开一个窗口，为这个区域中的内容块设置小点的内边距以防止出现多个滚动条 */
+.block__edit>.protyle-content>.protyle-wysiwyg.protyle-wysiwyg--attr{
+    padding: 0px 30px 0px 30px !important;
+    /* min-height: 30px; */
+    /* margin: 10px; */
+}
+
+/* 将鼠标放置在文档树中笔记本右侧的引用数字上能打开一个窗口，为这个区域设置边框 */
+.block__popover.block__popover--move.block__popover--open{
+    border: 5px solid var(--b3-pinkroom-border);
+}
+
+/* 将鼠标放置在文档树中笔记本右侧的引用数字上能打开一个窗口，为这个区域取消内阴影*/
+.block__edit.fn__flex-1.protyle{
+    box-shadow: none;
+}
+
+/* 将鼠标放置在文档树中笔记本右侧的引用数字上能打开一个窗口，为这个区域取消内阴影*/
+.block__edit>.protyle-breadcrumb{
+    background-color: #fbeeee;
+}
+
+/* 将鼠标放置在文档树中笔记本右侧的引用数字上能打开一个窗口，为这个区域中的内容区域设置底色 */
+.block__edit.fn__flex-1.protyle>.protyle-content{
+    background-color: #fbf4f4;
+}

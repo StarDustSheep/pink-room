@@ -1,0 +1,16 @@
+/* 设置块引用样式 */
+
+/* 修改的样式 */
+.protyle-wysiwyg [data-node-id] span[data-type~=block-ref], .protyle-wysiwyg [data-node-id] span[data-type~=file-annotation-ref]{
+    border-bottom: 1px solid var(--b3-protyle-inline-blockref-color);
+    margin: 0px 2px 0px;
+}
+
+/* 修改鼠标悬浮在块引用上的样式 */
+.protyle-wysiwyg [data-node-id] span[data-type="block-ref"]::after {
+    content: "↓";
+    position: relative;
+    font-size: 80%;
+    top: -0.1em;
+    margin-left: 2px;
+}
