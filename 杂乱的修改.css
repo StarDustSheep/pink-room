@@ -234,8 +234,4 @@ audio{
     box-shadow: 0px 0px 11px -3px grey;
 }
 
-/* 修改标签样式颜色 */
-.protyle-wysiwyg [data-node-id] span[data-type~=tag]{
-    box-shadow: #576ca5 3.6em 0px 0px -2.2em inset, 0px 0px 0px 1px inset;
-}
 
