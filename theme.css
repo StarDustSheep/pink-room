@@ -1,21 +1,21 @@
-/* 引入root元素，勿动 */
-@import url("root.css");
+/* ----引入root元素，勿动---- */
+@import url("config/root.css");
 
-/* ----作者自用特色功能，打开后整个文章区域就和一张竖向的长卷轴一样，使用该功能需要开启自适应宽度---- */
+
+/* ----作者自用特色功能，可开关 ---- */
+/* @import url("style/另外一种默认字体.css"); */
 /* @import url("style/卷轴页面.css"); */
-
-/* 背景图片可自行修改 */
 /* @import url("style/背景图片.css"); */
+/* @import url("style/4类主要自定义字色.css"); */
+@import url("style/复习用填空&黑条样式.css");
+@import url("style/超级块边框.css");
 
+/* ----通用样式---- */
 @import url("style/Breadcrumb&TabBar.css");
-
-/* ----感觉搭配效果不佳的效果,暂时不使用---- */
-/* @import url("style/多彩文档树.css"); */
 
 @import url("style/TextColorMenu.css");
 @import url("style/ListTree.css");
 
-@import url("style/SuperBlock.css");
 @import url("style/CodeBlock.css");
 
 @import url("style/keyboard.css");
@@ -23,125 +23,9 @@
 
 @import url("style/BlockRef.css");
 @import url("style/SuperLink.css");
-@import url("style/复习用填空&黑条样式.css");
 
-/* ----以整个界面为边界设置背景图片，但只显示在始质或者说编辑区域---- */
+@import url("杂乱的修改.css");
 
-
-/* ————————————下面的都是比较杂乱的修改——————————————— */
-
-/* 让标题直接透明，露出下方颜色 */
-.protyle-title__input{
-    background-color: transparent;
-    padding: 4px 2px;
-}
-
-
-/* 修改行距和段落间距  但除了代码块的行距，因为会让每行前的数字无法对齐*/
-.protyle-wysiwyg.protyle-wysiwyg [data-node-id]:not([data-type="NodeCodeBlock"]){
-    line-height:1.8em !important;
-    margin-bottom: 6px;
-    margin-top: 6px;
-}
-
-/* 鼠标悬浮于题头图标上时放大，以让用户意识到鼠标移动到了热区 */
-.protyle-background__icon:hover{
-    transform: scale(1.05);
-}
-
-
-/* ----界面配色修改相关---- */
-/* 左右两侧的停靠栏设置为粉色 */
-.dock{
-    background-color: #ffcdd0;
-}
-
-/* 顶部工具栏设置为粉色 */
-.toolbar{
-    background-color: #f9c1c5;
-    border-bottom: 1px solid var(--b3-border-color);
-}
-
-
-/* 为"始质"区域添加内阴影使得编辑区整个看起来位于一个空间内部，更有质感 */
-.fn__flex-1.protyle{
-    box-shadow: inset 0 0 10px 1px #e1c2c3;
-}
-
-
-
-
-/* 滚动条滑块部分 */
-::-webkit-scrollbar-thumb{
-    background-color:#61badebc;
-    /* background-color:transparent; */
-    border-radius: 0.2em;   
-    /* 不要为滚动条添加外部阴影，会有残影 */
-}
-
-
-/* 修改嵌入块的样式 */
-.protyle-wysiwyg [data-node-id].render-node[data-type=NodeBlockQueryEmbed] {
-    background-color: #ebdad763;
-    box-shadow: 0px 0px 3px 2px inset #d2c5ca;
-    border-radius: 5px;
-}
-
-
-/* 给右边的关系图和反链面板所在的区域设置左侧边框 */
-/* #layouts > div.fn__flex.fn__flex-1 > div:nth-child(5){
-    border-left: solid 10px #f9c1c5;
-} */
-
-
-/* 给右边的关系图和反链面板所在的区域和中间的编辑区域设置边界 */
-#layouts > div.fn__flex.fn__flex-1 > div:nth-child(4){
-    background-color:#f9c1c5;
-}
-
-
-/* 修改状态栏底色 */
-.status{
-    background-color: #ffcdd0;
-    border-top: solid 0.5px rgba(108, 86, 86, 0.373);
-    box-sizing: border-box;
-}
-
-
-/* 修改激活中的区域图标的颜色 */
-.dock__item--active {
-    color: #ee579de2;
-}
-
-/* 修改提示菜单样式 */
-.hint--menu {
-    column-count: 4;
-    column-width: 178px !important;
-    column-gap: 5px;
-    min-width: 50vw !important;
-    max-height: 600px !important;
-    border: 0.2em solid pink;
-    padding: 4px;
-    background-color: white;
-    border-radius: 0px;
-
-}
-/* 修改提示菜单中选项样式 */
-.b3-menu .b3-list-item {
-    font-size: 90%;
-    border: 1px solid #8b41417d;
-    box-sizing: border-box;
-    vertical-align: middle;
-    padding: 2px 8px !important;
-    margin-bottom: 0.1em;
-}
-
-/* 防止界面中出现没什么用的滚动条 */
-.fn__flex.fn__flex-1{
-    overflow-x:hidden;
-}
-
-
-
-
-
+/* ---多种色系配色界面暂时性解决方案，可开关切换--- */
+/* @import url("config/绿色系界面.css"); */
+/* @import url("config/蓝色系界面.css"); */

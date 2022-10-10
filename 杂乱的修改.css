@@ -1,0 +1,241 @@
+/* ————————————下面的都是比较杂乱的修改——————————————— */
+
+/* 让标题直接透明，露出下方颜色 */
+.protyle-title__input{
+    background-color: transparent;
+    padding: 4px 2px;
+}
+
+/* 改变标题区域的样式 2版 */
+.protyle-title__input {
+    background: transparent;
+    border-bottom: 3px solid #e3bbc3;
+    line-height: 1.1em;
+}
+
+/* 修改行距和段落间距  但除了代码块的行距，因为会让每行前的数字无法对齐*/
+.protyle-wysiwyg.protyle-wysiwyg [data-node-id]:not([data-type="NodeCodeBlock"]){
+    line-height:1.8em !important;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+/* 鼠标悬浮于题头图标上时放大，以让用户意识到鼠标移动到了热区 */
+.protyle-background__icon:hover{
+    transform: scale(1.05);
+}
+
+
+/* ----界面配色修改相关---- */
+/* 左右两侧的停靠栏设置为粉色 */
+.dock{
+    background-color: #ffcdd0;
+}
+
+/* 顶部工具栏设置为粉色 */
+.toolbar{
+    background-color: #f9c1c5;
+    border-bottom: 1px solid var(--b3-border-color);
+}
+
+
+/* 为"始质"区域添加内阴影使得编辑区整个看起来位于一个空间内部，更有质感 */
+.fn__flex-1.protyle{
+    box-shadow: inset 0 0 10px 1px #e1c2c3;
+}
+
+
+
+
+/* 滚动条滑块部分 */
+::-webkit-scrollbar-thumb{
+    background-color:#61badebc;
+    /* background-color:transparent; */
+    border-radius: 0.2em;   
+    /* 不要为滚动条添加外部阴影，会有残影 */
+}
+
+
+/* 修改嵌入块的样式 */
+.protyle-wysiwyg [data-node-id].render-node[data-type=NodeBlockQueryEmbed] {
+    background-color: #ebdad763;
+    box-shadow: 0px 0px 3px 2px inset #d2c5ca;
+    border-radius: 5px;
+}
+
+
+/* 给右边的关系图和反链面板所在的区域设置左侧边框 */
+/* #layouts > div.fn__flex.fn__flex-1 > div:nth-child(5){
+    border-left: solid 10px #f9c1c5;
+} */
+
+
+/* 给右边的关系图和反链面板所在的区域和中间的编辑区域设置边界 */
+#layouts > div.fn__flex.fn__flex-1 > div:nth-child(4){
+    background-color:#f9c1c5;
+}
+
+
+/* 修改状态栏底色 */
+.status{
+    background-color: #ffcdd0;
+    border-top: solid 0.5px rgba(108, 86, 86, 0.373);
+    box-sizing: border-box;
+}
+
+
+/* 修改激活中的区域图标的颜色 */
+.dock__item--active {
+    color: #ee579de2;
+}
+
+/* 修改提示菜单样式 */
+.hint--menu {
+    column-count: 4;
+    column-width: 178px !important;
+    column-gap: 5px;
+    min-width: 50vw !important;
+    max-height: 600px !important;
+    border: 0.2em solid pink;
+    padding: 4px;
+    background-color: white;
+    border-radius: 0px;
+
+}
+/* 修改提示菜单中选项样式 */
+.b3-menu .b3-list-item {
+    font-size: 90%;
+    border: 1px solid #8b41417d;
+    box-sizing: border-box;
+    vertical-align: middle;
+    padding: 2px 8px !important;
+    margin-bottom: 0.1em;
+}
+
+/* 防止界面中出现没什么用的滚动条 */
+.fn__flex.fn__flex-1{
+    overflow-x:hidden;
+}
+
+/* 修改默认的投影样式 */
+[style*="text-shadow"]{
+    color:#834e68 !important;
+    text-shadow: 0px 1px 0px #d3b9b9c2, 0px 2px #d3b2b299, 0px 3px 5px #c7b0b0, 0px 4px 5px #eed3d0cc !important;
+
+}
+
+/* 修改默认的镂空样式 */
+[style*="-webkit-text-stroke"]{
+    font-weight: 900 !important;
+    -webkit-text-stroke: 0.8px var(--b3-theme-on-background) !important;
+}
+
+/* 录音块外观修改 */
+audio{
+    display: block;
+    border-radius: 49px;
+    border: 5px solid #b2708a;
+    /* background: #030303; */
+    box-shadow: 0px 0px 5px 0px #6e5d548f, 0px 0px 14px 1px #9a7a8282;
+}
+
+/* 标题中标签不显示在大纲中  */
+.b3-list-item__text [data-type="tag"]{
+    color:transparent !important;
+}
+
+/* 修改提示气泡样式 */
+.tooltip{
+    font-size: 1rem !important;
+    background-color: #834e68;
+}
+
+
+/* 标签tag样式 */
+.protyle-wysiwyg [data-node-id] span[data-type~=tag] {
+    background-color: #fff;
+    transition: all .2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    color: var(--text-focus);
+    /* border-radius: 10% 10% 10% 10% / 34% 34% 34% 34% ; */
+    border-radius: 5px;
+    position: relative;
+    padding: .1rem 0.3rem .1rem .1rem;
+
+    font-size: 85%;
+    box-shadow: #9a6e84 3.6em 0px 0px -2.2em inset,0px 0px 0px 1px inset;
+    border: none;
+    /* box-sizing: border-box; */
+}
+/* 标签tag样式 */
+.protyle-wysiwyg [data-node-id] span[data-type~=tag]::before {
+    content: "#";
+    color: #fff;
+    display: inline-block;
+    margin-right: .2rem;
+    padding: 0rem .4rem 0rem 0.3rem;
+}
+
+
+
+
+/* 思源笔记的嵌入块默认的左侧边框虚线 */
+.protyle-wysiwyg [data-node-id].render-node[data-type=NodeBlockQueryEmbed]{
+    border-left: none !important;
+}
+
+/* 给分隔线设置单独的颜色以契合背景颜色 */
+.protyle-wysiwyg [data-node-id].hr>div{
+    border-bottom: 1px solid #852a4b;
+}
+
+
+/* 使代码块和嵌入块在块合并操作中能正常显示拖放合并块提示色条 */
+/* 加大拖放合并块提示色条的大小以让其更容易识别 */
+.dragover__top{
+    box-shadow: 0px -10px 0 var(--b3-theme-primary-lighter) !important;
+}
+.dragover__right{
+    box-shadow: 10px 0 0 var(--b3-theme-primary-lighter) !important;
+}
+.dragover__bottom{
+    box-shadow: 0px 10px 0 var(--b3-theme-primary-lighter) !important;
+}
+.dragover__left{
+    box-shadow: -10px 0 0 var(--b3-theme-primary-lighter) !important;
+}
+
+/* 使得protyle-content的box-shadow不遮挡面包屑 */
+.protyle-breadcrumb{
+    z-index: 1;
+}   
+
+/* 使得标签界面、书签界面和其中的列表左侧伪元素底色一致 */
+.sy__bookmark .fn__flex-1,.sy__tag .fn__flex-1{
+    background-color: #fff;
+}
+/* 书签、标签顶栏横线 */
+.sy__bookmark > .block__icons > :nth-child(2), .sy__tag > .block__icons > :nth-child(2){
+    background-color: var(--b3-theme-on-background);
+}
+
+
+
+
+
+
+/* 反链列表项底色，提高z-index防止下方代码添加的阴影遮挡 */
+.backlinkList .b3-list-item{
+    background-color: #f0e0e5;
+    z-index: 1;
+}
+
+/* 为反链列表中的内容区域添加底部阴影 */
+.backlinkList.fn__flex-1 > ul > [data-ismention="false"]{
+    box-shadow: 0px 0px 11px -3px grey;
+}
+
+/* 修改标签样式颜色 */
+.protyle-wysiwyg [data-node-id] span[data-type~=tag]{
+    box-shadow: #576ca5 3.6em 0px 0px -2.2em inset, 0px 0px 0px 1px inset;
+}
+

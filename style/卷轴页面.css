@@ -1,7 +1,12 @@
-/* -----让页面编辑区域变成固定宽度且固定在页面中部，以呈现一种竖卷轴式的编辑区  特色性功能----- */
-.protyle-content:not(#searchPreview.fn__flex-1.protyle>.protyle-content,.block__popover,.block__edit.fn__flex-1.protyle>.protyle-content){
+/* --------------------让页面编辑区域变成固定宽度且固定在页面中部，以呈现一种竖卷轴式的编辑区  特色性功能-------------------- */
+:root{
+        /* 修改主要的背景色，如果开启卷轴模式则将其设置为编辑区域旁边的背景色 */
+    --b3-theme-background: hsl(0, 33%, 97%);
+}
 
-    width: 80em !important;
+/* ----------此处为初版样式，由于即使是浅粉色，也依旧对不同颜色的文字阅读造成了不好的影响，故换成纯白底色---------- */
+/* .protyle-content:not(#searchPreview.fn__flex-1.protyle>.protyle-content,.block__popover,.block__edit.fn__flex-1.protyle>.protyle-content){
+    width: 297mm !important;
     background-color: #faf5f5;
     box-shadow: #5007134a 0px 0px 0.7em 0.3em, #b43e672b 0px 0px 3em 1em, #f5e4e7a3 0px 0px 2.5em;
     border: 10px solid #f4c4d0;
@@ -10,13 +15,43 @@
     margin: 0 0 0 0;
     padding: 0 0 30rem 0;
     min-height: 10rem;
-    /* margin: 0 40rem 40rem 30rem; */
-    /* left: 50%; */
-    /* align-self: center; */
-    /* 开启绝对定位后，在向下滑动页面的时候，面包屑依旧留在“上面”然后被挡住 */
-    /* position: absolute; */
+} */
+
+/* ----------此为当前正在使用的卷轴页面样式，去除了边框以防止其干扰对文字内容的阅读，底色相比之前更接近白色了，能更好地让多种字色的文字比较容易阅读---------- */
+.protyle-content:not(#searchPreview.fn__flex-1.protyle>.protyle-content,.block__popover,.block__edit.fn__flex-1.protyle>.protyle-content,.backlinkList .protyle-content,.backlinkMList .protyle-content){
+    width: 297mm !important;
+    background-color: hsl(0, 33%, 99%);
+    box-shadow: #33101624 0px 0px 0.7em 0.3em, #da5b872b 0px 0px 3em 1em, #f5e4e7a3 0px 0px 2.5em;
+    border-bottom-width: 0px;
+    border-top-width: 0px;
+    margin: 0 0 0 0;
+    padding: 0 0 30rem 0;
+    min-height: 10rem;
 }
 
+.backlinkList.protyle-content,.backlinkMList .protyle-content{
+    background-color: hsl(0, 33%, 99%);
+    /* box-shadow: 0px 0px 5px pink; */
+}
+
+.backlinkList.fn__flex-1{
+    box-shadow: 0px 0px 16px inset grey;
+}
+
+
+/* ----------此为修复瑕疵而做的试验，请勿使用---------- */
+/* 开启绝对定位后，在向下滑动页面的时候，面包屑依旧留在“上面”然后被挡zz */
+/* .protyle-content:not(#searchPreview.fn__flex-1.protyle>.protyle-content,.block__popover,.block__edit.fn__flex-1.protyle>.protyle-content){
+    margin: 0 40rem 40rem 30rem;
+    left: 50%;
+    align-self: center;
+    position: absolute;
+} */
+
+
+
+
+/* 中央卷轴之外的区域，视觉上看起来就像是卷轴底下的平面。设为灰粉色以和中央文字区域区分，目的是让使用者更容易把注意力集中在中央的文字区域 */
 .protyle{
     background-color: #f3e3e3;
 }

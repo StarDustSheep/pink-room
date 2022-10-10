@@ -1,0 +1,14 @@
+:root {
+    /* 字体 */
+    --b3-font-family: "Alibaba PuHuiTi 2.0","quote", "Helvetica Neue", "Luxi Sans", "DejaVu Sans", "Hiragino Sans GB", "Microsoft Yahei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
+    --b3-font-family-code: "Consolas",微软雅黑,"TsangerYuMo W02","JetBrainsMono-Regular", mononoki, Consolas, "Liberation Mono", Menlo, Courier, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
+    --b3-font-family-graph: mononoki;
+    --b3-font-family-emoji: "Segoe UI Emoji", "Segoe UI Symbol", "Segoe UI", "Apple Color Emoji", "Twemoji Mozilla", "Noto Color Emoji", "Android Emoji";
+    --b3-font-family-math: KaTeX_Math;
+    --b3-font-family-yinshu:"三极柴园简体";
+    --b3-font-family-button:"Consolas";    /*给按键kbd用的字体  */
+    --b3-font-family-strong:"Alibaba PuHuiTi 2.0","Microsoft Yahei"; 
+}
+
+
+

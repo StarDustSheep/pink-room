@@ -2,7 +2,7 @@
 .b3-typography kbd, .b3-typography span[data-type~=kbd], .protyle-wysiwyg kbd, .protyle-wysiwyg span[data-type~=kbd]{
     font-size: 0.9em;
     font-family: var(--b3-font-family-button);
-    margin: 0.1rem 0.1rem 0.2rem 0.35rem;
+    margin: 0.1rem 0.1rem 0.2rem 0.1rem;
     border-radius: 4px;
     color: rgb(0 94 118);
     background-color: hsl(185deg 64% 85%);

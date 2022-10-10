@@ -56,13 +56,19 @@ span.b3-list-item__icon.b3-tooltips.b3-tooltips__n {
 .b3-list--background .b3-list-item--focus .b3-list-item__text,
 .b3-list--background .b3-list-item--focus .b3-list-item__graphic,
 .b3-list--background .b3-list-item--focus .b3-list-item__icon svg {
-    color: var(--b3-theme-primary);
+    color: var(--b3-theme-on-background);
 }
 
-/* 背景 */
+
+
+/* 背景色 */
 .b3-list--background .b3-list-item--focus {
-    background-color: var(--b3-theme-tm2) !important;
+    background-color: #ffd7d9 !important;
 }
+
+
+
+
 
 /* -----------------------------文档树hover-------------------------------- */
 
@@ -70,7 +76,7 @@ span.b3-list-item__icon.b3-tooltips.b3-tooltips__n {
 .b3-list--background .b3-list-item:hover .b3-list-item__text,
 .b3-list--background .b3-list-item:hover .b3-list-item__graphic,
 .b3-list--background .b3-list-item:hover .b3-list-item__icon svg {
-    color: var(--b3-theme-on-surface);
+    color: var(--b3-theme-error);
 }
 
 /* 背景 */
@@ -132,11 +138,15 @@ span.b3-list-item__icon.b3-tooltips.b3-tooltips__n {
     margin-left: 42px
 }
 
+/* 暂时不理解这部分代码的功能 */
 .fn__flex-1.fn__flex-column.file-tree.sy__backlink{
     background-color: #fff;
 }
 
-
+/* 在设置了文档辅助线后，列表大纲的底色和文档辅助线所用的白色box-shadow冲突了，出现白色长条块影响美观，故将列表大纲直接设置成白色底色以融合在一起 */
+.sy__outline > div.fn__flex-1{
+    background-color: #fff;
+}
 
 
 
@@ -171,3 +181,5 @@ span.b3-list-item__icon.b3-tooltips.b3-tooltips__n {
 .block__edit.fn__flex-1.protyle>.protyle-content{
     background-color: #fbf4f4;
 }
+
+

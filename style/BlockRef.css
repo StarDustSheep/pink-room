@@ -6,11 +6,14 @@
     margin: 0px 2px 0px;
 }
 
-/* 修改鼠标悬浮在块引用上的样式 */
+/* 增加块引后部的标示符号 */
 .protyle-wysiwyg [data-node-id] span[data-type="block-ref"]::after {
     content: "↓";
+    font-style: bold;
     position: relative;
     font-size: 80%;
-    top: -0.1em;
-    margin-left: 2px;
+    /* top: -0.05em; */
+    /* left: -0.2em; */
+    margin-left: 1px;
 }
+
