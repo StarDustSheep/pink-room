@@ -20,8 +20,9 @@ body{
     background-color: transparent;    
 }
 
-/* 设置输入容器底色透明 */
-.layout-tab-container{
+
+/* 设置输入容器底色透明以让背景图片可以显示，但除了标签面板输入容器 */
+.layout__center.fn__flex.fn__flex-1 > div:nth-child(1) > div > div.layout-tab-container.fn__flex-1{
     background-color: transparent;
 }
 

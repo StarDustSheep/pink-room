@@ -3,7 +3,7 @@
     --b3-border-color:#639d2e55;
     --b3-theme-on-surface:#376f4f;
         /* 列表 */
-    --b3-list-hover:#cceea0e8;
+    --b3-list-hover:#d1ebb0e8;
 
     --b3-theme-on-background:#174236;
         /* 为各类菜单和面板设置一个统一的边框颜色 */
@@ -20,7 +20,7 @@
     /* 超链接用字色 */
     /* --b3-protyle-inline-link-color:#1461e0; */
 
-    --b3-theme-background-light: #8ce864;
+    --b3-theme-background-light: hwb(88 25% 23%);
 
 
     --b3-theme-surface:#f2fbe2;
@@ -30,6 +30,12 @@
 
     /* 修改对话窗口阴影 */
     --b3-dialog-shadow: 0px 11px 11px 2px hwb(98deg 35% 31% / 41%), 0px 24px 38px 4px hwb(0deg 0% 100% / 14%), 0px 9px 46px 8px rgb(0 0 0 / 12%);
+
+    /* 修改成功、信息、警告、错误背景色，是为了适应绿色界面过于明亮而做的改动 */
+    --b3-card-success-background: rgb(217 234 201);
+    --b3-card-info-background: rgb(214 236 252);
+    --b3-card-warning-background: rgb(251 224 193);
+    --b3-card-error-background: rgb(245 219 216);
 }
 
 
@@ -49,7 +55,7 @@ body{
 
 /* 左侧文档树区域 */
 .fn__flex-1.fn__flex-column.file-tree{
-    background-color: #f8ffed;
+    background-color: #eff3df;
 }
 
 
@@ -91,13 +97,13 @@ body{
 
 /* 面包屑其上的页签的底色 */
 .layout-tab-bar .item{
-    background-color:#e9ffe3;
+    background-color:#f2ffe3;
 }
 
 /* 修改当前正在处于编辑\使用状态的页签的底色 */
 .layout__wnd--active .layout-tab-bar .item--focus{
     /* background-color: #ffd0d0; */
-    background-color:rgb(194 255 185);
+    background-color:rgb(214 255 185);
 }
 
 /* 修改当前正在处于编辑\使用状态的页签的字色 */
@@ -114,11 +120,11 @@ body{
 
 /* 左侧停靠栏底色 */
 .dock {
-    background-color: #e1ffcd;
+    background-color: #d4eaba;
 }
 
 .toolbar {
-    background-color: #91d03b;
+    background-color: #a3c165;
     border-bottom: 1px solid var(--b3-border-color);
 }
 
@@ -176,7 +182,7 @@ body{
 
 /* 底部状态栏 */
 .status{
-    background-color: #dfffcd;
+    background-color: #d4eaba;
     border-top: solid 0.5px rgb(92 108 86 / 60%);
 }
 
@@ -283,14 +289,14 @@ body{
 
 /* 为超级块设置边框、底色、顶部颜色识别区、底部间距*/
 .protyle-wysiwyg [data-node-id].sb {
-    background-color: #f8f7ef;
+    background-color: #fffcf6;
     border-top-color: #70e3f3cf;
     outline-color: #2e7a18d4;
 }
 
 /* 使得超级块中的超级块不会有边框、边距等样式 */
 .protyle-wysiwyg [data-node-id].sb[data-sb-layout="col"] .sb, .protyle-wysiwyg [data-node-id].sb[data-sb-layout="row"] .sb {
-    background-color: #fffef900!important;
+    background-color: #fffef900;
 }
 
 
@@ -333,7 +339,7 @@ body{
 
 /* 卷轴页面底色 */
 .protyle-content:not(#searchPreview.fn__flex-1.protyle>.protyle-content,.block__popover,.block__edit.fn__flex-1.protyle>.protyle-content,.backlinkList .protyle-content,.backlinkMList .protyle-content){
-    background-color: hsl(100deg 100% 99%);
+    background-color: hsl(76deg 36% 95%);
     box-shadow: #18331024 0px 0px 0.7em 0.3em, #a4da5b2b 0px 0px 3em 1em, #e4f5e5a3 0px 0px 2.5em;
 }
 
@@ -352,7 +358,7 @@ body{
 .protyle-title__input {
     background: transparent;
     border-bottom: 3px solid rgb(196, 219, 169);
-    color: #539247;
+    color: #3d7932;
     line-height: 1.1em;
 }
 
@@ -362,7 +368,7 @@ body{
 
 
 #layouts > div.fn__flex.fn__flex-1 > div:nth-child(4){
-    background-color:#91d03b;
+    background-color:#a3c165;
 }
 
 
@@ -409,7 +415,8 @@ body{
 
 /* 反链列表项底色 */
 .backlinkList .b3-list-item{
-    background-color: #c8ddb4;
+    border-top-color: #6b9900bf;
+    background-color: rgb(228 241 213);
 }
 
 /* 修改标签样式颜色 */

@@ -33,14 +33,14 @@
     --b3-theme-on-error: #fff;
 
     /* 字体 */
-    --b3-font-family: /* "Alibaba PuHuiTi 2.0", */"quote", "Helvetica Neue", "Luxi Sans", "DejaVu Sans", "Hiragino Sans GB", "Microsoft Yahei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
+    --b3-font-family: "quote", "Helvetica Neue", "Luxi Sans", "DejaVu Sans", "Hiragino Sans GB", "Microsoft Yahei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
     --b3-font-family-code: "Consolas",微软雅黑,"TsangerYuMo W02","JetBrainsMono-Regular", mononoki, Consolas, "Liberation Mono", Menlo, Courier, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
     --b3-font-family-graph: mononoki;
     --b3-font-family-emoji: "Segoe UI Emoji", "Segoe UI Symbol", "Segoe UI", "Apple Color Emoji", "Twemoji Mozilla", "Noto Color Emoji", "Android Emoji";
     --b3-font-family-math: KaTeX_Math;
     --b3-font-family-yinshu:"三极柴园简体";
     --b3-font-family-button:"Consolas";    /*给按键kbd用的字体  */
-    --b3-font-family-strong:/* "Alibaba PuHuiTi 2.0", *//* "思源黑体", *//* "字体圈欣意冠黑体", */"Microsoft Yahei"; /* 添加了字色部分的字体
+    --b3-font-family-strong:"Microsoft Yahei"; /* 添加了字色部分的字体
 
     /* 线条 */
     --b3-border-color: #9d2e2e55;
@@ -49,7 +49,7 @@
     --b3-scroll-color: rgba(0, 0, 0, .2);
 
     /* 列表 */
-    --b3-list-hover: #ffd7d9;
+    --b3-list-hover: #ffe4e5;
 
     /* 菜单 */
     --b3-menu-background: #f8f9fa;
@@ -170,7 +170,7 @@
 
 
     /* 文档树辅助样式 */
-    --b3-list-item-background-color:#fff;
+    --b3-list-item-background-color:inherit;
 
 
 
