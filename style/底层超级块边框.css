@@ -5,8 +5,8 @@
     background-color: #fffef9;
     /* border: solid 1px #b36e3fd4; */
     border-radius: 5px;
-    padding: 0.1em 0.2em 0.1em 0.2em;
-    margin: 0.5em;
+    /* padding: 0.1em 0.2em 0.1em 0.2em; */
+    margin: 0.5em !important;
     border-top-style: solid;
     /* border: 1px solid #b36e3fd4; */
     border-top-color: #70e3f3cf;
