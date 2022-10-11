@@ -15,9 +15,9 @@ pink-room的界面颜色以浅粉色、白色以及米色为主，试图营造�
 ![image](https://user-images.githubusercontent.com/114859111/193455158-fdedcab4-b448-4f87-b002-1caec93c0f2f.png)<br>
 此特性默认开启，如不需要，请下载好主题后用任意文本编辑器找到主题文件夹内theme.css中的```@import url("style/超级块边框.css");```，在其两边的加上```/*```和```*/```后保存。<br><br>
 #### 底层超级块边框
-为底层超级块添加边框，以用来满足不一样的排版需求。
+为底层超级块添加边框，以用来满足不一样的排版需求。(注意：实验性功能，普通用户不要尝试)
 ![image](https://user-images.githubusercontent.com/114859111/195104956-ff7dbd06-8e28-44f5-bd91-39c38b29864b.png)
-此特性默认不开启，如需开启，请下载好主题后用任意文本编辑器将主题文件夹内theme.css中的```@import url("style/底层超级块边框.css");```两边的```/*```和```*/```删除，同时保证```@import url("style/超级块边框.css"); ```两遍有```/*```和```*/```。<br><br>
+
 
 
 
