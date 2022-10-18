@@ -31,12 +31,10 @@
 
 .backlinkList.protyle-content,.backlinkMList .protyle-content{
     background-color: hsl(0, 33%, 99%);
-    /* box-shadow: 0px 0px 5px pink; */
+    box-shadow: 0px 0px 5px pink;
 }
 
-.backlinkList.fn__flex-1{
-    box-shadow: 0px 0px 16px inset grey;
-}
+
 
 
 /* ----------此为修复瑕疵而做的试验，请勿使用---------- */
@@ -59,7 +57,7 @@
 
 
 /* 为文档文字编辑区域设置较窄的内边距 */
-.protyle-wysiwyg.protyle-wysiwyg--attr{
+.protyle-wysiwyg,.protyle-wysiwyg--attr{
     padding: 34px 16px 16px 24px !important;
 }
 

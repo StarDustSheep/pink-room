@@ -1,0 +1,19 @@
+
+
+:root {
+    /* PDF */
+    /* PDF标注有7种颜色 */
+    --b3-pdf-selection: #d0e9c8;
+    --b3-pdf-sidebar-width: 200px;
+    --b3-pdf-offset: 0;
+    --b3-pdf-background1: hsl(0deg 100% 81%);
+    --b3-pdf-background2: hsl(36deg 100% 75%);
+    --b3-pdf-background3: hsl(53deg 100% 73%);
+    --b3-pdf-background4: hsl(83deg 55% 76%);
+    --b3-pdf-background5: hsl(191deg 84% 76%);
+    --b3-pdf-background6: hsl(212deg 100% 82%);
+    --b3-pdf-background7: hsl(308deg 76% 85%);
+}
+
+
+

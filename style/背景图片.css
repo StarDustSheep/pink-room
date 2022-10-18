@@ -34,6 +34,5 @@ body{
 
 /* 修改中间区域阴影层，给底下的图片叠一层色降低对比度*/
 .fn__flex-1.protyle{
-    box-shadow: inset 0 0 10px 1px #203f1a99;
     background-color: #d2d2d211;
 }

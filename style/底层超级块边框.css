@@ -1,6 +1,5 @@
 /* 为超级块设置边框、底色、顶部颜色识别区、底部间距*/
 
-
 .protyle-wysiwyg .sb:not(.sb:has(.sb)){
     background-color: #fffef9;
     /* border: solid 1px #b36e3fd4; */

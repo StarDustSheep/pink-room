@@ -34,26 +34,32 @@
 
 /* 顶部工具栏设置为粉色 */
 .toolbar{
-    background-color: #f9c1c5;
-    border-bottom: 1px solid var(--b3-border-color);
+    background-color: #f9c1c5 !important;
+    height: 2rem;
 }
 
 
 /* 为"始质"区域添加内阴影使得编辑区整个看起来位于一个空间内部，更有质感 */
-.fn__flex-1.protyle{
-    box-shadow: inset 0 0 10px 1px #e1c2c3;
-}
-
+/* .fn__flex-1.protyle{ */
+    /* box-shadow: inset 0 0 10px 1px #e1c2c3; */
+    /* 不加了，容易使画面看起来脏 */
+/* } */
 
 
 
 /* 滚动条滑块部分 */
-::-webkit-scrollbar-thumb{
-    background-color:#61badebc;
-    /* background-color:transparent; */
-    border-radius: 0.2em;   
-    /* 不要为滚动条添加外部阴影，会有残影 */
+::-webkit-scrollbar-thumb:hover{
+    background-color:#69caf1;
+    border-radius: 0.1em;   
+
 }
+::-webkit-scrollbar-thumb{
+    background-color:#9cd9f1;
+    border-radius: 0.1em;   
+    box-shadow: none;
+     /* 不要为滚动条添加外部阴影，会有残影 */
+}
+
 
 
 /* 修改嵌入块的样式 */
@@ -70,10 +76,7 @@
 } */
 
 
-/* 给右边的关系图和反链面板所在的区域和中间的编辑区域设置边界 */
-#layouts > div.fn__flex.fn__flex-1 > div:nth-child(4){
-    background-color:#f9c1c5;
-}
+
 
 
 /* 修改状态栏底色 */
@@ -84,10 +87,6 @@
 }
 
 
-/* 修改激活中的区域图标的颜色 */
-.dock__item--active {
-    color: #ee579de2;
-}
 
 /* 修改提示菜单样式 */
 .hint--menu {
@@ -223,18 +222,69 @@ audio{
 
 
 
-/* 反链列表项底色，提高z-index防止下方代码添加的阴影遮挡 */
-.backlinkList .b3-list-item{
-    background-color: #fff5f5;
-    z-index: 1;
+
+
+/* 修改菜单卡片悬浮后底色 */
+.b3-card:hover{
+    background-color: #ffa0a055;
+}   
+
+
+/* 修改虚拟引用样式 */
+.protyle-wysiwyg [data-node-id] span[data-type=virtual-block-ref]{
+    background-color: #ffcbdb82;
+    border-bottom: 2px #00b3e5;
+    border-bottom-style: dashed;
 }
 
-/* 为反链列表中的内容区域添加底部阴影 */
-.backlinkList.fn__flex-1 > ul > [data-ismention="false"]{
-    box-shadow: 0px 0px 11px -3px grey;
+/* 停靠栏图标，激活时 */
+.dock__item--activefocus{
+    background-color: #f88eb6 !important;
+    color: #802727 !important;
+}
+/* 修改激活中的区域图标的颜色 */
+.dock__item--active {
+    background-color: #eb8cb1b5;
+    color: #7d2b2b;
 }
 
-/* 反链列表项顶部标签 */
-.backlinkList .b3-list-item{
-    border-top:1px solid #af7f8abf;
+
+
+/* 给右边的关系图和反链面板所在的区域和中间的编辑区域之间的边界移动条设置位置 */
+#layouts > div.fn__flex.fn__flex-1 > div:nth-child(4) {
+    cursor: col-resize;
+    width: 11px;
+    margin: 0px -11px 0 0px;
+    height: auto;
 }
+
+
+/* 给嵌入块中的面包屑添加底部分割线 */
+.render-node .protyle-breadcrumb__bar.protyle-breadcrumb__bar--nowrap::before{
+    content: "";
+    width: 100%;
+    border-bottom: 1px solid #a3708980;
+    position: absolute;
+    top: 27px;
+}
+
+/* 修改面包屑bar中文字大小，不和正文抢注意力 */
+.protyle-wysiwyg .protyle-breadcrumb__bar{
+    font-size: 12px;
+}
+
+.render-node .protyle-breadcrumb__item{
+    height: 14px;
+    color: #a47483;
+}
+
+.render-node .protyle-breadcrumb__item--active{
+    background-color: #fff0!important;
+    color: #ba304bad;
+}
+
+
+/* 鼠标划过其他列表项时的底色 */
+/* .b3-list--background .b3-list-item:hover:not(.b3-list-item--focus){
+    background-color: #ffd9d6;
+} */

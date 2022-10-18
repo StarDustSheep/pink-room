@@ -13,8 +13,8 @@
     /*  */
     --b3-theme-background-light: #e86494;
 
-    /* 修改界面颜色为略有粉色的白色 */
-    --b3-theme-surface: #fef9f9; 
+    /* 修改界面颜色为米色 */
+    --b3-theme-surface: #fffcf8; 
 
     --b3-theme-surface-light: rgba(243, 243, 243, .86);
     --b3-theme-error: #d83021;
@@ -29,7 +29,7 @@
     /* 此色影响顶部栏图标颜色和不少界面区域中的文字颜色，修改为暗红色以和粉色的界面整体色调匹配 */
     --b3-theme-on-surface: #6f3748;
 
-    --b3-theme-on-surface-light: rgb(164 129 157 / 87%);
+    --b3-theme-on-surface-light: rgb(174 101 133 / 87%);
     --b3-theme-on-error: #fff;
 
     /* 字体 */
@@ -176,6 +176,10 @@
 
     /* 为各类菜单和面板设置一个统一的边框颜色 */
     --b3-pinkroom-border:#f9c1c5;
+
+    /* 顶栏图标颜色 */
+    --b3-toolbar-color:var(--b3-theme-on-surface);
+
 }
 
 

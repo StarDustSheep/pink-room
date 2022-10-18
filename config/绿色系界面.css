@@ -124,8 +124,8 @@ body{
 }
 
 .toolbar {
-    background-color: #a3c165;
-    border-bottom: 1px solid var(--b3-border-color);
+    background-color: #a3c165 !important;
+    border-bottom: 1px solid var(--b3-border-color) !important;
 }
 
 
@@ -288,16 +288,16 @@ body{
 
 
 /* 为超级块设置边框、底色、顶部颜色识别区、底部间距*/
-.protyle-wysiwyg [data-node-id].sb {
+/* .protyle-wysiwyg [data-node-id].sb {
     background-color: #fffcf6;
     border-top-color: #70e3f3cf;
     outline-color: #2e7a18d4;
-}
+} */
 
 /* 使得超级块中的超级块不会有边框、边距等样式 */
-.protyle-wysiwyg [data-node-id].sb[data-sb-layout="col"] .sb, .protyle-wysiwyg [data-node-id].sb[data-sb-layout="row"] .sb {
+/* .protyle-wysiwyg [data-node-id].sb[data-sb-layout="col"] .sb, .protyle-wysiwyg [data-node-id].sb[data-sb-layout="row"] .sb {
     background-color: #fffef900;
-}
+} */
 
 
 /* ————————————字体菜单样式———————————— */
@@ -363,13 +363,14 @@ body{
 }
 
 .dock__item--active{
-    color: #1a9b00;
+    color: #1a9b00 !important;
+    background-color: #a1cf68b5 !important;
 }
 
 
-#layouts > div.fn__flex.fn__flex-1 > div:nth-child(4){
-    background-color:#a3c165;
-}
+/* #layouts > div.fn__flex.fn__flex-1 > div:nth-child(4){
+    background-color:#c2da91;
+} */
 
 
 /* 滚动条滑块部分 */
@@ -428,4 +429,26 @@ body{
 .fn__flex-1.protyle{
     box-shadow: inset 0 0 10px 1px #203f1a99;
     background-color: #d2d2d230;
+}
+
+/* 修改菜单卡片悬浮后底色 */
+.b3-card:hover{
+    background-color: #ecffa08a;
+}   
+
+/* 反链面板，真反链和提及的顶部栏 */
+.sy__backlink .block__icons--active,.sy__backlink .block__icons{
+    background-color: #d4eaba;
+}
+/* 反链列表项顶部标签 */
+.sy__backlink .b3-list-item{
+    /* border-top:1px solid #96af7fbf; */
+    /* box-shadow: 0px 2px 6px -2px #afafaf, 0px 3px 15px -3px #f2f2f2; */
+    background-color: #fdfff5;
+}
+
+
+/* 鼠标划过列表项时的底色 */
+.b3-list--background .b3-list-item:hover:not(.b3-list-item--focus){
+    background-color: #e6ffd6;
 }

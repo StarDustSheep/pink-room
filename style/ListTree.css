@@ -138,10 +138,6 @@ span.b3-list-item__icon.b3-tooltips.b3-tooltips__n {
     margin-left: 42px
 }
 
-/* 暂时不理解这部分代码的功能 */
-.fn__flex-1.fn__flex-column.file-tree.sy__backlink{
-    background-color: #fff;
-}
 
 /* 在设置了文档辅助线后，列表大纲的底色和文档辅助线所用的白色box-shadow冲突了，出现白色长条块影响美观，故将列表大纲直接设置成白色底色以融合在一起 */
 .sy__outline > div.fn__flex-1{
@@ -157,7 +153,8 @@ span.b3-list-item__icon.b3-tooltips.b3-tooltips__n {
 
 /* 将鼠标放置在文档树中笔记本右侧的引用数字上能打开一个窗口，为这个区域中的内容块设置小点的内边距以防止出现多个滚动条 */
 .block__edit>.protyle-content>.protyle-wysiwyg.protyle-wysiwyg--attr{
-    padding: 0px 30px 0px 30px !important;
+    padding: 0px 20px 0px 20px !important;
+    overflow-y: hidden;
     /* min-height: 30px; */
     /* margin: 10px; */
 }
@@ -178,8 +175,30 @@ span.b3-list-item__icon.b3-tooltips.b3-tooltips__n {
 }
 
 /* 将鼠标放置在文档树中笔记本右侧的引用数字上能打开一个窗口，为这个区域中的内容区域设置底色 */
+/* 设置overflow是为了不出现多余的滚动条 */
 .block__edit.fn__flex-1.protyle>.protyle-content{
-    background-color: #fbf4f4;
+    background-color: #fffbf9;
+    overflow: hidden;
+}
+
+/* 将鼠标放置在文档树中笔记本右侧的引用数字上能打开一个窗口，为这个区域中的内容区域设置最底层的底色 */
+.block__popover.block__popover--move.block__popover--open .block__content{
+    background-color: #dfd1cdb5;
 }
 
 
+/* 防止鼠标划过列表项时，底色左右两边还留有空隙 */
+.b3-list-item{
+    margin: 0px !important;
+}
+
+/* 鼠标划过列表项时的底色 */
+.b3-list--background .b3-list-item:hover:not(.b3-list-item--focus){
+    background-color: #ffd9d6;
+}
+
+
+/* list-item设置底色时和外边框的圆角不融合 */
+.b3-list--background .b3-list-item{
+    border-radius: 2px;
+}

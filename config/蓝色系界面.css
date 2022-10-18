@@ -52,7 +52,7 @@ background-image: url("../pic/ice\ station\ zebra\ by\ Col\ Price.jpg");
 
 /* 左侧文档树、大纲底色 */
 .fn__flex-1.fn__flex-column.file-tree{
-background-color: #dfecf3;
+background-color: #e5f4f7;
 }
 
 
@@ -72,7 +72,7 @@ border-right: 1px solid var(--b3-border-color);
 /* 面包屑导航栏 */
 .protyle-breadcrumb {
 background-color: #fcfffc;
-border-bottom: 1.5px solid #7e94c4;
+border-bottom: 1.5px solid #88b5c7;
 }
 
 /* 在标签页区域和面包屑交界的地方添加边界线 */
@@ -121,8 +121,8 @@ background-color: #c4e4f0;
 }
 
 .toolbar {
-background-color: #81c2d6;
-border-bottom: 1px solid var(--b3-border-color);
+background-color: #81c2d6 !important;
+border-bottom: 1px solid var(--b3-border-color) !important;
 }
 
 
@@ -358,18 +358,25 @@ color: #476492;
 }
 
 .dock__item--active{
-color: #005a9b;
+    background-color: #8cd0ebb5;
+    color: #005a9b;
+}
+
+.dock__item--activefocus{
+    background-color: #9cd6ed !important;
+    color: #00223b !important;
 }
 
 
-#layouts > div.fn__flex.fn__flex-1 > div:nth-child(4){
-background-color:#81c2d6;
-}
+
+/* #layouts > div.fn__flex.fn__flex-1 > div:nth-child(4){
+background-color:#c4e4f0;
+} */
 
 
 /* 滚动条滑块部分 */
 ::-webkit-scrollbar-thumb{
-background-color:#5ba4beda;
+background-color:#68b0cada;
 }
 
 
@@ -396,7 +403,7 @@ box-shadow: 0px 0px 11px #4b5f429c inset;
 
 /* 嵌入块样式 */
 .protyle-wysiwyg [data-node-id].render-node[data-type=NodeBlockQueryEmbed]{
-background-color: #e2ebd763;
+background-color: #d7ebe563;
 box-shadow: 0px 0px 3px 2px inset #c5d2c9;
 }
 
@@ -407,7 +414,7 @@ box-shadow: 0px 0px 3px 2px inset #c5d2c9;
 
 /* 反链列表项底色 */
 .backlinkList .b3-list-item{
-    border-top-color: #008a99bf;
+    border-top-color: #57acb575;
     background-color: rgb(222 241 245);
 }
 
@@ -424,3 +431,30 @@ box-shadow: 0px 0px 3px 2px inset #c5d2c9;
     background-color: #d2d2d230;
 }
 
+/* 修改菜单卡片悬浮后底色 */
+.b3-card:hover{
+    background-color: #b6fbffa1;
+}   
+
+/* 修改反链面板顶部栏底色 */
+.sy__backlink .block__icons{
+    background-color: #c4e4f0;
+}
+
+/* 反链面板中底色 */
+.sy__backlink .protyle{
+    background-color: hsl(192deg 100% 99%);
+}
+
+/* 反链列表项顶部标签 */
+.sy__backlink .b3-list-item{
+    /* border-top:1px solid #7f9bafbf; */
+    /* box-shadow: 0px 2px 6px -2px #afafaf, 0px 3px 15px -3px #f2f2f2; */
+    background-color: #f5ffff;
+}
+
+
+/* 鼠标划过列表项时的底色 */
+.b3-list--background .b3-list-item:hover:not(.b3-list-item--focus){
+    background-color: #d6fcff;
+}

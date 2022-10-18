@@ -53,11 +53,6 @@
     content: "12";
     /* font-size: 100%; */
 }
-.b3-color__square[style="background-color:var(--b3-font-color13)"]:before{ 
-    content: "13";
-    /* font-size: 100%; */
-}
-
 
 /* 为所有背景色图标设置一些统一属性 */
 .b3-color__square[data-type="backgroundColor"]:before{
