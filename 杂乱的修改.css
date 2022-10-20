@@ -34,7 +34,7 @@
 
 /* 顶部工具栏设置为粉色 */
 .toolbar{
-    background-color: #f9c1c5 !important;
+    background-color: hsl(358deg 74% 81%) !important;
     height: 2rem;
 }
 
@@ -283,8 +283,7 @@ audio{
     color: #ba304bad;
 }
 
-
-/* 鼠标划过其他列表项时的底色 */
-/* .b3-list--background .b3-list-item:hover:not(.b3-list-item--focus){
-    background-color: #ffd9d6;
-} */
+/* 此代码用以解决集市页面，卡片的图片“顶”出卡片范围的问题 */
+.b3-card{
+    padding-top: 5px;
+}
