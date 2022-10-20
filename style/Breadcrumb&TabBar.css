@@ -13,13 +13,7 @@
     flex-wrap:wrap;
 }
 
-/* 为标签页中的页签设置边框 */
-.fn__flex.layout-tab-bar.fn__flex-1.layout-tab-bar .item {
-    border-bottom: 0.5px solid #9f2121bf;
-    border-left: 0.5px solid var(--b3-border-color);
-    border-right: 1px solid var(--b3-border-color);
-    /* border-bottom: 1px solid #9f2121bf; */
-}
+
 
 /* 取消思源页签默认的阴影 */
 .layout-tab-bar .item:not(:last-child), .layout-tab-bar .item:last-child:not(.item--focus):not(.item--readonly){
@@ -68,16 +62,24 @@
 }
 
 /* 修改页签在鼠标悬浮于其上时的底色 */
-.layout-tab-bar .item:hover:not(.item--focus):not(.item--readonly) {
-    background-color: rgb(255 191 185);
+.layout-tab-bar .item:hover:not(.layout__wnd--active .item--focus):not(.item--readonly) {
+    background-color: rgb(255 212 208);
     box-shadow: none;
     border-radius: 0px 0px 0px 0px;
 }
+/* 修改页签在鼠标悬浮于其上时，其中文字的颜色 */
+.layout-tab-bar .item:hover:not(.item--focus):not(.item--readonly) .item__text{
+    color: #bc5572;
+}
 
-/* 面包屑其上的页签的底色 */
+
+
+/* 页签 */
 .layout-tab-bar .item{
-    /* background-color: #ffeaea; */
-    background-color:#ffe2e2;
+    background-color: #ffe2e2;
+    border-bottom: 0.5px solid #9f2121bf;
+    border-left: 0.5px solid var(--b3-border-color);
+    border-right: 1px solid var(--b3-border-color);
 }
 
 /* 修改当前正在处于编辑\使用状态的页签的底色 */
@@ -89,6 +91,10 @@
 
 /* 修改当前正在处于编辑\使用状态的页签的字色 */
 .layout__wnd--active .layout-tab-bar .item--focus>.item__text{
-    color: #bc0f0f;
+    color: hsl(346deg 37% 45% / 87%);
 }
 
+/* 当前正在编辑的页面的页签底部的线条 */
+.layout-tab-bar .item--focus:after{
+    background-color: transparent !important;
+}

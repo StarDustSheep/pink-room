@@ -27,7 +27,7 @@ span.b3-list-item__icon.b3-tooltips.b3-tooltips__n {
 /* 笔记本之间的间隔 */
 .sy__file ul.b3-list.b3-list--background {
     border-radius: 2px;
-    margin: 6px 10px 6px 14px;
+    margin: 6px 10px 6px 12px;
     outline: 1px solid rgba(178, 100, 100, 0.812);
     background-color: white;
     /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; */

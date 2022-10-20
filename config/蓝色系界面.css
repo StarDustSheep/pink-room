@@ -29,7 +29,7 @@
 
 /* 修改对话窗口阴影 */
 --b3-dialog-shadow: 0px 11px 11px 2px
-hwb(196deg 35% 31% / 41%), 0px 24px 38px 4px hwb(0deg 0% 100% / 14%), 0px 9px 46px 8px rgb(0 0 0 / 12%);
+hwb(196deg 18% 57% / 33%), 0px 24px 38px 4px hwb(190deg 22% 67% / 14%), 0px 9px 46px 8px rgb(141 151 151 / 12%);
 
 /* 略微调整其色相，使其和蓝色系主题整体配色更加搭调 */
     --b3-protyle-inline-blockref-color: #9215ac;
@@ -43,10 +43,6 @@ hwb(196deg 35% 31% / 41%), 0px 24px 38px 4px hwb(0deg 0% 100% / 14%), 0px 9px 46
 
 
 
-/* 修改背景图 */
-body{
-background-image: url("../pic/ice\ station\ zebra\ by\ Col\ Price.jpg");
-}
 
 
 
@@ -308,14 +304,14 @@ z-index: 2;
 top: 13px;
 margin-left: 0px;
 font-weight: bold;
-color:#456b4aad
+color:#5689b8c9;
 }
 
 
 
 /* 为所有背景色图标设置一些统一属性 */
 .b3-color__square[data-type="backgroundColor"]:before{
-color:#456b5ead
+color:#5689b8c9;
 }
 
 /* 为字色面板\菜单设置边框 */
@@ -409,7 +405,7 @@ box-shadow: 0px 0px 3px 2px inset #c5d2c9;
 
 /* 界面左上角王冠颜色 */
 .ft__error{
-    color: #001aff !important;
+    color: #3a4cf3 !important;
 }
 
 /* 反链列表项底色 */
@@ -458,3 +454,61 @@ box-shadow: 0px 0px 3px 2px inset #c5d2c9;
 .b3-list--background .b3-list-item:hover:not(.b3-list-item--focus){
     background-color: #d6fcff;
 }
+
+/* 给图片设置边框 */
+[custom-tpbk="1"] img{
+    outline-color: #2a7185cb;
+}
+
+/* 修改提示菜单样式 */
+.hint--menu{
+    border-color:  #74cbdf;
+}
+
+
+/* 修改页签在鼠标悬浮于其上时的底色 */
+.layout-tab-bar .item:hover:not(.layout__wnd--active .item--focus):not(.item--readonly){
+    background-color: hsl(186, 100%, 91%);
+}
+
+/* 修改页签在鼠标悬浮于其上时，其中文字的颜色 */
+.layout-tab-bar .item:hover:not(.item--focus):not(.item--readonly) .item__text{
+    color: hsl(186, 43%, 54%);
+}
+
+/* 页签 */
+.layout-tab-bar .item{
+    border-bottom: 0.5px solid #217b9fbf;
+}
+
+
+
+
+
+/* 修改背景图 */
+body{
+    background-image: url("../pic/ice\ station\ zebra\ by\ Col\ Price.jpg");
+    }
+
+
+/* ——给空界面设置背景图片—— */
+.layout-tab-container{
+    background-color: transparent !important;
+}
+.layout__empty{
+    background-color: transparent !important;
+}
+
+
+.layout__empty::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url("../pic/ice\ station\ zebra\ by\ Col\ Price.jpg");
+    background-position: center top;
+    background-size: cover;
+    filter: contrast(0.5) brightness(1.5) grayscale(0.3);
+    z-index: -1;
+}
+/* ——给空界面设置背景图片—— */
