@@ -512,3 +512,23 @@ body{
     z-index: -1;
 }
 /* ——给空界面设置背景图片—— */
+
+
+/* ——反链面板中的提示栏的样式—— */
+.sy__backlink .protyle-hint.b3-list.b3-list--background{
+    border: var( --pinkroom-blue-menu-border);
+}
+
+/* 反链列表项底色，提高z-index防止下方代码添加的阴影遮挡 */
+.sy__backlink .b3-list-item:not(.hint--menu .b3-list-item){
+    background-color: #f5ffff;
+}
+
+.protyle-hint .b3-list-item,.backlinkList .protyle-hint.b3-list.b3-list--background:not(.hint--menu) .b3-list-item{
+    border-color:rgba(23, 112, 130, 0.556);
+}
+
+/* 按[[唤出的hint菜单 */
+.protyle-hint{
+    border: var( --pinkroom-blue-menu-border);
+}

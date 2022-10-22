@@ -91,25 +91,40 @@
 /* 修改提示菜单样式 */
 .hint--menu {
     column-count: 4;
-    column-width: 178px !important;
-    column-gap: 5px;
-    min-width: 50vw !important;
+    column-width: 20px !important;
+    column-gap: 10px;
+    min-width: 38vw !important;
     max-height: 600px !important;
     border: 0.2em solid pink;
     padding: 4px;
     background-color: white;
     border-radius: 0px;
-
 }
+
 /* 修改提示菜单中选项样式 */
-.b3-menu .b3-list-item {
+.protyle-hint.b3-list.b3-list--background.hint--menu .b3-list-item {
     font-size: 90%;
     border: 1px solid #8b41417d;
     box-sizing: border-box;
     vertical-align: middle;
     padding: 2px 8px !important;
-    margin-bottom: 0.1em;
+    margin-top: 3px !important;
+    border-radius: 0px;
+    width: 100% !important;
 }
+
+
+/* 菜单中的分隔线 */
+.b3-menu__separator{
+    background-color: rgb(194 157 157 / 66%);
+    margin: 5px 0;
+    width: 100%
+}
+
+
+
+
+
 
 /* 防止界面中出现没什么用的滚动条 */
 .fn__flex.fn__flex-1{
@@ -286,4 +301,22 @@ audio{
 /* 此代码用以解决集市页面，卡片的图片“顶”出卡片范围的问题 */
 .b3-card{
     padding-top: 5px;
+}
+
+
+
+/* 按[[唤出的hint菜单 */
+.protyle-hint{
+    border: var( --pinkroom-pink-menu-border);
+    border-radius: 2px;
+}
+
+/* 按[[唤出的hint菜单中的项目 */
+.protyle-hint .b3-list-item{
+    width: 100% !important;
+    border: 1px solid rgba(130, 23, 23, 0.556);
+    border-left: none;
+    border-radius: 0px !important;
+    background-color: #ffffff;
+    border-top: none;
 }

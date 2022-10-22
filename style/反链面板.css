@@ -17,7 +17,7 @@
 
 
 /* 反链列表项底色，提高z-index防止下方代码添加的阴影遮挡 */
-.sy__backlink .b3-list-item{
+.sy__backlink  .b3-list-item:not(.hint--menu .b3-list-item){
     background-color: #fff5f5;
     z-index: 1;
 }
@@ -34,7 +34,7 @@
 }
 
 /* 反链列表项 */
-.sy__backlink .b3-list-item{
+.sy__backlink .b3-list-item:not(.protyle-hint .b3-list-item):not(.hint--menu .b3-list-item){
     padding-left: 17px;
     border-top-right-radius: 0px !important;
     border-top-left-radius: 0px !important;
@@ -44,12 +44,12 @@
     outline: 1px solid grey;
 }
 
-.sy__backlink .protyle+.b3-list-item{
+.sy__backlink .protyle+.b3-list-item:not(.protyle-hint .b3-list-item){
     border-top-left-radius: 7px !important;
     border-top-right-radius: 7px !important;
 }
 
-.sy__backlink .b3-list-item:nth-last-child(1){
+.sy__backlink .b3-list-item:nth-last-child(1):not(.protyle-hint .b3-list-item){
     border-bottom-left-radius: 7px!important;
     border-bottom-right-radius: 7px!important;
 }
@@ -120,3 +120,30 @@ div.layout-tab-container.fn__flex-1 > div > div:nth-child(1){
 .backlinkMList.fn__flex-1 ::-webkit-scrollbar-thumb{
     overflow-y: overlay;
 }
+
+
+/* ——反链面板中的提示栏的样式—— */
+.sy__backlink .protyle-hint.b3-list.b3-list--background{
+    border: var( --pinkroom-pink-menu-border);
+    border-radius: 2px;
+}
+
+
+
+
+/* 反链面板中按[[唤出的hint菜单的项目，底色设置为白色方便看字 */
+.backlinkList .protyle-hint.b3-list.b3-list--background:not(.hint--menu) .b3-list-item{
+    width: 100% !important;
+    border: 1px solid rgba(130, 23, 23, 0.556);
+    border-left: none;
+    border-radius: 0px !important;
+    background-color: #ffffff;
+    border-top: none;
+}
+
+
+.backlinkList .protyle-hint:not(.hint--menu){
+    padding-top: 0px !important;
+    margin-top: 0px !important;
+}
+
