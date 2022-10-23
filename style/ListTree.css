@@ -176,9 +176,10 @@ span.b3-list-item__icon.b3-tooltips.b3-tooltips__n {
 
 /* 将鼠标放置在文档树中笔记本右侧的引用数字上能打开一个窗口，为这个区域中的内容区域设置底色 */
 /* 设置overflow是为了不出现多余的滚动条 */
+/* 这里设置overflow会导致鼠标悬浮在引用上时的编辑面板无法上下滚动 */
 .block__edit.fn__flex-1.protyle>.protyle-content{
     background-color: #fffbf9;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 /* 将鼠标放置在文档树中笔记本右侧的引用数字上能打开一个窗口，为这个区域中的内容区域设置最底层的底色 */
