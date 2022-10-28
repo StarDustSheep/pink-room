@@ -12,7 +12,7 @@ window.theme.colors = [
 window.theme.IDs = {
     STYLE_COLOR: 'custom-id-style-theme-color',
     BUTTON_TOOLBAR_CHANGE_COLOR: 'custom-id-button-toolbar-change-color',
-    LOCAL_STORAGE_COLOR_HREF:'pink-room-color-href',
+    LOCAL_STORAGE_COLOR_HREF: 'pink-room-color-href',
 };
 
 /* 循环迭代器 */
@@ -28,7 +28,7 @@ window.theme.Iterator = function* (items) {
  * @params {string} href 样式地址
  * @params {string} id 样式 ID
  */
- window.theme.loadStyle = function (href, id = null) {
+window.theme.loadStyle = function (href, id = null) {
     let style = document.createElement('link');
     if (id) style.id = id;
     style.type = 'text/css';
@@ -91,3 +91,23 @@ setTimeout(() => {
 
     }
 }, 0);
+
+
+
+
+// 看板娘 功能测试中……
+// function loadScript(url, type = 'module') {
+//     let script = document.createElement('script');
+//     script.setAttribute('type', type);
+//     script.setAttribute('src', url);
+//     document.head.appendChild(script);
+// }
+// loadScript("D:/创作/stevenjoezhang - live2d-widget-master/autoload.js");
+
+// function loadScript(url, type = 'module') {
+//     let script = document.createElement('script');
+//     script.setAttribute('type', type);
+//     script.setAttribute('src', url);
+//     document.head.appendChild(script);
+// }
+// loadScript("D:/创作/fghrsh - live2d_demo-master/assets/autoload.js")

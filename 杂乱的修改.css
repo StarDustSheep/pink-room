@@ -171,7 +171,7 @@ audio{
     transition: all .2s cubic-bezier(0.645, 0.045, 0.355, 1);
     color: var(--text-focus);
     /* border-radius: 10% 10% 10% 10% / 34% 34% 34% 34% ; */
-    border-radius: 5px;
+    border-radius: 0.3em;
     position: relative;
     padding: .1em 0.3em .1em .1em;
     font-size: 85%;
@@ -246,7 +246,7 @@ audio{
 
 /* 修改虚拟引用样式 */
 .protyle-wysiwyg [data-node-id] span[data-type=virtual-block-ref]{
-    background-color: #ffcbdb82;
+    background-color: var(--pinkroom-virtual-rel-background-color);
     border-bottom: 2px #00b3e5;
     border-bottom-style: dashed;
 }
