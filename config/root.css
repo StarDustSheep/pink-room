@@ -62,13 +62,13 @@
 
     /* 卡片背景 */
     --b3-card-error-color: hsl(4deg 87% 34%);
-    --b3-card-error-background: rgb(253, 236, 234);
-    --b3-card-warning-color: rgb(160, 93, 0);
-    --b3-card-warning-background: rgb(255 235 209);
+    --b3-card-error-background: rgb(253 236 234 / 80%);
+    --b3-card-warning-color: rgb(160, 93, 0 );
+    --b3-card-warning-background: rgb(255 235 209 / 80%);
     --b3-card-info-color: rgb(10, 103, 175);
-    --b3-card-info-background: rgb(232, 244, 253);
+    --b3-card-info-background: rgb(232 244 253 / 80%);
     --b3-card-success-color: rgb(23, 120, 28);
-    --b3-card-success-background: rgb(237, 247, 237);
+    --b3-card-success-background: rgb(237 247 237 / 80%);
 
     /* 自定义文字 */
     --b3-font-color1: var(--b3-card-error-color);

@@ -33,10 +33,24 @@
     hwb(117deg 12% 70% / 32%), 0px 24px 38px 4px hwb(79deg 28% 62% / 14%), 0px 9px 46px 8px rgb(118 127 123 / 12%);
 
     /* 修改成功、信息、警告、错误背景色，是为了适应绿色界面过于明亮而做的改动 */
-    --b3-card-success-background: rgb(217 234 201);
-    --b3-card-info-background: rgb(214 236 252);
-    --b3-card-warning-background: rgb(251 224 193);
-    --b3-card-error-background: rgb(245 219 216);
+    --b3-card-success-background: rgb(217 234 201 /90%);
+    --b3-card-info-background: rgb(214 236 252 /90%);
+    --b3-card-warning-background: rgb(251 224 193 / 90%);
+    --b3-card-error-background: rgb(245 219 216 / 90%);
+
+    --pinkroom-tag-boxshadow-color: #7b9a6e;
+    
+    /* 虚拟引用标记颜色 */
+    --pinkroom-virtual-rel-background-color:#9ee9a952;
+
+    /* 表格标题行的底色 */
+    --pinkroom-table-head-background-color:#cae7ba;
+    /* 表格单数行底色 */
+    --pinkroom-table-2n-1-background-color:hsl(101deg 98% 99%);
+    /* 表格双数行底色 */
+    --pinkroom-table-2n-background-color:hsl(96deg 65% 96%);
+    /* 表格边框颜色 */
+    --pinkroom-table-border-color:#94ab884a;
 }
 
 
