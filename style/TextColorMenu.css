@@ -12,7 +12,7 @@
     color:#6b4545ad
 }
 
-.b3-color__square[style="background-color:var(--b3-font-color1)"]:before{ 
+/* .b3-color__square[style="background-color:var(--b3-font-color1)"]:before{ 
     content: "1";
 }
 
@@ -43,16 +43,13 @@
 }
 .b3-color__square[style="background-color:var(--b3-font-color10)"]:before{ 
     content: "10";
-    /* font-size: 100%; */
 }
 .b3-color__square[style="background-color:var(--b3-font-color11)"]:before{ 
     content: "11";
-    /* font-size: 100%; */
 }
 .b3-color__square[style="background-color:var(--b3-font-color12)"]:before{ 
     content: "12";
-    /* font-size: 100%; */
-}
+} */
 
 /* 为所有背景色图标设置一些统一属性 */
 .b3-color__square[data-type="backgroundColor"]:before{
@@ -66,7 +63,7 @@
 }
 
 /* 为每个底色图标设置编号 */
-.b3-color__square[style="background-color:var(--b3-font-background1)"]:before{ 
+/* .b3-color__square[style="background-color:var(--b3-font-background1)"]:before{ 
     content: "Ⅰ";
 }
 
@@ -97,20 +94,16 @@
 }
 .b3-color__square[style="background-color:var(--b3-font-background10)"]:before{ 
     content: "Ⅹ";
-    /* font-size: 100%; */
 }
 .b3-color__square[style="background-color:var(--b3-font-background11)"]:before{ 
     content: "Ⅺ";
-    /* font-size: 100%; */
 }
 .b3-color__square[style="background-color:var(--b3-font-background12)"]:before{ 
     content: "Ⅻ";
-    /* font-size: 100%; */
 }
 .b3-color__square[style="background-color:var(--b3-font-background13)"]:before{ 
     content: "";
-    /* font-size: 100%; */
-}
+} */
 
 
 /* 增加字色、底色方块图标的下边距以放下上面的文字 */

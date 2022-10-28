@@ -16,7 +16,7 @@
 
 
 /* 取消思源页签默认的阴影 */
-.layout-tab-bar .item:not(:last-child), .layout-tab-bar .item:last-child:not(.item--focus):not(.item--readonly){
+.layout-tab-bar .item:not(:last-child),.layout-tab-bar .item:last-child:not(.item--focus):not(.item--readonly){
     box-shadow: none;
 }
 
