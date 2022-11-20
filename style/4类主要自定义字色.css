@@ -13,20 +13,20 @@
 
 
 /* 红色系 字色 重要等级低 */
-[style="color: var(--b3-font-color1);"] {
+[style*="var(--b3-font-color1);"] {
     color:#e26681 !important;
     text-shadow:none;
 }
 
 /* 红色系 字色 重要等级中 */
-[style="color: var(--b3-font-color2);"] {
+[style*="var(--b3-font-color2);"] {
     color: #e63965 !important;
     /* text-shadow:    0px 0px 2px hsl(345, 88%, 46%, 0.8),
                     0px 0px 3px hsla(342, 88%, 53%, 0.8); */
 }
 
 /* 红色系 字色 重要等级高 */
-[style="color: var(--b3-font-color3);"] {
+[style*="var(--b3-font-color3);"] {
     color:#dd0e42 !important;
     /* text-shadow:    0px 0px 2px hsl(345, 88%, 46%),
                     0px 0px 3px hsl(342, 88%, 53%),
@@ -35,31 +35,31 @@
 
 
 /* 绿色系 字色 重要等级低 */
-[style="color: var(--b3-font-color4);"] {
+[style*="var(--b3-font-color4);"] {
     color:#8ec181 !important;
     text-shadow:none;
 }
 
 /* 绿色系 字色 重要等级中 */
-[style="color: var(--b3-font-color5);"] {
+[style*="var(--b3-font-color5);"] {
     /* opacity: 88%; */
     color:#5d9c35!important;
 }
 
 /* 绿色系 字色 重要等级高 */
-[style="color: var(--b3-font-color6);"] {
+[style*="var(--b3-font-color6);"] {
     color:#007a16 !important;
     /* text-shadow:    0px 0px 0.1em hsl(91, 100%, 33%),
                     0px 0px 0.2em hsla(88, 96%, 37%, 0.8),
                     0px 0px 0.3em hsla(88, 100%, 39%, 0.3); */
 }
 
-[style="color: var(--b3-font-color7);"] {
+[style*="var(--b3-font-color7);"] {
     color:#68aeca !important;
     text-shadow:none;
 }
 
-[style="color: var(--b3-font-color8);"] {
+[style*="var(--b3-font-color8);"] {
     opacity: 88%;
     color:#2c98ce !important;
     /* text-shadow:    0px 0px 2px hsla(200, 90%, 34%, 1),
@@ -67,7 +67,7 @@
 }
 
 /* 蓝色系 字色 重要程度高  */
-[style="color: var(--b3-font-color9);"] {
+[style*="var(--b3-font-color9);"] {
     color:#006ec2 !important;
     /* text-shadow:    0px 0px 1px hsl(206, 100%, 38%),
                     0px 0px 2px hsl(206, 100%, 38%),
@@ -76,12 +76,12 @@
 }
 
 /* 黄色系 字色 重要等级低 */
-[style="color: var(--b3-font-color10);"] {
+[style*="var(--b3-font-color10);"] {
     color:#a379dc !important;
 }
 
 /* 黄色系 字色 重要等级中 */
-[style="color: var(--b3-font-color11);"] {
+[style*="var(--b3-font-color11);"] {
     /* opacity: 88%; */
     color:#7c51b8 !important;
     /* text-shadow:    0px 0px 2px rgb(86, 0, 208),
@@ -90,7 +90,7 @@
 
 
 /* 黄色系 字色 重要等级高 */
-[style="color: var(--b3-font-color12);"] {
+[style*="var(--b3-font-color12);"] {
     color:#703cd7 !important;
     /* text-shadow:    0px 0px 0.1em hsl(260, 100%, 39%),
                     0px 0px 0.2em hsla(265, 100%, 69%, 0.95),

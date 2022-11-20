@@ -12,13 +12,18 @@
     /* padding: 0px !important; */
 }
 
+.h1,.h2,.h3,.h4,.h5,.h6{
+    margin-top: 1em !important;
+}
 
 
 .h2 div[spellcheck="false"]::after {
     content: "";
     position: absolute;
     display: inline-block;
+    width: -moz-available; 
     width: -webkit-fill-available;
+    width: fill-available;
     height: 1.5px;
     top: 50%;
     /* background-color: var(--pinkroom-tag-boxshadow-color); */

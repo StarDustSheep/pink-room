@@ -18,4 +18,6 @@ thead >:nth-child(1) {
 /* 覆盖思源默认的表格边框颜色 */
 .b3-typography table td, .b3-typography table th, .protyle-wysiwyg table td, .protyle-wysiwyg table th{
     border-color:var(--pinkroom-table-border-color) !important;
-}
+}   
+
+

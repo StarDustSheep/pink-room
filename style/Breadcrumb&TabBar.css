@@ -40,7 +40,7 @@
 
 /* 在标签页区域和面包屑交界的地方添加边界线 */
 #layouts > div.fn__flex.fn__flex-1 > div.layout__center.fn__flex.fn__flex-1 > div > div > div.fn__flex{
-    border-bottom: 1px solid #c47e7e;
+    /* border-bottom: 1px solid #c47e7e; */
 }
 
 /* 取消标签页圆角 */

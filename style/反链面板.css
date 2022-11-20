@@ -24,6 +24,7 @@
 
 /* 为反链列表中的内容区域添加底部阴影 */
 .sy__backlink .protyle{
+    background-color: white;
     min-height: auto;
     margin-bottom: 15px;
     border-bottom-left-radius: 7px;
@@ -36,18 +37,15 @@
 /* 反链列表项 */
 .sy__backlink .b3-list-item:not(.protyle-hint .b3-list-item):not(.hint--menu .b3-list-item){
     padding-left: 17px;
-    border-top-right-radius: 0px !important;
-    border-top-left-radius: 0px !important;
-    border-bottom-right-radius: 0px !important;
-    border-bottom-left-radius: 0px !important;
+    border-top-right-radius: 0px ;
+    border-top-left-radius: 0px ;
+    border-bottom-right-radius: 0px ;
+    border-bottom-left-radius: 0px ;
     margin: 0px 10px 0px 18px !important;
     outline: 1px solid grey;
 }
 
-.sy__backlink .protyle+.b3-list-item:not(.protyle-hint .b3-list-item){
-    border-top-left-radius: 7px !important;
-    border-top-right-radius: 7px !important;
-}
+
 
 .sy__backlink .b3-list-item:nth-last-child(1):not(.protyle-hint .b3-list-item){
     border-bottom-left-radius: 7px!important;
@@ -147,3 +145,7 @@ div.layout-tab-container.fn__flex-1 > div > div:nth-child(1){
     margin-top: 0px !important;
 }
 
+.sy__backlink .protyle+.b3-list-item:not(.protyle-hint .b3-list-item){
+    border-top-left-radius: 7px !important;
+    border-top-right-radius: 7px !important;
+}
