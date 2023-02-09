@@ -9,16 +9,17 @@
 /* 改变标题区域的样式 2版 */
 .protyle-title__input {
     background: transparent;
-    border-bottom: 3px solid #e3bbc3;
+    border-bottom: 2px solid #e3bbc3;
     line-height: 1.1em;
+    color: #e06289;
 }
 
 /* 修改行距和段落间距  但除了代码块的行距，因为会让每行前的数字无法对齐*/
-.protyle-wysiwyg.protyle-wysiwyg [data-node-id]:not([data-type="NodeCodeBlock"]){
+/* .protyle-wysiwyg.protyle-wysiwyg [data-node-id]:not([data-type="NodeCodeBlock"]){
     line-height:1.8em !important;
     margin-bottom: 6px;
     margin-top: 6px;
-}
+} */
 
 
 
@@ -31,12 +32,12 @@
 /* ----界面配色修改相关---- */
 /* 左右两侧的停靠栏设置为粉色 */
 .dock{
-    background-color: #ffcdd0;
+    background-color: #ffe1e1;
 }
 
 /* 顶部工具栏设置为粉色 */
 .toolbar{
-    background-color: hsl(358deg 74% 81%) !important;
+    background-color: #f8c5c4 !important;
     height: 2rem;
 }
 
@@ -53,8 +54,8 @@
 ::-webkit-scrollbar-thumb:hover{
     background-color:#69caf1;
     border-radius: 0.1em;   
-
 }
+
 ::-webkit-scrollbar-thumb{
     background-color:#9cd9f1;
     border-radius: 0.1em;   
@@ -83,7 +84,7 @@
 
 /* 修改状态栏底色 */
 .status{
-    background-color: #ffcdd0;
+    background-color: #ffe1e1;
     border-top: solid 0.5px rgba(108, 86, 86, 0.373);
     box-sizing: border-box;
 }
@@ -171,13 +172,13 @@ audio{
 .protyle-wysiwyg [data-node-id] span[data-type~=tag] {
     background-color: #fff;
     transition: all .2s cubic-bezier(0.645, 0.045, 0.355, 1);
-    color: var(--text-focus);
+    color: var(--b3-theme-on-surface);
     /* border-radius: 10% 10% 10% 10% / 34% 34% 34% 34% ; */
     border-radius: 0.3em;
     position: relative;
     padding: .1em 0.3em .1em .1em;
     font-size: 85%;
-    box-shadow: #9a6e84 3.6em 0px 0px -2.2em inset,0px 0px 0px 1px inset;
+    box-shadow: #b16b81 3.6em 0px 0px -2.2em inset, 0px 0px 0px 1px inset;
     border: none;
     /* box-sizing: border-box; */
 }
@@ -333,3 +334,46 @@ audio{
 .b3-dialog__close:hover{
     background-color: #9cd9f1;
 }
+
+
+
+
+/* .protyle-title__input::after{
+    content: "聚焦状态";
+    color: red;
+    position: relative;
+    display: inline-block;
+    margin-right: .2rem;
+    padding: 0em .4em 0em 0.3em;
+} */
+
+
+/* 进入聚焦状态时，标题能显示出当前处于“聚焦状态”下 */
+/* .protyle-breadcrumb:has(.block__icon.block__icon--show.ft__smaller.fn__flex-center:not(.fn__none))+.protyle-content .protyle-title.protyle-wysiwyg--attr .protyle-title__input::after{
+    content: "聚焦状态";
+    color: rgb(224, 150, 150);
+    position: relative;
+    font-weight: 400;
+    display: inline-block;
+    margin-right: .2rem;
+    padding: 0em .4em 0em 0.3em;
+} */
+
+/* 修改聚焦状态下退出按钮的显眼度 */
+.block__icon.block__icon--show.ft__smaller.fn__flex-center{
+    font-size: 100%;
+    background-color: #8cdfff;
+    color: #535d6a;
+}
+/* 增强面包屑上边距，目的是让聚焦状态下出现背景色的元素的上下空白间隙达到视觉平衡*/
+.protyle-breadcrumb{
+    padding-top: 2px;
+}
+
+/* 使工作空间名字字色和工具栏其他颜色统一 */
+.toolbar__text{
+    color: var(--b3-toolbar-color);
+}
+
+
+

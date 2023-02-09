@@ -123,4 +123,10 @@
 /* 修改标题的位置   此代码可能是为了适应主题的内容区域宽度固定而做的针对性修改 */
 .protyle-title{
     margin: 34px 16px 0 24px !important;
+    padding: 6px !important;
+}
+
+/* 改变文档属性图标的位置 */
+.protyle-title__icon{
+    left: -16px;
 }

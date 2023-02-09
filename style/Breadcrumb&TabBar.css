@@ -29,7 +29,7 @@
     flex-shrink: 0;
     box-sizing: border-box;
     /* box-shadow: 0px 5px 0px #ad4040; */
-    border-bottom: 1.5px solid #ad4040;
+    border-bottom: 1.5px solid #c98c8c;
     /* border-bottom-left-radius: 0.7em; */
     /* border-bottom-right-radius: 0.7em; */
     /* border-bottom: 0.4em solid #ffd0d0; */
@@ -77,7 +77,7 @@
 /* 页签 */
 .layout-tab-bar .item{
     background-color: #ffe2e2;
-    border-bottom: 0.5px solid #9f2121bf;
+    border-bottom: 0.5px solid #c98c8c;
     border-left: 0.5px solid var(--b3-border-color);
     border-right: 1px solid var(--b3-border-color);
 }

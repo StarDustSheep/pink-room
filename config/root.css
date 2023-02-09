@@ -24,14 +24,14 @@
     --b3-theme-on-secondary: #fff;
 
     /* 多级标题默认字色，修改以和米色背景搭配，黑色太难看了 */
-    --b3-theme-on-background: #743d57;
+    --b3-theme-on-background: #7a4d5b;
 
     /* 此色影响顶部栏图标颜色和不少界面区域中的文字颜色，修改为暗红色以和粉色的界面整体色调匹配 */
-    --b3-theme-on-surface: #6f3748;
+    --b3-theme-on-surface: #8b606d;
 
     --b3-theme-on-surface-light: rgb(174 101 133 / 87%);
     --b3-theme-on-error: #fff;
-
+    --b3-toolbar-hover:#ef94b7;
     /* 字体 */
     --b3-font-family: "quote", "Helvetica Neue", "Luxi Sans", "DejaVu Sans", "Hiragino Sans GB", "Microsoft Yahei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
     --b3-font-family-code: "Consolas",微软雅黑,"TsangerYuMo W02","JetBrainsMono-Regular", mononoki, Consolas, "Liberation Mono", Menlo, Courier, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";

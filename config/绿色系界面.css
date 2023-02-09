@@ -41,7 +41,7 @@
     --pinkroom-tag-boxshadow-color: #7b9a6e;
     
     /* 虚拟引用标记颜色 */
-    --pinkroom-virtual-rel-background-color:#9ee9a952;
+    --pinkroom-virtual-rel-background-color:#9ee9a936;
 
     /* 表格标题行的底色 */
     --pinkroom-table-head-background-color:#cae7ba;
@@ -89,10 +89,7 @@
     border-bottom: 1.5px solid #81ad40;
 }
 
-/* 在标签页区域和面包屑交界的地方添加边界线 */
-#layouts > div.fn__flex.fn__flex-1 > div.layout__center.fn__flex.fn__flex-1 > div > div > div.fn__flex{
-    border-bottom: 1px solid #7ec485;
-}
+
 
 
 /* 给页签设置字色 */
@@ -350,7 +347,7 @@
 
 /* 卷轴页面底色 */
 .protyle-content:not(#searchPreview.fn__flex-1.protyle>.protyle-content,.block__popover,.block__edit.fn__flex-1.protyle>.protyle-content,.backlinkList .protyle-content,.backlinkMList .protyle-content){
-    background-color: hsl(76deg 36% 97%);
+    background-color: hsl(76deg 36% 99%);
     box-shadow: #18331024 0px 0px 0.7em 0.3em, #a4da5b2b 0px 0px 3em 1em, #e4f5e5a3 0px 0px 2.5em;
 }
 
@@ -368,8 +365,8 @@
 /* 改变标题区域的样式 2版 */
 .protyle-title__input {
     background: transparent;
-    border-bottom: 3px solid rgb(196, 219, 169);
-    color: #3d7932;
+    border-bottom: 2px solid rgb(196, 219, 169);
+    color: #5fa306;
     line-height: 1.1em;
 }
 
@@ -433,7 +430,8 @@
 
 /* 修改标签样式颜色 */
 .protyle-wysiwyg [data-node-id] span[data-type~=tag]{
-    box-shadow: #539d7e 3.6em 0px 0px -2.2em inset, 0px 0px 0px 1px inset;
+    box-shadow: #72a16d 3.6em 0px 0px -2.2em inset, 0px 0px 0px 1px inset;
+    color: #4f7c4a;
 }
 
 /* 修改中间区域阴影层，给底下的图片叠一层色降低对比度*/
@@ -544,4 +542,51 @@ body{
 }
 .protyle-hint .b3-list-item{
     border-color:rgba(41, 130, 23, 0.556);
+}
+
+
+
+/* 菜单中的分隔线 */
+.b3-menu__separator{
+    background-color: rgb(169 194 157 / 66%);
+}
+
+
+/* 横向多开窗口时中间用来调节宽度的竖条 */
+/* .layout__resize--lr{
+    background-color: #f2ffe3;
+    border-right: 1px #d1dea6 solid;
+} */
+
+/* 鼠标悬浮于工具栏上图标时的底色 */
+.toolbar__item:not(.toolbar__item--disabled):not(.toolbar__item--close):hover, .toolbar__item--active{
+    background-color: #c6ef94;
+}
+
+
+/* 修改全部标题的字色 */
+.b3-typography .h1, .b3-typography h1, .b3-typography .h2, .b3-typography h2, .b3-typography .h3, .b3-typography h3, .b3-typography .h4, .b3-typography h4, .b3-typography .h5, .b3-typography h5, .b3-typography .h6, .b3-typography h6, .protyle-wysiwyg .h1, .protyle-wysiwyg h1, .protyle-wysiwyg .h2, .protyle-wysiwyg h2, .protyle-wysiwyg .h3, .protyle-wysiwyg h3, .protyle-wysiwyg .h4, .protyle-wysiwyg h4, .protyle-wysiwyg .h5, .protyle-wysiwyg h5, .protyle-wysiwyg .h6, .protyle-wysiwyg h6{
+    color: #547a30 !important;
+}
+
+/* 修改标题前图标颜色 */
+.h1 > :first-child::before, .h2 > :first-child::before, .h3 > :first-child::before, .h4 > :first-child::before, .h5 > :first-child::before, .h6 > :first-child::before {
+    filter: brightness(35%) sepia(100%) hue-rotate(49deg) saturate(178%);
+}
+
+/* 修改反链面板中各文档的边界线 */
+.sy__backlink .protyle{
+    outline: 1px solid #98c37d;
+}
+.sy__backlink .b3-list-item:not(.protyle-hint .b3-list-item):not(.hint--menu .b3-list-item){
+    outline: 1px solid #98c37d;
+}
+
+/* 反链面板中背景板颜色 */
+.fn__flex-1.fn__flex-column.file-tree.sy__backlink {
+    background-color: #edefe6;
+}
+/* 反链面板中内部框阴影 */
+.sy__backlink .backlinkList.fn__flex-1 {
+    box-shadow: 0px 0px 9px -1px inset hsl(77deg 12% 59%), inset 3px 0px 2px -1px hsl(77deg 12% 59%), inset -3px 0px 2px -1px hsl(77deg 12% 59%);
 }

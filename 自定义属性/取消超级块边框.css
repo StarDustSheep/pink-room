@@ -5,3 +5,11 @@
     margin: 0px !important;
     padding: 0px;
 }
+
+.protyle-wysiwyg [custom-wbk="1"][data-node-id].sb{
+    outline: none;
+    background-color: transparent;
+    border: none ;
+    margin: 0px !important;
+    padding: 0px;
+}

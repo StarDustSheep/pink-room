@@ -1,7 +1,7 @@
 /* ----以整个界面为边界设置背景图片，但只显示在始质或者说编辑区域---- */
 /* 全屏动漫背景图 */
 body{
-    background-image: url("../pic/粉色系背景.jpg");
+    background-image: url("../pic/思源笔记背景图.png");
 	background-position:center top;
 	background-size:cover;
 	z-index: -1;

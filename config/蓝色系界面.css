@@ -36,7 +36,7 @@
     --pinkroom-tag-boxshadow-color: #6e899a;
 
     /* 虚拟引用标记颜色 */
-    --pinkroom-virtual-rel-background-color:#90d4ff5c;
+    --pinkroom-virtual-rel-background-color:#90d4ff34;
 
 
     /* 表格标题行的底色 */
@@ -85,10 +85,7 @@
     border-bottom: 1.5px solid #88b5c7;
 }
 
-/* 在标签页区域和面包屑交界的地方添加边界线 */
-#layouts>div.fn__flex.fn__flex-1>div.layout__center.fn__flex.fn__flex-1>div>div>div.fn__flex {
-    border-bottom: 1px solid #7e94c4;
-}
+
 
 
 /* 给页签设置字色 */
@@ -379,8 +376,8 @@ background-color: #fffef900;
 
 /* 改变标题区域的样式 2版 */
 .protyle-title__input {
-    border-bottom: 3px solid rgb(169 200 219);
-    color: #476492;
+    border-bottom: 2px solid rgb(169 200 219);
+    color: #2297c0;
 }
 
 .dock__item--active {
@@ -447,7 +444,8 @@ background-color:#c4e4f0;
 
 /* 修改标签样式颜色 */
 .protyle-wysiwyg [data-node-id] span[data-type~=tag] {
-    box-shadow: #576ca5 3.6em 0px 0px -2.2em inset, 0px 0px 0px 1px inset;
+    box-shadow: #5788a5 3.6em 0px 0px -2.2em inset, 0px 0px 0px 1px inset;
+    color:#406e89;
 }
 
 
@@ -564,4 +562,54 @@ body {
 /* 按[[唤出的hint菜单 */
 .protyle-hint {
     border: var(--pinkroom-blue-menu-border);
+}
+
+
+/* 菜单中的分隔线 */
+.b3-menu__separator{
+    background-color: rgb(157 194 193 / 66%);
+}
+
+/* 横向多开窗口时中间用来调节宽度的竖条 */
+/* .layout__resize--lr{
+    background-color: #d7eff1;
+    border-right: 1px #a6d1de solid;
+} */
+
+/* 鼠标悬浮于工具栏上图标时的底色 */
+.toolbar__item:not(.toolbar__item--disabled):not(.toolbar__item--close):hover, .toolbar__item--active{
+    background-color: #94e3ef;
+}
+
+/* 修改全部标题的字色 */
+.b3-typography .h1, .b3-typography h1, .b3-typography .h2, .b3-typography h2, .b3-typography .h3, .b3-typography h3, .b3-typography .h4, .b3-typography h4, .b3-typography .h5, .b3-typography h5, .b3-typography .h6, .b3-typography h6, .protyle-wysiwyg .h1, .protyle-wysiwyg h1, .protyle-wysiwyg .h2, .protyle-wysiwyg h2, .protyle-wysiwyg .h3, .protyle-wysiwyg h3, .protyle-wysiwyg .h4, .protyle-wysiwyg h4, .protyle-wysiwyg .h5, .protyle-wysiwyg h5, .protyle-wysiwyg .h6, .protyle-wysiwyg h6{
+    color: #36748a !important;
+}
+
+/* 修改标题前图标颜色 */
+.h1 > :first-child::before, .h2 > :first-child::before, .h3 > :first-child::before, .h4 > :first-child::before, .h5 > :first-child::before, .h6 > :first-child::before {
+    filter: brightness(34%) sepia(100%) hue-rotate(150deg) saturate(191%);
+}
+
+/* 虚拟引用底部线条 */
+.protyle-wysiwyg [data-node-id] span[data-type=virtual-block-ref]{
+    border-bottom-color:#eb8686;
+}
+
+
+/* 修改反链面板中各文档的边界线 */
+.sy__backlink .protyle{
+    outline: 1px solid #7dc1c3;
+}
+.sy__backlink .b3-list-item:not(.protyle-hint .b3-list-item):not(.hint--menu .b3-list-item){
+    outline: 1px solid #7dc1c3;
+}
+
+/* 反链面板中背景板颜色 */
+.fn__flex-1.fn__flex-column.file-tree.sy__backlink{
+    background-color: hsl(207deg 26% 90%);
+}
+/* 反链面板中内部框阴影 */
+.sy__backlink .backlinkList.fn__flex-1 {
+    box-shadow: 0px 0px 9px -1px inset #c0c8ce, inset 3px 0px 2px -1px #c0c8ce, inset -3px 0px 2px #c0c8ce;
 }

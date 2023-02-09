@@ -15,5 +15,26 @@
     --b3-pdf-background7: hsl(308deg 76% 85%);
 }
 
+/* 为pdf页面增加阴影以增强层次感 */
+.pdf__outer .textLayer, .pdf__outer .pdf__resize{
+    box-shadow: #33101624 0px 0px 0.7em 0.3em, #da5b872b 0px 0px 3em 1em, #f5e4e7a3 0px 0px 2.5em;
+}
 
+
+/* 给pdf跟打时修改二次元背景外观 */
+.pdfViewer{
+    background-image: url("/pic/思源笔记背景图.png");
+}
+
+.layout-tab-container__drag{
+    background-color: #09a9da1f;
+}
+.fn__flex-1.protyle{
+    background-color: #eee6e2;
+}
+
+.pdf__toolbar{
+    background-color: #ffe2e2;
+    box-shadow: inset 0 0 2px 0px #b75252;
+}
 
