@@ -375,5 +375,8 @@ audio{
     color: var(--b3-toolbar-color);
 }
 
-
+/* 引用统计标识会出现在嵌入块边框上，不好看，所以加上边线以区分 */
+.protyle-attr--refcount{
+    border: 1px solid var(--b3-theme-on-surface);
+}
 

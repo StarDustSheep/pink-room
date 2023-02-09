@@ -613,3 +613,12 @@ body {
 .sy__backlink .backlinkList.fn__flex-1 {
     box-shadow: 0px 0px 9px -1px inset #c0c8ce, inset 3px 0px 2px -1px #c0c8ce, inset -3px 0px 2px #c0c8ce;
 }
+
+/* 修改面包屑中文字颜色 */
+.render-node .protyle-breadcrumb__item{
+    color: #7499a4;
+}
+/* 修改面包屑中激活层级文字颜色 */
+.render-node .protyle-breadcrumb__item--active{
+    color: #1488ba;
+}

@@ -95,14 +95,14 @@ setTimeout(() => {
 
 
 
-// 看板娘 功能测试中……
-function loadScript(url, type = 'module') {
-    let script = document.createElement('script');
-    script.setAttribute('type', type);
-    script.setAttribute('src', url);
-    document.head.appendChild(script);
-}
-loadScript("D:/创作/stevenjoezhang - live2d-widget-master/autoload.js");
+// // 看板娘 功能测试中……
+// function loadScript(url, type = 'module') {
+//     let script = document.createElement('script');
+//     script.setAttribute('type', type);
+//     script.setAttribute('src', url);
+//     document.head.appendChild(script);
+// }
+// loadScript("D:/创作/stevenjoezhang - live2d-widget-master/autoload.js");
 
 // function loadScript(url, type = 'module') {
 //     let script = document.createElement('script');
