@@ -61,7 +61,10 @@ setTimeout(() => {
         const colors_href = [];
         window.theme.colors.forEach(color => colors_href.push(`${THEME_ROOT}${color}`));
         window.theme.iter = window.theme.Iterator(colors_href);
-        var color_href = localStorage.getItem(window.theme.IDs.LOCAL_STORAGE_COLOR_HREF);
+        var color_href = window.siyuan?.storage[window.theme.IDs.LOCAL_STORAGE_COLOR_HREF];
+        if (!color_href) {
+            localStorage.getItem(window.theme.IDs.LOCAL_STORAGE_COLOR_HREF);
+        }
         if (color_href) { // 将迭代器调整为当前配色
             for (let i = 0; i < window.theme.colors.length; ++i) {
                 if (window.theme.iter.next().value === color_href) break;
@@ -70,6 +73,7 @@ setTimeout(() => {
         else { // 迭代器第一个为当前配色
             color_href = window.theme.iter.next().value;
             localStorage.setItem(window.theme.IDs.LOCAL_STORAGE_COLOR_HREF, color_href);
+            setLocalStorageVal(window.theme.IDs.LOCAL_STORAGE_COLOR_HREF, color_href);
         }
 
         /* 加载配色文件 */
@@ -83,6 +87,7 @@ setTimeout(() => {
         button_change_color.addEventListener('click', e => {
             color_href = window.theme.iter.next().value;
             localStorage.setItem(window.theme.IDs.LOCAL_STORAGE_COLOR_HREF, color_href);
+            setLocalStorageVal(window.theme.IDs.LOCAL_STORAGE_COLOR_HREF, color_href);
             window.theme.updateStyle(window.theme.IDs.STYLE_COLOR, color_href);
         });
         // REF [JS DOM 编程复习笔记 -- insertAdjacentHTML（九） - 知乎](https://zhuanlan.zhihu.com/p/425616377)
@@ -92,8 +97,51 @@ setTimeout(() => {
     }
 }, 0);
 
-
-
+/**
+ * 发送API请求
+ * @param {*} data 
+ * @param {*} url 
+ * @returns 
+ */
+async function postRequest(data, url){
+    let result;
+    await fetch(url, {
+        body: JSON.stringify(data),
+        method: 'POST',
+        headers: {
+            "Authorization": "Token ",
+            "Content-Type": "application/json"
+        }
+    }).then((response) => {
+        result = response.json();
+    });
+    return result;
+}
+/**
+ * 设置LocalStorage
+ * @param {*} ikey 
+ * @param {*} ival 
+ */
+async function setLocalStorageVal(ikey, ival) {
+    let url = "/api/storage/setLocalStorageVal";
+    let response = await postRequest({app: getAppId(), key: ikey, val: ival}, url);
+    if (window.top.siyuan.storage != undefined) {
+        window.top.siyuan.storage[ikey] = ival;
+    }
+    function getAppId() {
+        let wsurl = window.top.siyuan.ws.ws.url;
+        let appIdMatchResult = wsurl.match(new RegExp(`(?<=\\?app=|&app=)[^&]{1,}`));
+        if (appIdMatchResult.length == 1){
+            return appIdMatchResult[0];
+        }else if (appIdMatchResult.length > 1) {
+            console.warn("正则获取appId错误", appIdMatchResult);
+            return appIdMatchResult[0];
+        }else {
+            console.error("正则获取appId错误", appIdMatchResult);
+            return "";
+        }
+    }
+}
 
 // // 看板娘 功能测试中……
 // function loadScript(url, type = 'module') {
