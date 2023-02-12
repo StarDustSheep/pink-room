@@ -130,12 +130,12 @@ async function setLocalStorageVal(ikey, ival) {
     }
     function getAppId() {
         let wsurl = window.top.siyuan.ws.ws.url;
-        let appIdMatchResult = wsurl.match(new RegExp(`(?<=\\?app=|&app=)[^&]{1,}`));
+        let appIdMatchResult = wsurl.match(new RegExp(`(\\?app=|&app=)[^&]+`, "g"));
         if (appIdMatchResult.length == 1){
-            return appIdMatchResult[0];
+            return appIdMatchResult[0].substring(5);
         }else if (appIdMatchResult.length > 1) {
             console.warn("正则获取appId错误", appIdMatchResult);
-            return appIdMatchResult[0];
+            return appIdMatchResult[0].substring(5);
         }else {
             console.error("正则获取appId错误", appIdMatchResult);
             return "";
