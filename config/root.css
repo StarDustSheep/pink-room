@@ -180,6 +180,8 @@
     /* 顶栏图标颜色 */
     --b3-toolbar-color:var(--b3-theme-on-surface);
 
+    /* 文件引用字色设为青色 */
+    --b3-protyle-inline-fileref-color:#218667;
 }
 
 

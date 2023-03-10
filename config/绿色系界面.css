@@ -72,7 +72,7 @@
 
 /* 整个标签栏的样式 */
 .layout-tab-bar {
-    background-color: #e9ffe3;
+    background-color: #f2ffe3;
 }
 
 /* 为标签页中的页签设置边框 */
@@ -103,10 +103,6 @@
     border-radius: 0px 0px 0px 0px;
 }
 
-/* 面包屑其上的页签的底色 */
-.layout-tab-bar .item{
-    background-color:#f2ffe3;
-}
 
 /* 修改当前正在处于编辑\使用状态的页签的底色 */
 .layout__wnd--active .layout-tab-bar .item--focus{
@@ -383,7 +379,7 @@
 
 /* 滚动条滑块部分 */
 ::-webkit-scrollbar-thumb{
-    background-color:#90be5bda;
+    background-color:#80b840da;
 }
 
 
@@ -484,9 +480,23 @@
 }
 
 /* 页签 */
-.layout-tab-bar .item{
-    border-bottom: 0.5px solid hsla(120, 66%, 38%, 0.749);
+.layout-tab-bar .item:not(.item--readonly) {
+    background-color: #f2ffe3;
+    outline: 1px solid #81ad40;
 }
+
+/* 修改当前正在处于编辑\使用状态的页签的底色 */
+.layout__wnd--active .layout-tab-bar .item--focus {
+    background-color: #f2ffe3;
+}
+.layout-tab-bar--readonly{
+    box-shadow: 0px 1px 0px 0px #81ad40,inset 1px 0px 0px 0px #81ad40;
+}
+#layouts > div.fn__flex.fn__flex-1 > div.layout__center.fn__flex.fn__flex-1 > div > div > div.fn__flex{
+    border-bottom: 1px solid #81ad40;
+    background-color: #f2ffe3;
+}
+
 
 
 
@@ -495,7 +505,7 @@
 
 /* 修改背景图 */
 body{
-    background-image: url("../pic/Sweeping\ Spires\ by\ Andreas\ Rocha.jpg");
+    background-image: url("../pic/思源笔记背景图.jpg");
 }
 
 
@@ -588,7 +598,7 @@ body{
 }
 /* 反链面板中内部框阴影 */
 .sy__backlink .backlinkList.fn__flex-1 {
-    box-shadow: 0px 0px 9px -1px inset hsl(77deg 12% 59%), inset 3px 0px 2px -1px hsl(77deg 12% 59%), inset -3px 0px 2px -1px hsl(77deg 12% 59%);
+    /* box-shadow: 0px 0px 9px -1px inset hsl(77deg 12% 59%), inset 3px 0px 2px -1px hsl(77deg 12% 59%), inset -3px 0px 2px -1px hsl(77deg 12% 59%); */
 }
 
 
@@ -599,4 +609,10 @@ body{
 /* 修改面包屑中激活层级文字颜色 */
 .render-node .protyle-breadcrumb__item--active{
     color: #5ba800;
+}
+
+/* 开启卷轴页面时需要的边框 */
+.protyle-content:not(#searchPreview.fn__flex-1.protyle>.protyle-content,.block__popover,.block__edit.fn__flex-1.protyle>.protyle-content,.backlinkList .protyle-content,.backlinkMList .protyle-content){
+    border-left-color:#b2cc8f;
+    border-right-color: #b2cc8f;
 }

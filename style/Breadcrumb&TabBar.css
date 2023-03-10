@@ -11,13 +11,14 @@
     background-color: #ffe2e2;
     /* box-shadow: inset 0px 1px 0px 0px var(--b3-border-color), inset 0px -1px 0px 0px var(--b3-border-color); */
     flex-wrap:wrap;
+    border:none;
 }
 
 
 
 /* 取消思源页签默认的阴影 */
 .layout-tab-bar .item:not(:last-child),.layout-tab-bar .item:last-child:not(.item--focus):not(.item--readonly){
-    box-shadow: none;
+    /* box-shadow: none; */
 }
 
 
@@ -29,7 +30,7 @@
     flex-shrink: 0;
     box-sizing: border-box;
     /* box-shadow: 0px 5px 0px #ad4040; */
-    border-bottom: 1.5px solid #c98c8c;
+    border-bottom: 1px solid #c98c8c;
     /* border-bottom-left-radius: 0.7em; */
     /* border-bottom-right-radius: 0.7em; */
     /* border-bottom: 0.4em solid #ffd0d0; */
@@ -40,13 +41,14 @@
 
 /* 在标签页区域和面包屑交界的地方添加边界线 */
 #layouts > div.fn__flex.fn__flex-1 > div.layout__center.fn__flex.fn__flex-1 > div > div > div.fn__flex{
-    /* border-bottom: 1px solid #c47e7e; */
+    border-bottom: 1px solid #c47e7e;
+    background-color: #ffe2e2;
 }
 
 /* 取消标签页圆角 */
 .layout-tab-bar .item {
     border-radius: 0px 0px 0px 0px;
-    box-shadow: none;
+    /* box-shadow: none; */
 }
 
 /* 给页签设置字色 */
@@ -64,7 +66,7 @@
 /* 修改页签在鼠标悬浮于其上时的底色 */
 .layout-tab-bar .item:hover:not(.layout__wnd--active .item--focus):not(.item--readonly) {
     background-color: rgb(255 212 208);
-    box-shadow: none;
+    /* box-shadow: none; */
     border-radius: 0px 0px 0px 0px;
 }
 /* 修改页签在鼠标悬浮于其上时，其中文字的颜色 */
@@ -75,18 +77,28 @@
 
 
 /* 页签 */
-.layout-tab-bar .item{
+.layout-tab-bar .item:not(.item--readonly){
     background-color: #ffe2e2;
-    border-bottom: 0.5px solid #c98c8c;
-    border-left: 0.5px solid var(--b3-border-color);
-    border-right: 1px solid var(--b3-border-color);
+    /* border-bottom: 0.5px solid #c98c8c; */
+    /* border-left: 0.5px solid var(--b3-border-color); */
+    /* border-right: 1px solid var(--b3-border-color); */
+    /* box-shadow: inset 0px -1px 0px 0px var(--b3-border-color),inset -1px 0px 0px 0px var(--b3-border-color); */
+    outline: 1px solid #dea6a6;
 }
+.item--readonly{
+    /* box-shadow: 0px 1px 0px 0px var(--b3-border-color),inset 1px 0px 0px 0px var(--b3-border-color); */
+}
+
+.layout-tab-bar--readonly{
+    box-shadow: 0px 1px 0px 0px #dea6a6,inset 1px 0px 0px 0px #dea6a6;
+}
+
 
 /* 修改当前正在处于编辑\使用状态的页签的底色 */
 .layout__wnd--active .layout-tab-bar .item--focus{
     /* background-color: #ffd0d0; */
     background-color:#ffc4c4;
-    box-shadow: none !important;
+    /* box-shadow: none !important; */
 }
 
 /* 修改当前正在处于编辑\使用状态的页签的字色 */

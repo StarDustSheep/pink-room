@@ -1,5 +1,6 @@
 /* ----引入root元素，勿动---- */
 @import url("config/root.css");
+@import url("config/root/PDF.css");
 @import url("style/关系图所用颜色.css");
 @import url("style/修改菜单阴影.css");
 @import url("config/pink-room-root.css");
@@ -36,6 +37,7 @@
 /* @import url("style/设置面板.css"); */
 @import url("style/引述.css");
 @import url("style/大纲.css");
+@import url("style/PDF.css");
 
 @import url("杂乱的修改.css");
 
@@ -47,3 +49,7 @@
 /* ---多种色系配色界面暂时性解决方案，可开关切换--- */
 /* @import url("config/绿色系界面.css"); */
 /* @import url("config/蓝色系界面.css"); */
+
+
+
+

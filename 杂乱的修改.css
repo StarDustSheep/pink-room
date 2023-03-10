@@ -205,7 +205,7 @@ audio{
 }
 
 
-/* 使代码块和嵌入块在块合并操作中能正常显示拖放合并块提示色条 */
+/* 使代码块、嵌入块、超级块在拖拽移动和合并操作中能正常显示提示色条 */
 /* 加大拖放合并块提示色条的大小以让其更容易识别 */
 .dragover__top{
     box-shadow: 0px -10px 0 var(--b3-theme-primary-lighter) !important;
@@ -380,3 +380,8 @@ audio{
     border: 1px solid var(--b3-theme-on-surface);
 }
 
+
+/* 自己没事用着玩的内部阴影 */
+/* .fn__flex-1.protyle .protyle-content{
+    box-shadow: inset 4px 0px 7px -1px #d9d3cf;
+} */

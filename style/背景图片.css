@@ -17,7 +17,7 @@ body{
 
 /* 让始质\编辑区底色透明，以实现一种蒙板的效果 */
 .protyle{
-    background-color: transparent;    
+    background-color: transparent !important;    
 }
 
 

@@ -5,8 +5,9 @@
 
 
 /* 为反链面板中反链区域添加内部阴影，以增加层次感，方便用户目光聚焦于该区域 */
+/* 算了，没啥用 */
 .sy__backlink .backlinkList.fn__flex-1{
-    box-shadow: 0px 0px 9px -1px inset #e2d5d5, inset 3px 0px 2px -1px #e2d5d5, inset -3px 0px 2px -1px #e2d5d5;
+    /* box-shadow: 0px 0px 9px -1px inset #e2d5d5, inset 3px 0px 2px -1px #e2d5d5, inset -3px 0px 2px -1px #e2d5d5; */
 }
 
 
@@ -25,7 +26,7 @@
     border-bottom-left-radius: 1px;
     border-bottom-right-radius: 1px;
     margin: 0px 10px 10px 18px;
-    outline: 1px solid #c37d7d;
+    outline: 1px solid #c5a2a2;
     box-shadow: 0px 3px 3px -2px #c3b4b4;
 }
 
@@ -37,7 +38,7 @@
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
     margin: 0px 10px 0px 18px !important;
-    outline: 1px solid #c37d7d;
+    outline: 1px solid #c5a2a2;
 }
 
 

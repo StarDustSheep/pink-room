@@ -141,7 +141,7 @@ span.b3-list-item__icon.b3-tooltips.b3-tooltips__n {
 
 /* 在设置了文档辅助线后，列表大纲的底色和文档辅助线所用的白色box-shadow冲突了，出现白色长条块影响美观，故将列表大纲直接设置成白色底色以融合在一起 */
 .sy__outline > div.fn__flex-1{
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.556);
 }
 
 
@@ -202,4 +202,10 @@ span.b3-list-item__icon.b3-tooltips.b3-tooltips__n {
 /* list-item设置底色时和外边框的圆角不融合 */
 .b3-list--background .b3-list-item{
     border-radius: 2px;
+}
+
+/* 给大纲中项目添加边线 */
+.sy__outline .b3-list--background .b3-list-item{
+    border-radius: 0px;
+    box-shadow: inset -1px -1px 0px 0px #9f9f9f4b;
 }

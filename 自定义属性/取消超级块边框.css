@@ -13,3 +13,8 @@
     margin: 0px !important;
     padding: 0px;
 }
+
+
+.fn__flex-1.protyle.protyle-content{
+box-shadow: inset 5px 0px 5px 0px #d3c8c3;
+}
