@@ -1,0 +1,23 @@
+
+/* 重新声明表格标题行的底色 */
+thead >:nth-child(1) {
+    background-color: var(--pinkroom-table-head-background-color) !important;
+}
+
+/* 覆盖思源默认的表格中的单数行的底色 */
+.b3-typography table tr, .protyle-wysiwyg table tr{
+    background-color: var(--pinkroom-table-2n-1-background-color);
+}
+
+
+/* 覆盖思源默认的表格中的双数行的底色 */
+.b3-typography table tbody tr:nth-child(2n), .protyle-wysiwyg table tbody tr:nth-child(2n){
+    background-color: var(--pinkroom-table-2n-background-color);
+}
+
+/* 覆盖思源默认的表格边框颜色 */
+.b3-typography table td, .b3-typography table th, .protyle-wysiwyg table td, .protyle-wysiwyg table th{
+    border-color:var(--pinkroom-table-border-color) !important;
+}   
+
+

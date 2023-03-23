@@ -1,0 +1,40 @@
+
+
+:root {
+    /* PDF */
+    /* PDF标注有7种颜色 */
+    --b3-pdf-selection: #d0e9c8;
+    --b3-pdf-sidebar-width: 200px;
+    --b3-pdf-offset: 0;
+    --b3-pdf-background1: hsl(0deg 100% 81%);
+    --b3-pdf-background2: hsl(36deg 100% 75%);
+    --b3-pdf-background3: hsl(53deg 100% 73%);
+    --b3-pdf-background4: hsl(83deg 55% 76%);
+    --b3-pdf-background5: hsl(191deg 84% 76%);
+    --b3-pdf-background6: hsl(212deg 100% 82%);
+    --b3-pdf-background7: hsl(308deg 76% 85%);
+}
+
+/* 为pdf页面增加阴影以增强层次感 */
+.pdf__outer .textLayer, .pdf__outer .pdf__resize{
+    box-shadow: #33101624 0px 0px 0.7em 0.3em, #da5b872b 0px 0px 3em 1em, #f5e4e7a3 0px 0px 2.5em;
+}
+
+
+/* 给pdf跟打时修改二次元背景外观 */
+.pdfViewer{
+    background-image: url("/pic/思源笔记背景图.png");
+}
+
+.layout-tab-container__drag{
+    background-color: #09a9da1f;
+}
+.fn__flex-1.protyle{
+    background-color: #eee6e2;
+}
+
+.pdf__toolbar{
+    background-color: #ffe2e2;
+    box-shadow: inset 0 0 2px 0px #b75252;
+}
+

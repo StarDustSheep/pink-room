@@ -1,0 +1,108 @@
+/* 设置反向链接背景颜色 */
+.sy__backlink .protyle,
+.backlinkList {
+    background-color: #f3f3f5;
+}
+
+/* 提及面板背景颜色 */
+.backlinkMList {
+    background-color: #f3f3f5;
+}
+
+/* 去掉反向链接筛选按钮阴影，黑框不好看 */
+input.b3-text-field.b3-text-field--small.b3-form__icon-input {
+    box-shadow: none;
+    padding: 1px 8px;
+}
+
+/* 反链·文档标题 */
+.sy__backlink .b3-list-item {
+    height: 32px;
+    border-radius: 1px;
+    margin: 6px 10px 6px 10px !important;
+    outline: 1px solid #e6e6e8;
+    background-color: #fafafa;
+    /* 顶部阴影 */
+    box-shadow:
+        0px -4px 8px 0px rgba(0, 0, 0, 0.05),
+        0px 1px 0px 0px rgba(230, 230, 232, 1);
+}
+
+/* 首个文档标题设置上外边距 */
+.sy__backlink .b3-list-item:nth-of-type(1) {
+    margin-top: 6px !important;
+}
+
+/* 反链·正文内容 */
+.sy__backlink .protyle {
+    border-radius: 1px;
+    margin: -6px 10px 6px 10px;
+    outline: 1px solid #e6e6e8;
+    background-color: white;
+    box-shadow:
+        rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+        rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+/* 修改边距，使可以并列两个块标（如果是3个需要设置成5em） */
+.sy__backlink .protyle-wysiwyg {
+    padding-left: 3.3em !important;
+}
+
+.sy__backlink .protyle-breadcrumb__bar {
+    margin-left: -1em !important;
+}
+
+/* 调小面包屑字体大小 */
+.sy__backlink .protyle-breadcrumb__bar {
+    font-size: 12px;
+    height: 20px;
+    margin-top: -6px;
+}
+
+/* 调小面包屑中项目符号大小 */
+.sy__backlink .protyle-breadcrumb__item svg {
+    height: 12px;
+    width: 12px;
+}
+
+/* 给面包屑底部添加横线 */
+.sy__backlink .protyle::before {
+    content: "";
+    height: 0.05em;
+    width: 100%;
+    background-color: #e6e6e8;
+    position: absolute;
+    top: 24px;
+}
+
+/* 给包含两个以上面包屑的块中间添加横线 */
+.protyle-wysiwyg .protyle-breadcrumb__bar:not(.protyle-breadcrumb__bar:nth-child(1)):after {
+    content: "";
+    height: 0.05em;
+    width: 100%;
+    background-color: #e6e6e8;
+    position: relative;
+    top: 0px;
+}
+
+.protyle-wysiwyg .protyle-breadcrumb__bar:not(.protyle-breadcrumb__bar:nth-child(1)):before {
+    content: "▌";
+    color: #80808080;
+    position: absolute;
+    left: 20px;
+}
+
+/* 减小面包屑高度 */
+.sy__backlink .protyle-breadcrumb__item {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+
+/* 给提及面板增加顶部分割线 */
+.sy__backlink .block__icons:not(.block__icons:nth-child(1)) {
+    box-shadow: 0px -0.1em 0px 0px rgba(128, 128, 128, 0.1);
+}

@@ -1,0 +1,33 @@
+/* 给不同位置笔记本添加不同颜色(不包含文档和关闭的笔记本） */
+div.sy__file ul:not(ul ul):not(ul.b3-list.fn__flex-column):nth-of-type(8n+1) {  
+    border-left: 4px solid var(--b3-font-color1) !important;
+}
+
+
+div.sy__file ul:not(ul ul):not(ul.b3-list.fn__flex-column):nth-of-type(8n+2) {
+    border-left: 4px solid var(--b3-font-color2) !important;
+}
+
+div.sy__file ul:not(ul ul):not(ul.b3-list.fn__flex-column):nth-of-type(8n+3) {
+    border-left: 4px solid var(--b3-font-color3) !important;
+}
+
+div.sy__file ul:not(ul ul):not(ul.b3-list.fn__flex-column):nth-of-type(8n+4) {
+    border-left: 4px solid var(--b3-font-color4) !important;
+}
+
+div.sy__file ul:not(ul ul):not(ul.b3-list.fn__flex-column):nth-of-type(8n+5) {
+    border-left: 4px solid var(--b3-font-color5) !important;
+}
+
+div.sy__file ul:not(ul ul):not(ul.b3-list.fn__flex-column):nth-of-type(8n+6) {
+    border-left: 4px solid var(--b3-font-color6) !important;
+}
+
+div.sy__file ul:not(ul ul):not(ul.b3-list.fn__flex-column):nth-of-type(8n+7) {
+    border-left: 4px solid var(--b3-font-color7) !important;
+}
+
+div.sy__file ul:not(ul ul):not(ul.b3-list.fn__flex-column):nth-of-type(8n) {
+    border-left: 4px solid var(--b3-font-color8) !important;
+}

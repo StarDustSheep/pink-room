@@ -1,0 +1,54 @@
+/* 设置块引用样式 */
+
+/* 修改的样式 */
+.protyle-wysiwyg [data-node-id] span[data-type~=block-ref]{
+    /* border-bottom: 1px solid var(--b3-protyle-inline-blockref-color); */
+    margin: 0px 2px 0px;
+    font-weight: 500;
+}
+
+.protyle-wysiwyg [data-node-id] span[data-type~=file-annotation-ref]{
+    border-bottom: 1px solid #9dd2c178;
+}
+
+/* 鼠标悬浮时的样式 */
+.protyle-wysiwyg [data-node-id] span[data-type~=block-ref]:hover {
+    border-bottom: 1px solid var(--b3-protyle-inline-blockref-color);
+}
+
+
+.protyle-wysiwyg [data-node-id] span[data-type~=file-annotation-ref]:hover{
+    border-bottom: 1px solid #88bd9c;
+}
+
+
+
+
+
+
+
+
+/* 增加块引后部的标示符号 */
+/* .protyle-wysiwyg [data-node-id] span[data-type="block-ref"]::after {
+    content: "↓";
+    font-style: bold;
+    position: relative;
+    font-size: 80%;
+    margin-left: 1px;
+} */
+
+
+/* 为引用块后面增加引用图标 */
+/* .protyle-wysiwyg [data-node-id] span[data-type="block-ref"]::before {
+    color: var(--b3-block-ref-pseudo-color);
+    content: "[[";
+    font-family: auto;
+    padding-right: 1px;
+}
+
+.protyle-wysiwyg [data-node-id] span[data-type="block-ref"]::after {
+    color: var(--b3-block-ref-pseudo-color);
+    content: "]]";
+    font-family: auto;
+    padding-left: 1px;
+} */

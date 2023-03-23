@@ -1,0 +1,112 @@
+/* 整个标签栏的样式 */
+.layout-tab-bar {
+    font-size: 110%;
+    list-style: none;
+    font-family: "TsangerYuMo W02";
+    font-weight: bold;
+    align-items: center;
+    overflow: auto;
+    position: relative;
+    /* border-radius: 0.4em; */
+    background-color: #ffe2e2;
+    /* box-shadow: inset 0px 1px 0px 0px var(--b3-border-color), inset 0px -1px 0px 0px var(--b3-border-color); */
+    flex-wrap:wrap;
+    border:none;
+}
+
+
+
+/* 取消思源页签默认的阴影 */
+.layout-tab-bar .item:not(:last-child),.layout-tab-bar .item:last-child:not(.item--focus):not(.item--readonly){
+    /* box-shadow: none; */
+}
+
+
+/* 面包屑导航栏 */
+.protyle-breadcrumb {
+    display: flex;
+    padding: 0 8px;
+    background-color: #ffffff;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    /* box-shadow: 0px 5px 0px #ad4040; */
+    border-bottom: 1px solid #c98c8c;
+    /* border-bottom-left-radius: 0.7em; */
+    /* border-bottom-right-radius: 0.7em; */
+    /* border-bottom: 0.4em solid #ffd0d0; */
+    /* border-top: 1px solid #ad4040; */
+    /* border-radius: 0.6em; */
+    /* box-shadow: inset 0px 0px 5px #ffd1cdaa, inset 0px 0px 5px 5px #ffcfc973; */
+}
+
+/* 在标签页区域和面包屑交界的地方添加边界线 */
+#layouts > div.fn__flex.fn__flex-1 > div.layout__center.fn__flex.fn__flex-1 > div > div > div.fn__flex{
+    border-bottom: 1px solid #c47e7e;
+    background-color: #ffe2e2;
+}
+
+/* 取消标签页圆角 */
+.layout-tab-bar .item {
+    border-radius: 0px 0px 0px 0px;
+    /* box-shadow: none; */
+}
+
+/* 给页签设置字色 */
+.layout-tab-bar .item__text{
+    color: #bc5572;
+}
+
+/* 设置文字最小宽度，页签过多时才能看清楚文字  */
+.layout-tab-bar .item__text {
+    width: 5em;
+    /* white-space: nowrap !important; */
+    padding-left: 12px;
+}
+
+/* 修改页签在鼠标悬浮于其上时的底色 */
+.layout-tab-bar .item:hover:not(.layout__wnd--active .item--focus):not(.item--readonly) {
+    background-color: rgb(255 212 208);
+    /* box-shadow: none; */
+    border-radius: 0px 0px 0px 0px;
+}
+/* 修改页签在鼠标悬浮于其上时，其中文字的颜色 */
+.layout-tab-bar .item:hover:not(.item--focus):not(.item--readonly) .item__text{
+    color: #bc5572;
+}
+
+
+
+/* 页签 */
+.layout-tab-bar .item:not(.item--readonly){
+    background-color: #ffe2e2;
+    /* border-bottom: 0.5px solid #c98c8c; */
+    /* border-left: 0.5px solid var(--b3-border-color); */
+    /* border-right: 1px solid var(--b3-border-color); */
+    /* box-shadow: inset 0px -1px 0px 0px var(--b3-border-color),inset -1px 0px 0px 0px var(--b3-border-color); */
+    outline: 1px solid #dea6a6;
+}
+.item--readonly{
+    /* box-shadow: 0px 1px 0px 0px var(--b3-border-color),inset 1px 0px 0px 0px var(--b3-border-color); */
+}
+
+.layout-tab-bar--readonly{
+    box-shadow: 0px 1px 0px 0px #dea6a6,inset 1px 0px 0px 0px #dea6a6;
+}
+
+
+/* 修改当前正在处于编辑\使用状态的页签的底色 */
+.layout__wnd--active .layout-tab-bar .item--focus{
+    /* background-color: #ffd0d0; */
+    background-color:#ffc4c4;
+    /* box-shadow: none !important; */
+}
+
+/* 修改当前正在处于编辑\使用状态的页签的字色 */
+.layout__wnd--active .layout-tab-bar .item--focus>.item__text{
+    color: hsl(346deg 37% 45% / 87%);
+}
+
+/* 当前正在编辑的页面的页签底部的线条 */
+.layout-tab-bar .item--focus:after{
+    background-color: transparent !important;
+}
