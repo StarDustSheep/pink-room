@@ -631,8 +631,7 @@ body {
 }
 
 .b3-dialog__container{
-    border: 7px solid #74cbdf;
-    box-shadow: none;
+    border: 4px solid #74cbdf;
 }
 
 /* 给分隔线设置单独的颜色以契合背景颜色 */

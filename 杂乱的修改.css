@@ -351,3 +351,8 @@ audio{
 .b3-select:hover{
     background-color: #fffcf8;
 }
+
+/* 修改引用统计的位置，防止在卷轴页面情况下被遮挡 */
+.protyle-attr--refcount{
+    right: -16px;
+}
