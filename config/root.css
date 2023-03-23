@@ -24,7 +24,7 @@
     --b3-theme-on-secondary: #fff;
 
     /* 多级标题默认字色，修改以和米色背景搭配，黑色太难看了 */
-    --b3-theme-on-background: #7a4d5b;
+    --b3-theme-on-background: #61414b;
 
     /* 此色影响顶部栏图标颜色和不少界面区域中的文字颜色，修改为暗红色以和粉色的界面整体色调匹配 */
     --b3-theme-on-surface: #8b606d;

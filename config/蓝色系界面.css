@@ -1,3 +1,5 @@
+@import url("root/blue/root_modify.css");
+
 :root {
     /* 线条 */
     --b3-border-color: rgba(148, 208, 216, 0.857);
@@ -14,7 +16,7 @@
     --b3-theme-on-surface-light: rgb(129 155 164 / 87%);
 
     /* 多级标题默认字色，修改以和米色背景搭配，黑色太难看了 */
-    --b3-theme-on-background: #365c83;
+    --b3-theme-on-background: #3d5166;
 
     /* 超链接用字色 */
     /* --b3-protyle-inline-link-color:#1461e0; */
@@ -28,7 +30,7 @@
     --b3-theme-background: rgb(248 255 255);
 
     /* 修改对话窗口阴影 */
-    --b3-dialog-shadow: 0px 11px 11px 2px hwb(196deg 18% 57% / 33%), 0px 24px 38px 4px hwb(190deg 22% 67% / 14%), 0px 9px 46px 8px rgb(141 151 151 / 12%);
+    --b3-dialog-shadow: rgb(94 143 152 / 28%) 0px 1px 5px, rgb(84 125 127 / 42%) 0px 2px 4px, rgb(139 157 157 / 50%) 0px 4px 8px 1px, rgb(153 168 168 / 51%) 0px 8px 16px, rgb(131 136 139 / 9%) 0px 16px 32px;
 
     /* 略微调整其色相，使其和蓝色系主题整体配色更加搭调 */
     --b3-protyle-inline-blockref-color: #9215ac;
@@ -352,7 +354,7 @@ background-color: #fffef900;
 
 /* 卷轴页面底色 */
 .protyle-content:not(#searchPreview.fn__flex-1.protyle>.protyle-content, .block__popover, .block__edit.fn__flex-1.protyle>.protyle-content, .backlinkList .protyle-content, .backlinkMList .protyle-content) {
-    background-color: hwb(201deg 96% 0%);
+    background-color: #fafdff;
     box-shadow: #10293324 0px 0px 0.7em 0.3em, #5ba2da2b 0px 0px 3em 1em, #e4f0f5a3 0px 0px 2.5em;
 }
 
@@ -392,12 +394,6 @@ background-color:#c4e4f0;
     text-shadow: 0px 1px 0px #9db5c7c2, 0px 2px #b2c2d399, 0px 3px 5px #b0b5c7, 0px 4px 5px #d0e0eecc !important;
 }
 
-
-/* 修改提示气泡样式 */
-.tooltip {
-    font-size: 1rem !important;
-    background-color: #4e7483;
-}
 
 /* 修改菜单容器样式 */
 .b3-tab-container {
@@ -475,6 +471,11 @@ background-color:#c4e4f0;
 .hint--menu {
     border-color: #74cbdf;
 }
+.protyle-hint.b3-list.b3-list--background .b3-list-item{
+    border-color: #37597e66;
+}
+
+
 
 
 /* 修改页签在鼠标悬浮于其上时的底色 */
@@ -549,9 +550,8 @@ body {
     background-color: #f5ffff;
 }
 
-.protyle-hint .b3-list-item,
-.backlinkList .protyle-hint.b3-list.b3-list--background:not(.hint--menu) .b3-list-item {
-    border-color: rgba(23, 112, 130, 0.556);
+.protyle-hint.b3-list.b3-list--background.hint--menu .b3-list-item {
+    border-color: #418b8b7d
 }
 
 /* 按[[唤出的hint菜单 */
@@ -602,7 +602,7 @@ body {
 
 /* 反链面板中背景板颜色 */
 .fn__flex-1.fn__flex-column.file-tree.sy__backlink{
-    background-color: hsl(207deg 26% 90%);
+    background-color: hsl(190deg 34% 92%);
 }
 /* 反链面板中内部框阴影 */
 .sy__backlink .backlinkList.fn__flex-1 {
@@ -629,3 +629,26 @@ body {
     border-left-color: #89c2dc;
     border-right-color: #89c2dc;
 }
+
+.b3-dialog__container{
+    border: 7px solid #74cbdf;
+    box-shadow: none;
+}
+
+/* 给分隔线设置单独的颜色以契合背景颜色 */
+.protyle-wysiwyg [data-node-id].hr>div{
+    border-bottom: 1px solid #759da8;
+}
+
+
+.sy__backlink .protyle::before{
+    background-color: #b3bac1;
+}
+
+.sy__backlink .protyle{
+    box-shadow: 0px 3px 3px -2px #b4bbc3;
+}
+
+.b3-select:hover{
+    background-color: #f1fdff;
+} 

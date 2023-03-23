@@ -1,19 +1,33 @@
-/* ----引入root元素，勿动---- */
+/* ----引入root元素，---- */
 @import url("config/root.css");
+
+@import url("config/root/pink/root_modify.css");
+
 @import url("config/root/PDF.css");
 @import url("style/关系图所用颜色.css");
 @import url("style/修改菜单阴影.css");
-@import url("config/pink-room-root.css");
+@import url("config/root/主题新增自定义属性.css");
 
-/* ----作者自用特色功能，可开关 ---- */
-/* @import url("style/另外一种默认字体.css"); */
+/* ————作者自用特色功能，可开关———— */
+
+/* 作者自认为比默认的居中更舒服的布局 */
 /* @import url("style/卷轴页面.css"); */
-/* @import url("style/背景图片.css"); */
-/* @import url("style/4类主要自定义字色.css"); */
-/* @import url("style/复习用填空&黑条样式.css"); */
+
+/* 作者自己用的字色配色 */
+/* @import url("style/4类主要自定义字色.css");  */
+
+/* 默认开启的超级块边框，如不喜欢请将其注释掉 */
 @import url("style/超级块边框.css");
+
+/* 如果你想要实现工工整整的卡片布局，可以试试这个 */
 /* @import url("style/底层超级块边框.css"); */
-/* @import url("style/PDF相关自定义属性.css"); */
+
+/* ————最好别用的实验性功能———— */
+/* @import url("style/背景图片.css"); 事实证明没事别加背景图片比较好 */
+/* @import url("style/另外一种默认字体.css"); 如果没安装字体，开了和没开基本一样 */
+/* @import url("style/复习用填空&黑条样式.css"); 该功能已被闪卡替代*/
+/* @import url("style/PDF相关自定义属性.css"); 作者自己也忘了是干嘛的了*/
+/* @import url("style/悬浮窗内字体更小.css"); 作者用来读书的功能，不太完善 */
 
 /* ----通用样式---- */
 @import url("style/Breadcrumb&TabBar.css");
@@ -30,7 +44,7 @@
 @import url("style/SuperLink.css");
 @import url("style/table.css");
 /* @import url("style/title.css"); */
-@import url("style/标题.css");
+@import url("style/多级标题.css");
 @import url("style/关系图.css");
 @import url("style/反链面板.css");
 /* @import url("style/新反链面板.css"); */
@@ -38,6 +52,9 @@
 @import url("style/引述.css");
 @import url("style/大纲.css");
 @import url("style/PDF.css");
+
+@import url("部件修改/唤出菜单.css");
+@import url("部件修改/设置面板.css");
 
 @import url("杂乱的修改.css");
 
@@ -49,7 +66,3 @@
 /* ---多种色系配色界面暂时性解决方案，可开关切换--- */
 /* @import url("config/绿色系界面.css"); */
 /* @import url("config/蓝色系界面.css"); */
-
-
-
-

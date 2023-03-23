@@ -1,0 +1,14 @@
+.block__popover.block__popover--move.block__popover--open{
+    scale: 80%;
+}
+
+
+.block__popover{
+    max-width: 60vw;
+    width: auto;
+}
+
+.block__edit.fn__flex-1.protyle .protyle-hint {
+    top: auto !important;
+    left: 30vw !important;
+}

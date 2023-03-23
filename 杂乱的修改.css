@@ -90,43 +90,12 @@
 }
 
 
-
-/* 修改提示菜单样式 */
-.hint--menu {
-    column-count: 4;
-    column-width: 20px !important;
-    column-gap: 10px;
-    min-width: 38vw !important;
-    max-height: 600px !important;
-    border: 0.2em solid pink;
-    padding: 4px;
-    background-color: white;
-    border-radius: 0px;
-}
-
-/* 修改提示菜单中选项样式 */
-.protyle-hint.b3-list.b3-list--background.hint--menu .b3-list-item {
-    font-size: 90%;
-    border: 1px solid #8b41417d;
-    box-sizing: border-box;
-    vertical-align: middle;
-    padding: 2px 8px !important;
-    margin-top: 3px !important;
-    border-radius: 0px;
-    width: 100% !important;
-}
-
-
 /* 菜单中的分隔线 */
 .b3-menu__separator{
     background-color: rgb(194 157 157 / 66%);
     margin: 5px 0;
     width: 100%
 }
-
-
-
-
 
 
 /* 防止界面中出现没什么用的滚动条 */
@@ -161,10 +130,17 @@ audio{
     color:transparent !important;
 }
 
+
 /* 修改提示气泡样式 */
 .tooltip{
-    font-size: 1rem !important;
-    background-color: #834e68;
+    font-size: 0.8rem !important;
+    background-color: var(--b3-tooltips-color);
+}
+.b3-tooltips:hover::after{
+    background-color: var(--b3-tooltips-color);
+}
+.b3-tooltips__s::before, .b3-tooltips__se::before, .b3-tooltips__sw::before{
+    border-bottom-color: var(--b3-tooltips-color);
 }
 
 
@@ -201,7 +177,7 @@ audio{
 
 /* 给分隔线设置单独的颜色以契合背景颜色 */
 .protyle-wysiwyg [data-node-id].hr>div{
-    border-bottom: 1px solid #852a4b;
+    border-bottom: 1px solid  #976074;
 }
 
 
@@ -307,21 +283,6 @@ audio{
 
 
 
-/* 按[[唤出的hint菜单 */
-.protyle-hint{
-    border: var( --pinkroom-pink-menu-border);
-    border-radius: 2px;
-}
-
-/* 按[[唤出的hint菜单中的项目 */
-.protyle-hint .b3-list-item{
-    width: 100% !important;
-    border: 1px solid rgba(130, 23, 23, 0.556);
-    border-left: none;
-    border-radius: 0px !important;
-    background-color: #ffffff;
-    border-top: none;
-}
 
 
 /* 关闭按钮 */
@@ -385,3 +346,8 @@ audio{
 /* .fn__flex-1.protyle .protyle-content{
     box-shadow: inset 4px 0px 7px -1px #d9d3cf;
 } */
+
+
+.b3-select:hover{
+    background-color: #fffcf8;
+}

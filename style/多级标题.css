@@ -1,0 +1,83 @@
+/* 多级标题 */
+.b3-typography .h1, .b3-typography h1, .b3-typography .h2, .b3-typography h2, .b3-typography .h3, .b3-typography h3, .b3-typography .h4, .b3-typography h4, .b3-typography .h5, .b3-typography h5, .b3-typography .h6, .b3-typography h6, .protyle-wysiwyg .h1, .protyle-wysiwyg h1, .protyle-wysiwyg .h2, .protyle-wysiwyg h2, .protyle-wysiwyg .h3, .protyle-wysiwyg h3, .protyle-wysiwyg .h4, .protyle-wysiwyg h4, .protyle-wysiwyg .h5, .protyle-wysiwyg h5, .protyle-wysiwyg .h6, .protyle-wysiwyg h6{
+    letter-spacing: 0.1em;
+    color: #8b5d6c !important;
+    
+
+}
+
+
+
+
+.h1>:first-child,.h2>:first-child,.h3>:first-child,.h4>:first-child,.h5>:first-child,.h6>:first-child{
+    padding-left: 1.4rem;
+    display: flex;
+    align-items: center;
+}
+
+
+/* 标题前图标 */
+.h1 > :first-child::before{
+    background-image: url('../icon/title/h1.svg');
+    left: 0.3rem;
+    
+}
+
+.h2 > :first-child::before{
+    background-image: url('../icon/title/h2.svg');
+    left: 0.3rem;
+}
+
+
+.h3 > :first-child::before{
+    background-image: url('../icon/title/h3.svg');
+    left: 0.32rem;
+}
+
+
+.h4 > :first-child::before{
+    background-image: url('../icon/title/h4.svg');
+    left: 0.35rem;
+}
+
+/* 防止标题折叠后右侧圆点标示和小三角图标对不齐 */
+.protyle-wysiwyg div[fold="1"][data-type=NodeHeading].h4:before{
+    top: 40% !important;
+}
+
+
+.h5 > :first-child::before{
+    background-image: url('../icon/title/h5.svg');
+    left: 0.37rem;
+}
+
+/* 防止标题折叠后右侧圆点标示和小三角图标对不齐 */
+.protyle-wysiwyg div[fold="1"][data-type=NodeHeading].h5:before{
+    top: 40% !important;
+}
+
+
+.h6 > :first-child::before{
+    background-image: url('../icon/title/h6.svg');
+    left: 0.39rem;
+}
+
+/* 防止标题折叠后右侧圆点标示和小三角图标对不齐 */
+.protyle-wysiwyg div[fold="1"][data-type=NodeHeading].h6:before{
+    top: 40% !important;
+}
+
+
+
+/* 为所有标题伪元素图标设置相同的一些属性 */
+.h1 > :first-child::before,.h2 > :first-child::before,.h3 > :first-child::before,.h4 > :first-child::before,.h5 > :first-child::before,.h6 > :first-child::before{
+    height: 1em;
+    width: 1em;
+    display: inline-block;
+    position: absolute;
+    content: "";
+    fill: var(--b3-theme-on-background);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    filter: brightness(38%) sepia(100%) hue-rotate(283deg) saturate(194%);
+}

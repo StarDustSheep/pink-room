@@ -1,0 +1,5 @@
+.b3-dialog__container{
+    border: 7px solid var(--pinkroom-pink-menu-border);
+    box-shadow: none;
+}
+
