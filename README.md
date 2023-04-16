@@ -14,7 +14,6 @@ pink-room的界面颜色以浅粉色、白色以及米色为主，试图营造�
 ![image](https://user-images.githubusercontent.com/114859111/227111354-05141c6f-4f37-4900-8f7e-97d79157d5aa.png)
 
 ### 卡片化引述块
-将
 ![image](https://user-images.githubusercontent.com/114859111/227112679-77fce2b9-ec7f-4adb-b016-27441731d360.png)
 
 ### 超级块边框<br>
