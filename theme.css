@@ -11,7 +11,7 @@
 /* ————作者自用特色功能，可开关———— */
 
 /* 作者自认为比默认的居中更舒服的布局 */
-/* @import url("style/卷轴页面..css"); */
+/* @import url("style/卷轴页面.css"); */
 
 /* 作者自己用的字色配色 */
 /* @import url("style/4类主要自定义字色.css");  */
@@ -27,7 +27,8 @@
 /* @import url("style/另外一种默认字体.css"); 如果没安装字体，开了和没开基本一样 */
 /* @import url("style/复习用填空&黑条样式.css"); 该功能已被闪卡替代*/
 /* @import url("style/PDF相关自定义属性.css"); 作者自己也忘了是干嘛的了*/
-/* @import url("style/悬浮窗内字体更小.css"); 作者用来读书的功能，不太完善 */
+/* 作者用来读书的功能，不太完善 */
+/* @import url("style/悬浮窗内字体更小.css");  */
 
 /* ----通用样式---- */
 @import url("style/Breadcrumb&TabBar.css");

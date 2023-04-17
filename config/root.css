@@ -84,7 +84,7 @@
     --b3-font-color11: #6cad05;
     --b3-font-color12: #f56f10;
         /* 修改第十三种字色为透明色，以用来复习内容 */
-    --b3-font-color13: transparent;
+    --b3-font-color13: black;
 
     --b3-font-background1: var(--b3-card-error-background);
     --b3-font-background2: var(--b3-card-warning-background);

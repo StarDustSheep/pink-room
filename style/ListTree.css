@@ -178,7 +178,7 @@ span.b3-list-item__icon.b3-tooltips.b3-tooltips__n {
 /* 设置overflow是为了不出现多余的滚动条 */
 /* 这里设置overflow会导致鼠标悬浮在引用上时的编辑面板无法上下滚动 */
 .block__edit.fn__flex-1.protyle>.protyle-content{
-    background-color: #fffbf9;
+    /* background-color: #fffbf9; */
     /* overflow: hidden; */
 }
 

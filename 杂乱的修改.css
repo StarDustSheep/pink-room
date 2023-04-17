@@ -356,3 +356,9 @@ audio{
 .protyle-attr--refcount{
     right: -16px;
 }
+
+
+/* 选中文字后弹出的菜单 */
+.protyle-toolbar{
+    border:solid 3px var(--b3-pinkroom-border);
+}
