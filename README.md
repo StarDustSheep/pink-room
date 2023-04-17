@@ -37,7 +37,7 @@ pink-room的界面颜色以浅粉色、白色以及米色为主，试图营造�
 ### 字体样式菜单
 对字体样式菜单做了改动，添加了号码以让人能更加轻易地找到自己所需要的样式<br>
 未对思源默认的自定义字色、底色做偏离色调的大修改，以防止用户笔记外观和默认主题差距过大无法使用。但未来可能会加入另外标准的自定义字色和底色。<br><br>
-![image](https://user-images.githubusercontent.com/114859111/227111596-5546be7a-1448-44dd-b577-f1e88fe26559.png)
+![image](https://user-images.githubusercontent.com/114859111/232412203-8cf9e9e0-d5d9-46ab-839b-e4c991cfea53.png)
 
 ### 四色系字体颜色
 作者自用字体样式<br>
