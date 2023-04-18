@@ -3,7 +3,7 @@
 pink-room的界面颜色以浅粉色、白色以及米色为主，试图营造出清新、温馨的感觉。更重要的是优化一些常用样式，使其易读性更强。<br>
 如有任何使用问题可以加思源爱好者折腾QQ群：1017854502，直接提问。（请多反馈 \_(ÒωÓ๑ゝ∠)\_）
 
-[English Readme](https://github.com/StarDustSheep/pink-room/blob/main/README_EN)
+[English Readme](https://github.com/StarDustSheep/pink-room/blob/main/README_EN.md)
 ## 主要特性
 ### 多级标题前图标
 使用易于识别的图标来区分多级标题，以避免识别困难<br>
