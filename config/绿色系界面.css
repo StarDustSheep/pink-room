@@ -334,12 +334,12 @@
 
 
 /* 中央卷轴之外的区域，视觉上看起来就像是卷轴底下的平面。设为灰粉色以和中央文字区域区分，目的是让使用者更容易把注意力集中在中央的文字区域 */
-.protyle{
+.protyle:not(#searchPreview.fn__flex-1.protyle,.block__popover,.block__edit.fn__flex-1.protyle,.backlinkList .protyle,.backlinkMList .protyle, #cardPreview.protyle){
     background-color:hsl(100deg 100% 98% / 90%);
 }
 
 /* 卷轴页面底色 */
-.protyle-content:not(#searchPreview.fn__flex-1.protyle>.protyle-content,.block__popover,.block__edit.fn__flex-1.protyle>.protyle-content,.backlinkList .protyle-content,.backlinkMList .protyle-content){
+.fn__flex-1.protyle .protyle-content:not(#searchPreview.fn__flex-1.protyle>.protyle-content,.block__popover,.block__edit.fn__flex-1.protyle>.protyle-content,.backlinkList .protyle-content,.backlinkMList .protyle-content, #cardPreview>.protyle-content){
     background-color: hsl(76deg 36% 99%);
     box-shadow: #18331024 0px 0px 0.7em 0.3em, #a4da5b2b 0px 0px 3em 1em, #e4f5e5a3 0px 0px 2.5em;
 }
@@ -604,7 +604,7 @@ body{
 }
 
 /* 开启卷轴页面时需要的边框 */
-.protyle-content:not(#searchPreview.fn__flex-1.protyle>.protyle-content,.block__popover,.block__edit.fn__flex-1.protyle>.protyle-content,.backlinkList .protyle-content,.backlinkMList .protyle-content){
+.fn__flex-1.protyle .protyle-content:not(#searchPreview.fn__flex-1.protyle>.protyle-content,.block__popover,.block__edit.fn__flex-1.protyle>.protyle-content,.backlinkList .protyle-content,.backlinkMList .protyle-content, #cardPreview>.protyle-content){
     border-left-color:#b2cc8f;
     border-right-color: #b2cc8f;
 }
