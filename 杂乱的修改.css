@@ -362,3 +362,9 @@ audio{
 .protyle-toolbar{
     border:solid 3px var(--b3-pinkroom-border);
 }
+
+
+/* 块图标平滑移动 */
+.protyle-gutters {
+    transition: all 200ms ease-out;
+}

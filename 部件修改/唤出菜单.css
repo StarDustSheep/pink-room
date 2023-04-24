@@ -1,5 +1,5 @@
 /* 修改提示菜单样式 */
-.hint--menu {
+.hint--menu:not(.hint--menu:has(.emojis)){
     column-count: 4;
     column-width: 30px !important;
     column-gap: 15px;
@@ -11,6 +11,27 @@
     background-color: #fffcfb;
     border-radius: 4px;
 }
+
+
+/* 表情面板适配 */
+.hint--menu:has(.emojis){
+    padding:0px;
+}
+
+/* 表情面板的按钮 */
+.emojis__type{
+    background-color: #94949424;
+    margin-right: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.emojis__type:hover{
+    background-color: var(--b3-border-color) !important;
+}
+[data-type="0"].emojis__type{
+    margin-left: 2px;
+}
+
 
 
 /* 为按/唤出的提示菜单整体设置一个比较舒适的圆角 */
@@ -34,7 +55,7 @@
 }
 
 /* 按[[唤出的hint菜单 */
-.protyle-hint{
+.protyle-hint, .b3-menu{
     border: var( --pinkroom-pink-menu-border);
 }
 
