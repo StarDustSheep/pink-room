@@ -651,3 +651,8 @@ body {
 .b3-select:hover{
     background-color: #f1fdff;
 } 
+
+
+.protyle-hint, .b3-menu {
+    border: var( --pinkroom-blue-menu-border);
+}
