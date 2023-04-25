@@ -143,7 +143,7 @@ async function setLocalStorageVal(ikey, ival) {
     }
 }
 
-// // 看板娘 功能测试中……
+// 看板娘 功能测试中……
 // function loadScript(url, type = 'module') {
 //     let script = document.createElement('script');
 //     script.setAttribute('type', type);

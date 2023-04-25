@@ -6,39 +6,44 @@
 
 }
 
-
-
-.h1>:first-child,.h2>:first-child,.h3>:first-child,.h4>:first-child,.h5>:first-child,.h6>:first-child{
-    padding-left: 1.6rem;
-    /* display: flex; */
-    /* align-items: center; */
-}
-
-
 /* 标题前图标 */
 .h1 > :first-child::before{
-    background-image: url('../icon/title/h1.svg');
+    background: url('../icon/headings/h1.svg');
     left: 0.3rem;
-    
+    bottom: 0.62rem;
 }
+.h1 > :first-child{
+    padding-left: 0.8rem;
+}
+
+
 
 .h2 > :first-child::before{
-    background-image: url('../icon/title/h2.svg');
+    background: url('../icon/headings/h2.svg');
     left: 0.3rem;
+    bottom: 0.6rem;
 }
-
+.h2 > :first-child{
+    padding-left: 0.8rem;
+}
 
 .h3 > :first-child::before{
-    background-image: url('../icon/title/h3.svg');
+    background: url('../icon/headings/h3.svg');
     left: 0.32rem;
+    bottom: 0.34rem;
 }
-
+.h3 > :first-child{
+    padding-left: 0.8rem;
+}
 
 .h4 > :first-child::before{
-    background-image: url('../icon/title/h4.svg');
+    background: url('../icon/headings/h4.svg');
     left: 0.35rem;
+    bottom: 0.4rem;
 }
-
+.h4 > :first-child{
+    padding-left: 0.8rem;
+}
 /* 防止标题折叠后右侧圆点标示和小三角图标对不齐 */
 .protyle-wysiwyg div[fold="1"][data-type=NodeHeading].h4:before{
     top: 40% !important;
@@ -46,10 +51,13 @@
 
 
 .h5 > :first-child::before{
-    background-image: url('../icon/title/h5.svg');
+    background: url('../icon/headings/h5.svg');
     left: 0.37rem;
+    bottom: 0.55rem;
 }
-
+.h5 > :first-child{
+    padding-left: 0.8rem;
+}
 /* 防止标题折叠后右侧圆点标示和小三角图标对不齐 */
 .protyle-wysiwyg div[fold="1"][data-type=NodeHeading].h5:before{
     top: 40% !important;
@@ -57,10 +65,13 @@
 
 
 .h6 > :first-child::before{
-    background-image: url('../icon/title/h6.svg');
+    background: url('../icon/headings/h6.svg');
     left: 0.39rem;
+    bottom: 0.68rem;
 }
-
+.h6 > :first-child{
+    padding-left: 0.8rem;
+}
 /* 防止标题折叠后右侧圆点标示和小三角图标对不齐 */
 .protyle-wysiwyg div[fold="1"][data-type=NodeHeading].h6:before{
     top: 40% !important;
@@ -72,11 +83,11 @@
 .h1 > :first-child::before,.h2 > :first-child::before,.h3 > :first-child::before,.h4 > :first-child::before,.h5 > :first-child::before,.h6 > :first-child::before{
     height: 1em;
     width: 1em;
-    display: inline-block;
+    display:inline-block;
     position: absolute;
     content: "";
-    fill: var(--b3-theme-on-background);
-    background-position: left bottom;
+    filter: brightness(76%) sepia(79%) hue-rotate(147deg) saturate(194%);
+    background-position:left bottom;
     background-repeat: no-repeat;
-    filter: brightness(38%) sepia(100%) hue-rotate(283deg) saturate(194%);
 }
+

@@ -583,7 +583,7 @@ body {
 
 /* 修改标题前图标颜色 */
 .h1 > :first-child::before, .h2 > :first-child::before, .h3 > :first-child::before, .h4 > :first-child::before, .h5 > :first-child::before, .h6 > :first-child::before {
-    filter: brightness(34%) sepia(100%) hue-rotate(150deg) saturate(191%);
+    filter: brightness(74%) sepia(98%) hue-rotate(130deg) saturate(154%);
 }
 
 /* 虚拟引用底部线条 */
