@@ -91,3 +91,20 @@
     background-repeat: no-repeat;
 }
 
+
+
+
+/* 为解决此问题做的修改：列表块中的1、2级标题的图标发生错位 https://github.com/StarDustSheep/pink-room/issues/27 */
+.list .h1 > :first-child::before{
+    bottom: 0.2rem;
+}
+.list .h2 > :first-child::before{
+    bottom: 0.2rem;
+}
+.list .h5 > :first-child::before{
+    bottom: 0.5rem;
+}
+.list .h6 > :first-child::before{
+    bottom: 0.56rem;
+}
+
