@@ -1,0 +1,21 @@
+/* 修改超链接的样式 */
+.protyle-wysiwyg [data-node-id] span[data-type~=a]{
+    border-bottom: 1px solid var(--b3-protyle-inline-link-color);
+    margin: 0px 2px 0px;
+    font-weight: 500;
+}
+
+
+/* 先简单写一个超链接悬浮状态 */
+.protyle-wysiwyg [data-node-id] span[data-type~=a]:hover{
+    text-shadow: 0 0 3px #bae1ff, 0 0 8px #6dabffb3, 0 0 10px #c3edff12;
+}
+
+/* 为超链接添加图标 */
+.protyle-wysiwyg [data-node-id] span[data-type~=a]::after {
+    content: "↑";
+    position: relative;
+    font-size: 80%;
+    top: -0.1em;
+    margin-left: 2px;
+}

@@ -1,0 +1,9 @@
+/* 配合思源默认的文件引用青色 */
+/* 主要是PDF文件引用 */
+.protyle-wysiwyg [data-node-id] span[data-type~=file-annotation-ref], .protyle-wysiwyg [data-node-id] span[data-type~=a][data-href*="assets/"]{
+    border-bottom: 1px solid #88bd9c;
+}
+.protyle-wysiwyg [data-node-id] span[data-type~=file-annotation-ref]:hover, .protyle-wysiwyg [data-node-id] span[data-type~=a][data-href*="assets/"]:hover{
+    border-bottom: 1px solid #0e864a;
+}
+

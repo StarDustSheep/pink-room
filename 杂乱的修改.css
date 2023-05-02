@@ -1,0 +1,33 @@
+/* 选择下拉框 */
+.b3-select:hover{
+    background-color: #fff4e1;
+}
+
+
+/* 求求了给关闭按钮做明显点吧，点都点不到 */
+.b3-dialog__close{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 3px;
+    margin-top: 2px;
+}
+
+/* 块图标平滑移动 */
+.protyle-gutters {
+    transition: all 200ms ease-out;
+}
+
+
+
+/* 修改引用统计的位置，防止在卷轴页面情况下被遮挡 */
+.protyle-attr--refcount{
+    right: -16px;
+    outline: 1px solid var(--b3-theme-on-surface);
+}
+
+/* 修改聚焦状态下退出按钮的显眼度 */
+.block__icon.block__icon--show.ft__smaller.fn__flex-center{
+    font-size: 100%;
+    background-color: #8cdfff;
+    color: #535d6a;
+}
