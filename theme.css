@@ -47,7 +47,6 @@
 @import url("样式修改/超链接.css");
 @import url("样式修改/块引用.css");
 @import url("样式修改/标签.css");
-@import url("样式修改/超级块边框.css");
 @import url("样式修改/嵌入块.css");
 @import url("样式修改/斜体、镂空和投影.css");
 @import url("样式修改/虚拟引用.css");
@@ -59,6 +58,13 @@
 /* @import url("样式修改/行内样式/12种字色.css"); */
 /* @import url("部件修改/卷轴页面.css"); */
 /* @import url("部件修改/文档网格背景.css"); */
+
+/* 默认开启的超级块边框，如不喜欢请将其注释掉 */
+@import url("样式修改/超级块边框.css");
+
+/* 如果你想要实现工工整整的卡片布局，可以试试这个 */
+/* @import url("样式修改/底层超级块边框.css"); */
+
 
 @import url("自定义属性/图片边框.css");
 @import url("自定义属性/取消超级块边框.css");
