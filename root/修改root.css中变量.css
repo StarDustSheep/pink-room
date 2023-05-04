@@ -44,6 +44,13 @@
     /* 修改文件引用所用颜色 */
     --b3-protyle-inline-fileref-color: #21866b;
 
+    /* 加深块引所用颜色以方便辩识 */
+    --b3-protyle-inline-blockref-color: #7440d5;
+
+    /* 修改原版那个不怎么好看的阴影 */
+    --b3-dialog-shadow: rgb(152 94 124 / 28%) 0px 1px 5px, rgb(127 84 113 / 42%) 0px 2px 4px, rgb(157 139 143 / 50%) 0px 4px 8px 1px, rgb(168 153 158 / 51%) 0px 8px 16px, rgb(139 131 134 / 9%) 0px 16px 32px;
+
+    --b3-point-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 
     --b3-card-error-color: hsl(4deg 87% 34%);
     --b3-card-error-background: rgb(253 236 234 / 80%);

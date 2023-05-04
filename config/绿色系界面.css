@@ -12,12 +12,16 @@
     --b3-theme-on-surface-light: hsl(84deg 31% 54% / 87%);
     --b3-theme-on-background: hsl(84deg 20% 32%);
     --b3-theme-surface-lighter: hsl(84deg 26% 38% / 40%);
-    
+
+    --b3-dialog-shadow: rgb(111 152 94 / 28%) 0px 1px 5px, rgb(101 127 84 / 42%) 0px 2px 4px, rgb(141 157 139 / 50%) 0px 4px 8px 1px, rgb(160 168 153 / 51%) 0px 8px 16px, rgb(137 139 131 / 9%) 0px 16px 32px;
+
     --room-surface-lightcolor: hsl(74deg 94% 93%);
     --room-surface-lightcolor-blur: hsl(74, 65%, 91%);
     --room-grid-background: hsl(74, 0%, 95%);
     --room-high-saturated-color: hsl(74deg 67% 63%);
     --room-surface-dimcolor: hsl(79deg 43% 86%);
+    --room-grid-background: hsl(72deg 20% 93%);
+    --room-border-color: #c7df90;
 }
 
 /* 顶栏 */
@@ -85,7 +89,7 @@
     background-color: hsl(186deg 100% 92% / 69%) !important;
 }
 .b3-list--background .b3-list-item:hover:not(.b3-list-item--focus) {
-    background-color: hsl(194deg 100% 92%);
+    background-color: hsl(83deg 100% 83%);
 }
 
 /* 编辑区背景色 */
@@ -112,15 +116,15 @@
 
 /* 阴影字 */
 [style*="text-shadow"] {
-    color: #4e7383 !important;
-    text-shadow: 0px 1px 0px rgb(197 213 211 / 76%), 0px 2px rgb(186 199 210 / 60%), 0px 3px 5px #b0c5c7, 0px 4px 5px #d0ebeeb3 !important;
+    color: #4e8358 !important;
+    text-shadow: 0px 1px 0px rgb(197 213 197 / 76%), 0px 2px rgb(186 210 194 / 60%), 0px 3px 5px #b0c7bc, 0px 4px 5px #daeed0b3 !important;
 }
 
 
 
 /* 代码块 */
 .b3-typography .code-block, .protyle-wysiwyg .code-block {
-    box-shadow: 0px 0px 6px 1px #97acc672;
+    box-shadow: 0px 0px 6px 1px #95a47c72;
 }
 .protyle-linenumber__rows {
     border-right: 1px solid rgb(194 216 227);
@@ -199,4 +203,41 @@
 /* ————文档树列表————— */
 .sy__backlink .b3-list--background .b3-list-item--focus {
     background-color: #dfffb4b0 !important;
+}
+
+
+/* 嵌入块 */
+.protyle-wysiwyg [data-node-id].render-node[data-type=NodeBlockQueryEmbed] {
+    background-color: #e2ebd763;
+    box-shadow: 0px 0px 3px 2px inset #c5d2c6;
+}
+
+
+/* ————搜索面板———— */
+#searchInput.b3-text-field.b3-text-field--text {
+    background-color: white;
+    border-radius: 0.3rem;
+    box-shadow: inset 0 0 2px 1px #84b389b5;
+}
+#searchList .b3-list-item {
+    border-bottom: 1px solid #c5dbd6;
+    border-right: 1px solid #c5dbd6;
+}
+#searchList .b3-list-item:hover, #searchList .b3-list-item:has(+.b3-list-item:hover) {
+    border-bottom: 1px solid #679841;
+}
+
+/* ————面板边框———— */
+.protyle-hint, .b3-menu {
+    border: var(--room-green-menu-border);
+}
+
+.protyle-util {
+    border: var(--room-green-menu-border);
+}
+
+/* ————设置面板———— */
+.b3-card--current {
+    background-color: hsl(100deg 44% 90%);
+    border: 1px solid hsl(100deg 29% 80%);
 }

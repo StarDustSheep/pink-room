@@ -12,12 +12,16 @@
     --b3-theme-on-surface-light: hsl(194deg 31% 54% / 87%);
     --b3-theme-on-background: hsl(200deg 20% 32%);
     --b3-theme-surface-lighter: hsl(194deg 26% 38% / 40%);
+
+    --b3-dialog-shadow: rgb(94 143 152 / 28%) 0px 1px 5px, rgb(84 125 127 / 42%) 0px 2px 4px, rgb(139 157 157 / 50%) 0px 4px 8px 1px, rgb(153 168 168 / 51%) 0px 8px 16px, rgb(131 136 139 / 9%) 0px 16px 32px;
     
     --room-surface-lightcolor: hsl(194deg 98% 94%);
     --room-surface-lightcolor-blur: hsl(194, 65%, 91%);
     --room-grid-background: hsl(194, 0%, 95%);
     --room-high-saturated-color: hsl(196, 67%, 63%);
     --room-surface-dimcolor: hsl(204, 66%, 92%);
+    --room-grid-background: hsl(173, 21%, 93%);
+    --room-border-color: #b4dded;
 }
 
 /* 顶栏 */
@@ -196,7 +200,46 @@
 }
 
 
-/* ————文档树列表————— */
+/* ————文档树列表———— */
 .sy__backlink .b3-list--background .b3-list-item--focus {
     background-color: #b4f0ffb0 !important;
+}
+
+
+/* ————嵌入块———— */
+.protyle-wysiwyg [data-node-id].render-node[data-type=NodeBlockQueryEmbed] {
+    background-color: #d7ebe763;
+    box-shadow: 0px 0px 3px 2px inset #c5d1d2;
+}
+
+
+/* ————搜索面板———— */
+#searchInput.b3-text-field.b3-text-field--text {
+    box-shadow: inset 0 0 2px 1px #8490b3b5;
+}
+#searchList .b3-list-item {
+    border-bottom: 1px solid #d0dbc5;
+    border-right: 1px solid #d0dbc5;
+}
+#searchList .b3-list-item:hover, #searchList .b3-list-item:has(+.b3-list-item:hover) {
+    border-bottom: 1px solid #7dc8e6;
+}
+
+
+
+
+
+/* ————面板边框———— */
+.protyle-hint, .b3-menu {
+    border: var(--room-blue-menu-border);
+}
+
+.protyle-util {
+    border: var(--room-blue-menu-border);
+}
+
+/* ————设置面板———— */
+.b3-card--current {
+    background-color: hsl(186deg 44% 90%);
+    border: 1px solid hsl(186deg 29% 80%);
 }

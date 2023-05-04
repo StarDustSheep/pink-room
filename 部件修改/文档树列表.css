@@ -151,7 +151,7 @@ span.b3-list-item__icon.b3-tooltips.b3-tooltips__n {
 }
 
 /* 将鼠标放置在文档树中笔记本右侧的引用数字上能打开一个窗口，为这个区域中的内容块设置小点的内边距以防止出现多个滚动条 */
-.block__edit>.protyle-content>.protyle-wysiwyg.protyle-wysiwyg--attr{
+.block__popover.block__popover--move.block__popover--open .block__edit>.protyle-content{
     padding: 0px 20px 0px 20px !important;
     overflow-y: hidden;
     /* min-height: 30px; */

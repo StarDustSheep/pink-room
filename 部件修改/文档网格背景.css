@@ -4,11 +4,9 @@
 /* 首先给所见即所得文档区域加上一层网格背景，使用纯色变量作为颜色值 */
 /* 重要，此处排除了反链面板中的网格背景，因为在反链面板中添加网格后我无论如何都不能防止面包屑区域背景不出现网格 */
 :not(.sy__backlink) .protyle-wysiwyg.protyle-wysiwyg--attr:not(.sy__backlink .protyle-wysiwyg.protyle-wysiwyg--attr){
-    background-image: linear-gradient(var(--room-grid-background) 1px, transparent 0),
-    linear-gradient(90deg, var(--room-grid-background) 1px, transparent 0),
-    linear-gradient(white 1px, transparent 0),
-    linear-gradient(90deg, white 1px, transparent 0);
+    background-image: var(--room-background-grid);
     background-size: 15px 15px, 15px 15px, 75px 75px, 75px 75px;
+    
 }
 
 /* 让其定位为相对，好让伪元素能绝对定位 */
@@ -30,13 +28,29 @@
     left: 50%;
     z-index: 0;
     transform: translate(-50%, -50%);
-    background-image: linear-gradient(var(--room-grid-background) 1px, transparent 0),
-    linear-gradient(90deg, var(--room-grid-background) 1px, transparent 0),
-    linear-gradient(white 1px, transparent 0),
-    linear-gradient(90deg, white 1px, transparent 0);
+    background-image: var(--room-background-grid);
     background-size: 15px 15px, 15px 15px, 75px 75px, 75px 75px;
     pointer-events: none;
 }
+
+/* 文章底部空白也加上网格 */
+.protyle-wysiwyg.protyle-wysiwyg--attr:not(.sy__backlink .protyle-wysiwyg.protyle-wysiwyg--attr)::after {
+    content: "";
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    top: 98.5%;
+    left: 50%;
+    /* z-index: 1; */
+    transform: translate(-50%, 0%);
+    background-image: var(--room-background-grid);
+    background-size: 15px 15px, 15px 15px, 75px 75px, 75px 75px;
+    pointer-events: none;
+}
+
+/* .protyle-content *:not(.protyle-wysiwyg.protyle-wysiwyg--attr:not(.sy__backlink .protyle-wysiwyg.protyle-wysiwyg--attr)::after){
+z-index: 1;
+} */
 
 
 /* 将文档标题区域默认的背景色改成透明，以显露出下面的伪元素中的网格背景 */
