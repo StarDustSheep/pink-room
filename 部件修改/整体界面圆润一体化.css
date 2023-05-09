@@ -1,7 +1,3 @@
-
-
-
-
 /* 加了可能也没什么意义的 */
 .layout{
     margin: 0 0.2rem 0 0.2rem;
@@ -135,7 +131,9 @@ body.body--blur .fn__flex-1.fn__flex{
 }
 
 
-/* 修改面包屑内元素外编剧，以使得面包屑图标上下边距适中 */
-.fn__flex-1.protyle .protyle-breadcrumb__item{
+/* 修改面包屑内元素外边距，以使得面包屑图标上下边距适中 */
+/* 如不使用:not排除，则在悬浮窗中会有多余的滚动条 */
+/* 以后考虑用更加好的方法来实现 */
+.fn__flex-1.protyle:not(.block__popover .fn__flex-1.protyle) .protyle-breadcrumb__item{
     margin: 5px 0 3px 0px;
 }
