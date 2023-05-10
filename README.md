@@ -3,7 +3,7 @@ I found there is not any pink colour theme in SiYuan's bazaar, so I decide to ma
 The interface color of pink-room are mainly lightpink, white and beige.<br>
 If you have any questions, you can email me directly or submit issue（Please give me feedback \_(ÒωÓ๑ゝ∠)\_）
 
-Buy me a coffee:https://afdian.net/a/StarDustSheep
+Buy me a coffee:https://afdian.net/a/StarDustSheep <br>
 [中文说明](https://github.com/StarDustSheep/pink-room/blob/main/README_zh_CN.md)
 ## Main Style feature
 ### Heading icon
