@@ -1,191 +1,61 @@
-# pink-room主题介绍
-我发现思源的集市上没有粉色系的主题，于是打算自己做一个给自己用。<br>
-pink-room的界面颜色以浅粉色、白色以及米色为主，试图营造出清新、温馨的感觉。更重要的是优化一些常用样式，使其易读性更强。<br>
-如有任何使用问题可以加思源爱好者折腾QQ群：1017854502，直接提问。（请多反馈 \_(ÒωÓ๑ゝ∠)\_）
+# pink-room theme inroduction
+I found there is not any pink colour theme in SiYuan's bazaar, so I decide to make one for myself.<br>
+The interface color of pink-room are mainly lightpink, white and beige.<br>
+If you have any questions, you can email me directly or submit issue（Please give me feedback \_(ÒωÓ๑ゝ∠)\_）
 
-[English Readme](https://github.com/StarDustSheep/pink-room/blob/main/README_EN.md)
-## 主要特性
-### 多级标题前图标
-使用易于识别的图标来区分多级标题，以避免识别困难<br>
-![image](https://user-images.githubusercontent.com/114859111/234264563-26831c76-51bd-4220-946e-364df55bd8d9.png)
+Buy me a coffee:https://afdian.net/a/StarDustSheep
+[中文说明](https://github.com/StarDustSheep/pink-room/blob/main/README_zh_CN.md)
+## Main Style feature
+### Heading icon
+Use easily identifiable icons to distinguish between multiple levels of headings to avoid identification difficulties<br>
+![image](https://user-images.githubusercontent.com/114859111/232783230-f080b2b0-524c-4995-9792-ad19bfe979d1.png)
+
+### Styled inline code, keystrokes, hyperlinks, block references
+Made keystrokes and inline code more readable. Added end-of-line flags to hyperlinks and block references<br>The upward arrow represents travel to the outside world, i.e. the Internet/external links。<br>The reason for not putting icons in front of them is that too many icons tend to draw attention away from the eye and interfere with the reading of large passages of text.<br><br>
+![image](https://user-images.githubusercontent.com/114859111/232783311-fb0e4780-37fe-49c1-953f-688b25f9c48d.png)
+
+### Carded quote blocks
+![image](https://user-images.githubusercontent.com/114859111/232783451-03143bbf-11c8-4a84-b607-d1ce8201d0ed.png)
+
+### Superblock Card Style<br>
+
+#### Top-level SuperBlock border
+Add borders to Top-level SuperBlocks for partitioning of different topic content graphics<br><br>
+![image](https://user-images.githubusercontent.com/114859111/232785401-c4080ae8-5289-43e2-95ce-402659d1fea9.png)
+<br>
+This feature is enabled by default, if you don't want it, please the theme with any text editor to find the theme folder in theme.css, comment out ```@import url("style/超级块边框.css");```<br><br>
+#### Bottom-level Card Style
+Add border and backgournd to the bottom-level SuperBlock to be used for different typographic needs. (Note: experimental feature, ordinary users should not try)
+![image](https://user-images.githubusercontent.com/114859111/232785842-1a88b138-1c11-4113-91dc-09e8d6833a3a.png)
+
+### Scroll-like content page<br>
+Change the entire document editing area to a fixed width, with all content appearing to be on top of a vertical infinitely long scroll. Author's own use.<br>
+**Note: Using this code may cause problems with images not being scaled properly using the drag slider, as well as other potential problems. Please do not use this feature code if you do not only use simple graphic and text layout and notes only for your own viewing use is enough**
+![image](https://user-images.githubusercontent.com/114859111/232786106-65fe1633-e119-48f5-b201-195a362ddcad.png)
+![image](https://user-images.githubusercontent.com/114859111/232786197-4b9ed36b-3493-4fff-8171-91236a89334a.png)
 
 
-### 风格化行内代码、按键、超链接、块引用
-将按键和行内代码做得更加易读。给超链接和块引用加上了末尾标志。<br>向上代表前往外界，即互联网/外部链接；向下代表前往自家内部，即思源笔记内部的其他位置。<br>不在它们前面设置图标的理由是太图标容易吸走人视线的注意力，影响对大段文本的阅读。<br><br>
-![image](https://user-images.githubusercontent.com/114859111/234264657-8102c26b-c868-4fdb-a34e-f462a7aef242.png)
+This feature is not turned on by default, if you want to turn it on, please download the theme and use any text editor to put ```@import url("style/卷轴页面.css");``` uncomment it **and turn on adaptive width in Siwon Notes** with any text editor in the theme folder themes.css.<br><br>
 
-### 卡片化引述块
-![image](https://user-images.githubusercontent.com/114859111/227112679-77fce2b9-ec7f-4adb-b016-27441731d360.png)
+### Font Style Menu
+The font style menu has been changed and numbers have been added to make it easier for people to find the style they need<br>
+I did not make off-tone custom font and background color changes to Siyuan's default This is to prevent the user notes from looking too far away from the default theme to be usable. However, another standard custom word color and base color may be added in the future.<br><br>
+![image](https://user-images.githubusercontent.com/114859111/232787307-8fd4e7bc-db5f-464b-8a51-ef6a08348043.png)
 
-### 超级块边框<br>
-#### 一级超级块边框
-为一级超级块添加边框，以用来进行不同话题内容图文的分区<br><br>
-![image](https://user-images.githubusercontent.com/114859111/193455158-fdedcab4-b448-4f87-b002-1caec93c0f2f.png)<br>
-此特性默认开启，如不需要，请下载好主题后用任意文本编辑器找到主题文件夹内theme.css中的```@import url("style/超级块边框.css");```，在其两边的加上```/*```和```*/```后保存。<br><br>
-#### 底层超级块边框
-为底层超级块添加边框，以用来满足不一样的排版需求。(注意：实验性功能，普通用户不要尝试)
-![image](https://user-images.githubusercontent.com/114859111/195104956-ff7dbd06-8e28-44f5-bd91-39c38b29864b.png)
+### Four color system font color
+Author's own font style<br>
+![image](https://user-images.githubusercontent.com/114859111/232787176-ac69f362-74d3-4deb-806f-7a542d913235.png)
+This feature is not turned on by default, if you want to turn it on, please use any text editor to uncomment the ``@import url("style/4类主要自定义字色.css");`` in theme.css in the theme folder after downloading the theme.<br>
+A four-color text background color has been added to this style.<br><br>
 
+### Two other color schemes interface
+If you need to open, please download the theme and use the button to switch directly in the upper right corner.（Thank to [Zuoqiu-Yingyi](https://github.com/Zuoqiu-Yingyi)）<br><br>
+![Theme color switch display](https://user-images.githubusercontent.com/114859111/196854830-1762d995-3c57-48eb-9bb4-ff6b9bd66bdc.gif)
 
-
-
-### 卷轴页面<br>
-将整个图文编辑区域改为固定宽度，所有内容都好像在一个竖向无限长的卷轴之上。作者自用。<br>
-**注意：使用该模式可能会导致图片无法正常地使用拖动滑块对其进行缩放的问题，以及潜在的其他问题。如果不是只使用简单图文排版和笔记只给自己查看使用就够了的用户请不要使用该模式。**
-![image](https://user-images.githubusercontent.com/114859111/227111887-3b5ca82d-2f4f-487f-be25-f21fa209724e.png)
-此特性默认不开启，如需开启，请下载好主题后用任意文本编辑器将主题文件夹内theme.css中的```@import url("style/卷轴页面.css");```两边的```/*```和```*/```删除后保存，**并在思源笔记中开启自适应宽度**<br><br>
-
-### 字体样式菜单
-对字体样式菜单做了改动，添加了号码以让人能更加轻易地找到自己所需要的样式<br>
-未对思源默认的自定义字色、底色做偏离色调的大修改，以防止用户笔记外观和默认主题差距过大无法使用。但未来可能会加入另外标准的自定义字色和底色。<br><br>
-![image](https://user-images.githubusercontent.com/114859111/232412203-8cf9e9e0-d5d9-46ab-839b-e4c991cfea53.png)
-
-### 四色系字体颜色
-作者自用字体样式<br>
-![image](https://user-images.githubusercontent.com/114859111/194844923-b471a84c-2a51-46b1-8f9d-316d2a54bd06.png)
-此特性默认不开启，如需开启，请下载好主题后用任意文本编辑器将主题文件夹内theme.css中的```@import url("style/4类主要自定义字色.css");```两边的```/*```和```*/```删除后保存。<br>
-已为该样式补充四色系底色。<br><br>
-
-### 另外两种配色界面
-如需开启，请下载好主题后直接在右上角使用按钮切换。（感谢 [Zuoqiu-Yingyi](https://github.com/Zuoqiu-Yingyi)）<br><br>
-![主题配色切换展示](https://user-images.githubusercontent.com/114859111/196854830-1762d995-3c57-48eb-9bb4-ff6b9bd66bdc.gif)
-
-### 图片边框
+### Picture-border
 ![image](https://user-images.githubusercontent.com/114859111/196853759-aadbe55d-9a4c-406a-91ae-b342033d8764.png)<br>
-有时候在亮色主题中插入白色底色图片的时候，总感觉隐隐约约颜色不一样，但又看不清具体的边界在哪。这时候点击图片所在的块的块标，打开块属性面板，添加属性。属性名为tpbk(图片边框拼音缩写)，值设置为1，就能让图片有边框线了。
+Sometimes when you insert a white background image in a bright theme, you always feel that the color is vaguely different, but you can't see where the exact border is. At this time, click the block label of the block where the image is located to open the block properties panel and add the property. The property name is ```tpbk``` (the picture border key), the value is set to 1, you can make the picture have a border line.
 
 
-# 更新日志
-## 0.5.1之后的更新日志请看对应版本的release说明
-
-## 0.5.1版本
-* 优化关闭按钮外观
-* 对移动端宽度问题作出第一次解决尝试
-* 修复反链面板项目的样式，使其有圆角
-
-## 0.5.0版本
-
-### 新增特性
-
-* 不同样式的标题
-
-### 其他修改
-
-* 修改了引用的样式，是否一直采用该样式待定中
-* 调整了标签样式的圆角
-* 修改了3种配色情况下的表格，使其易读性更强
-
-
-## 0.4.4版本
-### 问题修复
-
-* 修复了不同字号情况下，标签样式显示不正常的问题
-* 修复了鼠标悬浮于引用上时出现的`block__popover`无法使用上下滚动页面的问题
-
-## 0.4.3版本
-修改了引用搜索面板和菜单面板的外观
-将`复习用填空&黑条样式`修改为默认不开启(未来计划添加将全部字色样式都变成填空的可选功能)
-
-## 0.4.2版本
-补全未更新的代码
-
-## 0.4.1版本
-
-适配了思源主题更新带来的改变
-
-### 新增特性
-
-* 增加了给图片添加边框的自定义属性
-* 为四色系字色添加了对应的底色
-
-### 问题修复
-
-* 修复了弹出菜单面板的边框颜色错误
-* 修复了蓝色界面字体样式菜单面板中的颜色错误
-
-### 其他改动
-
-* 为绿色界面、蓝色界面的空白页面增加了背景图
-* 微调了左侧文档树笔记本两边的外边距
-
-## 0.4版本
-
-适配了思源主题更新带来的改变
-
-修改了反链面板的外观
-
-### 其他改动
-
-调整了粉色界面中部分元素的配色
-
-## 0.3版本
-
-### 新增特性
-
-* 增加了主题配色切换按钮
-* 增加了实验性的底层超级块边框功能，如需使用需要在theme.css中通过注释掉```@import url("style/超级块边框.css")```;，取消注释```@import url("style/底层超级块边框.css");```来开启
-
-### 问题修复
-
-* 修复一些配色错误
-* 修复了鼠标悬浮于符合超级块图标上时，不显示容器范围的问题
-
-### 其他改动
-
-* 细微地调整了一了蓝色系界面下的的默认字色和块引字色，使其和蓝色系主题整体配色更加搭调
-* 调整了蓝色系界面中表格的底色
-
-## 0.2版本
-
-### 说明
-
-* 未来应该会以所有人都有的微软雅黑字体为标准做调整，用户如有字体修改的意愿可以直接在思源的<kbd>设置</kbd>-<kbd>编辑器</kbd>中更换自己设备上安装了的字体
-* 采用思源默认的字色标准（意义不明的标准），**特色性四色系字色需要在根据上方的说明手动开启
-* 卷轴页面现在同四色系字色一样需要手动开启
-
-### 新增特性
-
-* **页签栏：** 将页签栏改成支持多行
-* **块拖放合并提示**：将思源默认的拖放合并块提示色条改得更加显眼
-* **标签样式：** 新增标签样式 ![image](https://user-images.githubusercontent.com/114859111/194849208-ecdb5f49-a2a6-46ce-b4c4-141ef9d94f04.png)
-
-* **字体样式：** 增加了红、绿、蓝、紫的4色系自定义字色和背景色，为特色性功能
-
-### 问题修复
-* 使代码块和嵌入块在块合并操作中能正常显示拖放合并块提示色条
-* 开启超级块边框后，鼠标悬浮在最外层超级块的图标上时，能正确地显示该超级块的范围了
-* 去除了代码块左边影响美观的虚线
-### 其他改动
-
-* **卷轴页面：** 取消了竖卷轴页面的边框，以防止其边框线影响干扰对正文的阅读。
-* **块引用&amp;超级块标示**：根据微软雅黑字体进行调整
-
-## 0.1版本
-
-上架了初版的pink-room主题
-
-* 修改了按键和行内代码的外观
-* 为超级块添加了边框和底色，以实现卡片外观
-* 添加了特性：竖卷轴页面
-* 对字体样式菜单做了改动，添加了号码以让人能更加轻易地定位到自己所需要的样式
-
-
-# 更多图片展示
-通过<kbd>Ctrl</kbd>+<kbd>+</kbd>/<kbd>-</kbd>可以对界面进行缩放，以调整出合适自己的比例<br><br>
-![image](https://user-images.githubusercontent.com/114859111/193455229-a02cf0ce-43a0-423f-ba13-ea64008c4d90.png)
-
-![image](https://user-images.githubusercontent.com/114859111/193455452-2ca2f9ad-cd2d-477c-86f7-69d9537dfd9a.png)
-
-竖屏使用能看到更多的内容
-![image](https://user-images.githubusercontent.com/114859111/193455376-5b30ac9c-6830-4c69-8d45-536cc07cb0db.png)
-
-# 改进计划
-## 短期改进计划
-* 收集使用者反馈
-* 改善思源各界面的使用体验
-* 将其他主题作者的自定义字体样式方案引入作为用户可选方案
-
-## 长期改进计划
-* 建立自己的自定义字体样式通用方案
-* 制作出设计语言统一但整体色调为其他颜色的变体
-* 编写制作背景图教程
+# Update log
+## Sorry, update log is only in Chinese for now, and the changelog after version 0.5.1 is available in realeases

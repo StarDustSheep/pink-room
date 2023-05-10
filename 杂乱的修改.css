@@ -31,3 +31,8 @@
     background-color: #8cdfff;
     color: #535d6a;
 }
+
+/* 解决"悬浮窗内编辑器有了边框后上方留有间隙"的问题 */
+.block__popover--move>.block__icons{
+    border-radius: 0;
+}
