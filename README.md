@@ -8,11 +8,11 @@ Buy me a coffee:https://afdian.net/a/StarDustSheep <br>
 ## Main Style feature
 ### Heading icon
 Use easily identifiable icons to distinguish between multiple levels of headings to avoid identification difficulties<br>
-![image](https://user-images.githubusercontent.com/114859111/232783230-f080b2b0-524c-4995-9792-ad19bfe979d1.png)
+![image](https://github.com/StarDustSheep/pink-room/assets/114859111/b34c6b61-08f4-41e0-8b70-a3c72e7a9cdc)
 
 ### Styled inline code, keystrokes, hyperlinks, block references
 Made keystrokes and inline code more readable. Added end-of-line flags to hyperlinks and block references<br>The upward arrow represents travel to the outside world, i.e. the Internet/external links。<br>The reason for not putting icons in front of them is that too many icons tend to draw attention away from the eye and interfere with the reading of large passages of text.<br><br>
-![image](https://user-images.githubusercontent.com/114859111/232783311-fb0e4780-37fe-49c1-953f-688b25f9c48d.png)
+![image](https://github.com/StarDustSheep/pink-room/assets/114859111/18f40916-c166-4d4a-bb29-a8ebc7eaf38a)
 
 ### Carded quote blocks
 ![image](https://user-images.githubusercontent.com/114859111/232783451-03143bbf-11c8-4a84-b607-d1ce8201d0ed.png)
