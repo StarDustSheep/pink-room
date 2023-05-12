@@ -16,3 +16,4 @@
 .protyle-wysiwyg [data-node-id] span[data-type~=block-ref]:hover {
     border-bottom: 1px solid var(--b3-protyle-inline-blockref-color);
 }
+

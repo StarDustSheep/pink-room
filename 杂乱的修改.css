@@ -36,3 +36,14 @@
 .block__popover--move>.block__icons{
     border-radius: 0;
 }
+
+/* 块引用、文件链接不使用特殊动画 */
+.protyle-wysiwyg [data-node-id] span[data-type~=block-ref], .protyle-wysiwyg [data-node-id] span[data-type~=file-annotation-ref]{
+    transition: auto;
+}
+
+
+/* 修改分隔线的颜色 */
+.protyle-wysiwyg [data-node-id].hr>div{
+    border-bottom: 1px solid var(--b3-theme-on-surface-light);
+}
