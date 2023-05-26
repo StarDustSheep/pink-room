@@ -20,7 +20,7 @@
 } */
 
 /* ----------此为当前正在使用的卷轴页面样式，去除了边框以防止其干扰对文字内容的阅读，底色相比之前更接近白色了，能更好地让多种字色的文字比较容易阅读---------- */
-.fn__flex-1.protyle .protyle-content:not(#searchPreview.fn__flex-1.protyle>.protyle-content,.block__popover,.block__edit.fn__flex-1.protyle>.protyle-content,.backlinkList .protyle-content,.backlinkMList .protyle-content, #cardPreview>.protyle-content){
+.fn__flex-1.protyle .protyle-content:not(#searchPreview.fn__flex-1.protyle>.protyle-content,.block__popover,.block__edit.fn__flex-1.protyle>.protyle-content,.backlinkList .protyle-content,.backlinkMList .protyle-content, #cardPreview>.protyle-content, .b3-dialog__container .protyle-content){
     width: 297mm !important;
     background-color: hsl(0, 33%, 99%);
     box-shadow: #33101624 0px 0px 0.7em 0.3em, #da5b872b 0px 0px 3em 1em, #f5e4e7a3 0px 0px 2.5em;

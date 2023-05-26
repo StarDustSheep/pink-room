@@ -3,74 +3,75 @@
     letter-spacing: 0.1em;
     color: #8b5d6c !important;
     
-
 }
 
 /* 标题前图标 */
 .h1 > :first-child::before{
     background: url('../icon/headings/h1.svg');
-    left: 0.3rem;
-    bottom: 0.62rem;
+    left: 0.02em;
+    bottom: 0.08em;
 }
 .h1 > :first-child{
-    padding-left: 0.8rem;
+    padding-left: 0.5em;
 }
 
 
 
 .h2 > :first-child::before{
     background: url('../icon/headings/h2.svg');
-    left: 0.3rem;
-    bottom: 0.6rem;
+    left: 0.02em;
+    bottom: 0.08em;
 }
 .h2 > :first-child{
-    padding-left: 0.8rem;
+    padding-left: 0.565em;
 }
 
 .h3 > :first-child::before{
     background: url('../icon/headings/h3.svg');
-    left: 0.32rem;
-    bottom: 0.34rem;
+    left: 0em;
+    bottom: 0.12em;
 }
 .h3 > :first-child{
-    padding-left: 0.8rem;
+    padding-left: 0.634em;
 }
 
 .h4 > :first-child::before{
     background: url('../icon/headings/h4.svg');
-    left: 0.35rem;
-    bottom: 0.4rem;
+    left: 0.04em;
+    bottom: 0.16em;
 }
 .h4 > :first-child{
-    padding-left: 0.8rem;
+    padding-left: 0.7em;
 }
 
 
 .h5 > :first-child::before{
     background: url('../icon/headings/h5.svg');
-    left: 0.37rem;
-    bottom: 0.55rem;
+    left: 0.05em;
+    bottom: 0.34em;
 }
 .h5 > :first-child{
-    padding-left: 0.8rem;
+    padding-left: 0.77em;
 }
 /* 防止标题折叠后右侧圆点标示和小三角图标对不齐 */
+/* 现在暂时用不上这段代码 */
 .protyle-wysiwyg div[fold="1"][data-type=NodeHeading].h5:before{
-    top: 40% !important;
+    /* top: 40% !important; */
 }
 
 
 .h6 > :first-child::before{
     background: url('../icon/headings/h6.svg');
-    left: 0.39rem;
-    bottom: 0.68rem;
+    left: 0.08em;
+    bottom: 0.5em;
 }
 .h6 > :first-child{
-    padding-left: 0.8rem;
+    padding-left: 0.8em;
 }
 /* 防止标题折叠后右侧圆点标示和小三角图标对不齐 */
+/* 现在暂时用不上这段代码 */
 .protyle-wysiwyg div[fold="1"][data-type=NodeHeading].h6:before{
-    top: 40% !important;
+    /* top: 40% !important; */
 }
 
 
@@ -85,13 +86,20 @@
     filter: brightness(76%) sepia(79%) hue-rotate(147deg) saturate(194%);
     background-position:left bottom;
     background-repeat: no-repeat;
+    /* left: 0; */
+    vertical-align: middle;
+}
+
+
+.h1 > :first-child,.h2 > :first-child,.h3 > :first-child,.h4 > :first-child,.h5 > :first-child,.h6 > :first-child{
+    position: relative;
 }
 
 
 
-
 /* 为解决此问题做的修改：列表块中的1、2级标题的图标发生错位 https://github.com/StarDustSheep/pink-room/issues/27 */
-.list .h1 > :first-child::before{
+/* 暂时可能用不上这段代码了 */
+/* .list .h1 > :first-child::before{
     bottom: 0.2rem;
 }
 .list .h2 > :first-child::before{
@@ -102,5 +110,5 @@
 }
 .list .h6 > :first-child::before{
     bottom: 0.56rem;
-}
+} */
 
