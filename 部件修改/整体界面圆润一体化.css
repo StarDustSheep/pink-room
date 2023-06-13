@@ -44,7 +44,7 @@
 /* ————决定界面整体颜色，以及软件失焦状态颜色———— */
 
 /* 软件底部使用亮色做为基底 */
-body.body--win32{
+body{
     background-color: var(--room-surface-lightcolor);
 }
 /* 影响区域同上，在离开思源软件操作时切换到暗一点的颜色 */
