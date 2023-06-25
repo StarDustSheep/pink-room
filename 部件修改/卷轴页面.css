@@ -89,8 +89,8 @@
 
 /* 为始质…或者说编辑区域，添加背景图片 */
 /* .protyle{
-    background-image:url("../pic/思源笔记背景图.png") ;   
-    background-position:center top;
+    background-image:url("../pic/background.png") ;   
+    background-position:center center;
 	background-size:cover;
     background-repeat: no-repeat;
 } */

@@ -1,6 +1,7 @@
 /* 加了可能也没什么意义的 */
 .layout{
-    margin: 0 0.2rem 0 0.2rem;
+    /* margin: 0 0.2rem 0 0.2rem; */
+    background-color: var(--room-surface-lightcolor);
 }
 
 
@@ -48,7 +49,7 @@ body{
     background-color: var(--room-surface-lightcolor);
 }
 /* 影响区域同上，在离开思源软件操作时切换到暗一点的颜色 */
-body.body--blur{
+tool.body--blur{
     background-color: var(--room-surface-lightcolor-blur);
 }
 
@@ -56,8 +57,13 @@ body.body--blur{
 /* 顶部工具条使用偏深一点的颜色，不使用亮色，以防止失衡 */
 .toolbar{
     background-color: #f8c5c4;
-    margin-bottom: 5px  ;
+    /* margin-bottom: 5px; */
 }
+
+body>.fn__flex-1.fn__flex {
+    /* padding-top: 5px; */
+}
+
 /* 影响区域同上，在离开思源软件操作时切换到暗一点的颜色 */
 body.body--blur .toolbar{
     background-color: var(--room-surface-lightcolor-blur);
@@ -70,7 +76,7 @@ body.body--blur .toolbar{
  }
 /* 影响区域同上，在离开思源软件操作时切换到暗一点的颜色 */
 body.body--blur .dock{
-    background-color: var(--room-surface-lightcolor-blur); 
+    /* background-color: var(--room-surface-lightcolor-blur);  */
  }
 
 
@@ -80,21 +86,26 @@ body.body--blur .dock{
 }
 /* 影响区域同上，在离开思源软件操作时切换到暗一点的颜色 */
 body.body--blur .status{
-    background-color: var(--room-surface-lightcolor-blur);
+    /* background-color: var(--room-surface-lightcolor-blur); */
 }
 
 
 
 /* 下面的代码很混乱，是我在软件里一点点试出来能兼容各种使用情况的，我自己都看不太懂 */
 body.body--blur .fn__flex-1.fn__flex{
-    background-color: var(--room-surface-lightcolor-blur);
+    /* background-color: var(--room-surface-lightcolor-blur); */
 }
 /* body.body--blur .layout__center.fn__flex.fn__flex-1 .layout-tab-container.fn__flex-1:not(.layout--float){
     background-color: var(--room-surface-lightcolor-blur);
 } */
 
-.fn__flex-1.fn__flex{
-    background-color: var(--room-surface-lightcolor);
+body>.fn__flex-1.fn__flex{
+    background-color: transparent;
+}
+
+
+fn__flex-column fn__flex fn__flex-1{
+    padding-top: 5px;
 }
 
 /* 兼容性不好，暂时关闭 */
@@ -137,4 +148,11 @@ body.body--blur .fn__flex-1.fn__flex{
 /* 以后考虑用更加好的方法来实现 */
 .fn__flex-1.protyle:not(.block__popover .fn__flex-1.protyle) .protyle-breadcrumb__item{
     margin: 5px 0 3px 0px;
+}
+
+
+/* 为了兼容背景图插件 */
+.fn__flex-column.fn__flex.fn__flex-1{
+    padding-top: 5px;
+    min-height: 90%;
 }
