@@ -44,6 +44,11 @@
 
 
 /* 修改分隔线的颜色 */
-.protyle-wysiwyg [data-node-id].hr>div{
+/* 2.8.5前的 */
+/* .protyle-wysiwyg [data-node-id].hr>div{
     border-bottom: 1px solid var(--b3-theme-on-surface-light);
+} */
+/* 2.8.5后的 */
+.protyle-wysiwyg [data-node-id].hr>div:after {
+    background-color: var(--b3-theme-on-surface-light);
 }
