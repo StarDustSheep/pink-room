@@ -1,6 +1,9 @@
 :root {
     --b3-theme-background: hsl(194, 33%, 99%);
-    --b3-tooltips-color:hsl(213, 25%, 41%);
+
+    --b3-tooltips-color:white;
+    --b3-tooltips-background: hsl(213, 25%, 41%);
+    
     --b3-border-color: hsla(205, 55%, 40%, 0.333);
 
 
@@ -10,7 +13,7 @@
     --b3-border-color: hsl(194deg 55% 40% / 33%);
     --b3-theme-background-light: hsl(194deg 70% 79%);
     --b3-theme-on-surface-light: hsl(194deg 31% 54% / 87%);
-    --b3-theme-on-background: hsl(200deg 20% 32%);
+    --b3-theme-on-background: hsl(198 24% 23%);
     --b3-theme-surface-lighter: hsl(194deg 26% 38% / 40%);
 
     --b3-dialog-shadow: rgb(94 143 152 / 28%) 0px 1px 5px, rgb(84 125 127 / 42%) 0px 2px 4px, rgb(139 157 157 / 50%) 0px 4px 8px 1px, rgb(153 168 168 / 51%) 0px 8px 16px, rgb(131 136 139 / 9%) 0px 16px 32px;
@@ -242,4 +245,10 @@
 .b3-card--current {
     background-color: hsl(186deg 44% 90%);
     border: 1px solid hsl(186deg 29% 80%);
+}
+
+
+/* kbd中字色 */
+.b3-typography kbd, .b3-typography span[data-type~=kbd], .protyle-wysiwyg kbd, .protyle-wysiwyg span[data-type~=kbd]{
+    color: hsl(226.73deg 71.79% 15.29%);
 }

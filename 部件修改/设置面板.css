@@ -1,6 +1,5 @@
 .fn__flex-1.fn__flex.config__panel{
-    background-color: var(--b3-theme-surface) !important;
-
+    /* background-color: var(--b3-theme-surface) !important; */
 }
 
 .fn__flex-1.fn__flex.config__panel .layout-tab-bar.fn__flex{
@@ -33,4 +32,9 @@
 /* 手选另外一个颜色用来告诉用户你鼠标放在卡片上了 */
 .b3-card:hover{
     background-color: #f27d7d66;
+}
+
+/* 集市中的介绍页面中的引述块的外阴影无处可显示 */
+.b3-typography {
+    padding: 0 0.3em 0;
 }

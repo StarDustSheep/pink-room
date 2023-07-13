@@ -2,7 +2,8 @@
 :root{
     
     --b3-theme-background: #fefdfd;
-    --b3-tooltips-color:#834e68;
+    --b3-tooltips-color:#ffffff;
+    --b3-tooltips-background:#834e68;
     --b3-border-color: #9d2e2e55;
 
 
@@ -35,7 +36,7 @@
 
     /* 使加粗文字不直接变黑 */
     --b3-protyle-inline-strong-color: inherit;
-
+    --b3-protyle-inline-link-color:rgba(67, 135, 244, 1);
 
 
     /* 修改关系图中节点的颜色 */

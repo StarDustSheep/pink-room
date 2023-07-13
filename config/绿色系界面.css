@@ -1,6 +1,9 @@
 :root {
     --b3-theme-background: hsl(120, 20%, 99%);
-    --b3-tooltips-color:hsl(97, 31%, 37%);
+    
+    --b3-tooltips-color:white;
+    --b3-tooltips-background: hsl(97, 31%, 37%);
+
     --b3-border-color: hsla(117, 55%, 40%, 0.333);
 
 
@@ -10,7 +13,7 @@
     --b3-border-color: hsl(194deg 55% 40% / 33%);
     --b3-theme-background-light: hsl(84deg 69% 75%);
     --b3-theme-on-surface-light: hsl(84deg 31% 54% / 87%);
-    --b3-theme-on-background: hsl(84deg 20% 32%);
+    --b3-theme-on-background: hsl(84 20% 23%);
     --b3-theme-surface-lighter: hsl(84deg 26% 38% / 40%);
 
     --b3-dialog-shadow: rgb(111 152 94 / 28%) 0px 1px 5px, rgb(101 127 84 / 42%) 0px 2px 4px, rgb(141 157 139 / 50%) 0px 4px 8px 1px, rgb(160 168 153 / 51%) 0px 8px 16px, rgb(137 139 131 / 9%) 0px 16px 32px;

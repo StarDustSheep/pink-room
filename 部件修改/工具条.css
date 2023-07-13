@@ -1,0 +1,4 @@
+/* 防止此问题：https://github.com/StarDustSheep/pink-room/issues/31 */
+.protyle-toolbar{
+    z-index: 4;
+}
