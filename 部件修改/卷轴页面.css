@@ -88,7 +88,14 @@
 
 
 /* 为始质…或者说编辑区域，添加背景图片 */
-/* .protyle{
+
+/* .protyle::before{
+    content: "";
+    display: block;
+    position:fixed;
+    pointer-events: none;
+    height: 100%;
+    width: 100%;
     background-image:url("../pic/background.png") ;   
     background-position:center center;
 	background-size:cover;

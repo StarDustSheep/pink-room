@@ -3,7 +3,7 @@
     height: 100%;
     width: 100%;
     background-image: url("../pic/background.png");
-    -webkit-mask: linear-gradient(90deg, #0000008a 10%, transparent 20%, transparent 80%, #ffffff8a 100%);
+    -webkit-mask: linear-gradient(90deg, #000000bf 0%, #0000008a 22%, transparent 25%, transparent 74%, #ffffff8a 78%,#000000bf 100%);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;

@@ -54,3 +54,8 @@
 /* .fn__flex-1.protyle.protyle-content{
     box-shadow: inset 5px 0px 5px 0px #d3c8c3;
 } */
+
+/* 让超级块中的超级块的边距稍微窄一点 */
+.protyle-wysiwyg [data-node-id].sb[data-sb-layout=col]>div{
+    margin-right: 0.4em;
+}
