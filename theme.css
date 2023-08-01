@@ -56,6 +56,7 @@
 @import url("样式修改/虚拟引用.css");
 @import url("样式修改/引述块.css");
 @import url("样式修改/代码块.css");
+@import url("样式修改/块图标.css");
 
 
 /* ——————作者自用功能 没事别开—————————— */
@@ -76,6 +77,8 @@
 @import url("自定义属性/图片边框.css");
 @import url("自定义属性/取消超级块边框.css");
 @import url("自定义属性/仿维基百科简介+信息卡.css");
+
+@import url("移动端优化.css");
 
 @import url("杂乱的修改.css");
 

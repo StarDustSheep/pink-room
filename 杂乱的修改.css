@@ -12,12 +12,6 @@
     margin-top: 2px;
 }
 
-/* 块图标平滑移动 */
-.protyle-gutters {
-    transition: all 200ms ease-out;
-}
-
-
 
 /* 修改引用统计的位置，防止在卷轴页面情况下被遮挡 */
 .protyle-attr--refcount{

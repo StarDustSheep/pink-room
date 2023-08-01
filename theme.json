@@ -2,14 +2,14 @@
   "name": "pink-room",
   "author": "StarDustSheep",
   "url": "https://github.com/StarDustSheep/pink-room",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "displayName": {
     "default": "pink-room",
     "zh_CN": "粉色小屋"
   },
   "description": {
-    "default": "It's a stylize theme for Siyuan. <br> In addition to the pink interface there are also blue and green interfaces.",
-    "zh_CN": "这是一个浅色风格化主题。除了粉色界面外还另有蓝色和绿色界面。"
+    "default": "It's a stylize theme for Siyuan. I found there is not any pink colour theme in SiYuan's marketplace, so I decide to make one for myself.<br> The interface color of pink-room are mainly lightpink, white and beige.",
+    "zh_CN": "这是一个风格化主题。我发现在思源的集市中没有一个粉色配色的主题，所以我自己做了一个。“粉色小屋”的界面颜色以浅粉色、白色以及米色为主，试图营造出清新、温馨的感觉。优化了一些常用样式，使其易读性更强。"
   },
   "readme": {
     "default": "README.md",

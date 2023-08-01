@@ -10,10 +10,14 @@
 .protyle-wysiwyg [data-node-id] span[data-type~=block-ref] {
     border-bottom: 1px solid transparent;
     margin: 0px 2px 0px;
-    font-weight: 500;
+
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type~=block-ref]:hover {
     border-bottom: 1px solid var(--b3-protyle-inline-blockref-color);
 }
 
+
+span[data-type~=block-ref]{
+    font-weight: 500
+}

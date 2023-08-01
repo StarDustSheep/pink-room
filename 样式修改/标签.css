@@ -2,14 +2,11 @@
     background-color: #fff;
     transition: all .2s cubic-bezier(0.645, 0.045, 0.355, 1);
     color: var(--b3-theme-on-surface);
-    /* border-radius: 10% 10% 10% 10% / 34% 34% 34% 34%; */
     border-radius: 0.3em;
-    position: relative;
     padding: .1em 0.3em .1em .1em;
     font-size: 85%;
     box-shadow: #b16b81 3.6em 0px 0px -2.2em inset, 0px 0px 0px 1px inset;
     border: none;
-    /* box-sizing: border-box; */
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type~=tag]::before {

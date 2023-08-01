@@ -78,3 +78,11 @@
 .search__header{
     border-bottom: none;
 }
+
+
+
+
+#criteria.fn__flex{
+    min-height: 30px !important;
+    background-color: transparent !important;
+}
