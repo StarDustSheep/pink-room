@@ -1,4 +1,4 @@
-.protyle-content.protyle-content--transition::before{
+.protyle-content.protyle-content--transition:not(.block__popover .protyle-content.protyle-content--transition)::before{
     content: "";
     height: 100%;
     width: 100%;
