@@ -2,7 +2,31 @@
   "name": "pink-room",
   "author": "StarDustSheep",
   "url": "https://github.com/StarDustSheep/pink-room",
-  "version": "0.6.10 ",
+  "version": "0.8.4",
+  "displayName": {
+    "default": "pink-room",
+    "zh_CN": "粉色小屋"
+  },
+  "description": {
+    "default": "It's a stylize theme for Siyuan. <br> In addition to the pink interface there are also blue and green interfaces.",
+    "zh_CN": "这是一个浅色风格化主题。除了粉色界面外还另有蓝色和绿色界面"
+  },
+  "readme": {
+    "default": "README.md",
+    "zh_CN": "README_zh_CN.md"
+  },
+  "i18n": [
+    "en_US",
+    "zh_CN"
+  ],
+  "funding": {
+    "openCollective": "",
+    "patreon": "",
+    "github": "",
+    "custom": [
+      "https://afdian.net/order/create?user_id=3ced5134eee011eda1375254001e7c00"
+    ]
+  },
   "modes": [
     "light"
   ]
