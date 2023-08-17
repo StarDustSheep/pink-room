@@ -52,8 +52,14 @@ window.theme.updateStyle = function (id, href) {
     }
 }
 
+/**简单判断目前思源是否是手机模式 */
+function isPhone() {
+    return document.getElementById("toolbarName") != null && document.getElementById("toolbar") == null;
+}
+
 setTimeout(() => {
-    const drag = document.getElementById('drag'); // 标题栏
+    let drag = document.getElementById('drag'); // 标题栏
+    if (isPhone()) drag = document.getElementById('toolbarName'); // 手机端的标题栏不太一样
     const themeStyle = document.getElementById('themeStyle'); // 当前主题引用路径
     if (drag && themeStyle) {
         const THEME_ROOT = new URL(themeStyle.href).pathname.replace('theme.css', ''); // 当前主题根目录
@@ -78,6 +84,20 @@ setTimeout(() => {
 
         /* 加载配色文件 */
         window.theme.updateStyle(window.theme.IDs.STYLE_COLOR, color_href);
+
+        if (isPhone()) {
+            // 如果是手机端，就直接给标题栏塞个图标，不然样式不对
+            const doc = new DOMParser().parseFromString(`<svg id="${window.theme.IDs.BUTTON_TOOLBAR_CHANGE_COLOR}" class="toolbar__icon"><use xlink:href="#iconTheme"></use></svg>`, 'text/html')
+            const svg_change_color = doc.getElementById(window.theme.IDs.BUTTON_TOOLBAR_CHANGE_COLOR)
+            svg_change_color.addEventListener('click', e => {
+                color_href = window.theme.iter.next().value;
+                localStorage.setItem(window.theme.IDs.LOCAL_STORAGE_COLOR_HREF, color_href);
+                setLocalStorageVal(window.theme.IDs.LOCAL_STORAGE_COLOR_HREF, color_href);
+                window.theme.updateStyle(window.theme.IDs.STYLE_COLOR, color_href);
+            });
+            drag.insertAdjacentElement('afterend', svg_change_color);
+            return;
+        }
 
         const button_change_color = document.createElement('button'); // 切换主题颜色按钮
         button_change_color.id = window.theme.IDs.BUTTON_TOOLBAR_CHANGE_COLOR;

@@ -1,4 +1,4 @@
-# pink-room theme inroduction
+# pink-room theme introduction
 I found there is not any pink colour theme in SiYuan's bazaar, so I decide to make one for myself.<br>
 The interface color of pink-room are mainly lightpink, white and beige.<br>
 If you have any questions, you can email me directly or submit issue（Please give me feedback \_(ÒωÓ๑ゝ∠)\_）
