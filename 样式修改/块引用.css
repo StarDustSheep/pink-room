@@ -8,7 +8,6 @@
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type~=block-ref] {
-    border-bottom: 1px solid transparent;
     margin: 0px 2px 0px;
 
 }

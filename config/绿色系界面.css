@@ -113,8 +113,9 @@
 
 /* 行内代码 */
 .fn__code, .b3-typography code:not(.hljs), .b3-typography span[data-type~=code], .protyle-wysiwyg code:not(.hljs), .protyle-wysiwyg span[data-type~=code] {
-    color: rgb(0 98 4 / 78%);
-    background-color: hsl(76deg 100% 95%);
+    color: rgb(75 44 1 / 85%);
+    background-color: #fef7e9;
+    border-color: rgb(163 151 121 / 85%);
 }
 
 /* 阴影字 */
@@ -230,6 +231,15 @@
     border-bottom: 1px solid #679841;
 }
 
+#searchList .b3-list-item:first-child {
+    border-top: 1px solid rgb(197 209 219);
+}
+#searchList .b3-list-item:first-child:hover{
+    border-top: 1px solid #679841;
+}
+
+
+
 /* ————面板边框———— */
 .protyle-hint, .b3-menu {
     border: var(--room-green-menu-border);
@@ -243,4 +253,26 @@
 .b3-card--current {
     background-color: hsl(100deg 44% 90%);
     border: 1px solid hsl(100deg 29% 80%);
+}
+
+
+
+.protyle-wysiwyg [data-node-id].li:before{
+    border-left-color: hsl(148.5deg 16.67% 52.94% / 76.86%);
+}
+
+.protyle-wysiwyg [data-node-id].li:hover:before{
+    border-left-color: hsla(148, 25%, 43%, 0.84);
+}
+
+
+.search__drag:after {
+    background-color: #6d9e6b;
+}
+.search__drag:hover:after {
+    background-color: #367034;
+}
+
+.b3-list--mobile ul.b3-list.b3-list--background{
+    outline: 0.2em solid rgb(105 141 89 / 63%);
 }

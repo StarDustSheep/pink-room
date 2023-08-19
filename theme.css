@@ -58,6 +58,7 @@
 @import url("样式修改/引述块.css");
 @import url("样式修改/代码块.css");
 @import url("样式修改/块图标.css");
+@import url("样式修改/列表块.css");
 
 
 /* ——————作者自用功能 没事别开—————————— */
@@ -87,4 +88,3 @@
 /* ---多种色系配色界面暂时性解决方案，可开关切换--- */
 /* @import url("config/蓝色系界面.css"); */
 /* @import url("config/绿色系界面.css"); */
-
