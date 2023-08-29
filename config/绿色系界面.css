@@ -108,7 +108,7 @@
 /* 标签 */
 .protyle-wysiwyg [data-node-id] span[data-type~=tag] {
     color: hsl(156deg 25% 43%) !important;
-    box-shadow: hsl(180deg 30% 56%) 3.6em 0px 0px -2.2em inset, 0px 0px 0px 1px inset;
+    box-shadow: hsl(180deg 30% 56%) 3.6em 0px 0px -2.2em inset, 0px 0px 0px 1px inset #9cc1b8;
 }
 
 /* 行内代码 */
@@ -275,4 +275,16 @@
 
 .b3-list--mobile ul.b3-list.b3-list--background{
     outline: 0.2em solid rgb(105 141 89 / 63%);
+}
+
+
+.b3-text-field, .pcr-app .pcr-interaction .pcr-result{
+    background-color: #f8e4d654;
+}
+.b3-text-field, .pcr-app .pcr-interaction .pcr-result {
+    box-shadow: inset 0 0 0 0.6px #858264c2;
+}
+
+.b3-select{
+    background-color: #f8e4d654;
 }

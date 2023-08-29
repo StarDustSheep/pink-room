@@ -123,7 +123,7 @@ setTimeout(() => {
  * @param {*} url 
  * @returns 
  */
-async function postRequest(data, url){
+async function postRequest(data, url) {
     let result;
     await fetch(url, {
         body: JSON.stringify(data),
@@ -144,24 +144,28 @@ async function postRequest(data, url){
  */
 async function setLocalStorageVal(ikey, ival) {
     let url = "/api/storage/setLocalStorageVal";
-    let response = await postRequest({app: getAppId(), key: ikey, val: ival}, url);
+    let response = await postRequest({ app: getAppId(), key: ikey, val: ival }, url);
     if (window.top.siyuan.storage != undefined) {
         window.top.siyuan.storage[ikey] = ival;
     }
     function getAppId() {
         let wsurl = window.top.siyuan.ws.ws.url;
         let appIdMatchResult = wsurl.match(new RegExp(`(\\?app=|&app=)[^&]+`, "g"));
-        if (appIdMatchResult.length == 1){
+        if (appIdMatchResult.length == 1) {
             return appIdMatchResult[0].substring(5);
-        }else if (appIdMatchResult.length > 1) {
+        } else if (appIdMatchResult.length > 1) {
             console.warn("正则获取appId错误", appIdMatchResult);
             return appIdMatchResult[0].substring(5);
-        }else {
+        } else {
             console.error("正则获取appId错误", appIdMatchResult);
             return "";
         }
     }
 }
+
+
+
+
 
 // 看板娘 功能测试中……
 // function loadScript(url, type = 'module') {

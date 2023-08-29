@@ -46,3 +46,21 @@
 .protyle-wysiwyg [data-node-id].hr>div:after {
     background-color: var(--b3-theme-on-surface-light);
 }
+
+
+
+
+
+/* 次级菜单的圆角过大不太好看，用小号的 */
+.b3-menu__submenu{
+    border-radius: var(--b3-border-radius);
+}
+
+
+
+/* 属性面板中的item项目与外部容器的间距太过紧密，故手动调节 */
+.b3-dialog__body .layout-tab-bar.fn__flex {
+    padding-top: 8px;
+    padding-left: 9px;
+    padding-right: 2px;
+}

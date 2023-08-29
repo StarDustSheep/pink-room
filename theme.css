@@ -43,6 +43,10 @@
 @import url("部件修改/斜杠唤出菜单.css");
 @import url("部件修改/行内样式选择面板.css");
 @import url("部件修改/钉住的页签.css");
+@import url("部件修改/分离窗口.css");
+@import url("部件修改/加载界面.css");
+
+
 
 /* ——————样式修改 针对编辑器内文档内元素进行修改—————— */
 @import url("样式修改/多级标题.css");
@@ -59,6 +63,8 @@
 @import url("样式修改/代码块.css");
 @import url("样式修改/块图标.css");
 @import url("样式修改/列表块.css");
+@import url("样式修改/加载动画.css");
+
 
 
 /* ——————作者自用功能 没事别开—————————— */

@@ -280,3 +280,12 @@
 .b3-list--mobile ul.b3-list.b3-list--background{
     outline: 0.2em solid rgb(60 111 139 / 51%);
 }
+
+
+
+.b3-text-field, .pcr-app .pcr-interaction .pcr-result {
+    background-color: #e4ffc738;
+}
+.b3-text-field, .pcr-app .pcr-interaction .pcr-result {
+    box-shadow: inset 0 0 0 0.6px #648567c2;
+}

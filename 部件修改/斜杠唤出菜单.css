@@ -1,11 +1,10 @@
 /* 修改提示菜单样式 */
-.hint--menu:not(.hint--menu:has(.emojis)){
+.hint--menu>div:not(.hint--menu>div:has(.emojis)){
     column-count: 4;
     column-width: 30px !important;
     column-gap: 15px;
     min-width: 56em !important;
     max-height: 600px !important;
-    border:var(--room-blue-menu-border);
     padding: 4px;
     background-color: #fffcfb;
     border-radius: 4px;
