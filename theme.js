@@ -52,16 +52,31 @@ window.theme.updateStyle = function (id, href) {
     }
 }
 
-/**简单判断目前思源是否是手机模式 */
-function isPhone() {
-    return document.getElementById("toolbarName") != null && document.getElementById("toolbar") == null;
-}
+/**
+ * 获取客户端模式
+ * @return {string} 'app' 或 'desktop' 或 'mobile'
+ */
+window.theme.clientMode = (() => {
+    const url = new URL(window.location.href);
+    switch (true) {
+        case url.pathname.startsWith('/stage/build/app/window.html'):
+            return 'window';
+        case url.pathname.startsWith('/stage/build/app'):
+            return 'app';
+        case url.pathname.startsWith('/stage/build/desktop'):
+            return 'desktop';
+        case url.pathname.startsWith('/stage/build/mobile'):
+            return 'mobile';
+        default:
+            return null;
+    }
+})();
 
 setTimeout(() => {
     let drag = document.getElementById('drag'); // 标题栏
-    if (isPhone()) drag = document.getElementById('toolbarName'); // 手机端的标题栏不太一样
+    if (window.theme.clientMode == "mobile") drag = document.getElementById('toolbarName'); // 手机端的标题栏不太一样
     const themeStyle = document.getElementById('themeStyle'); // 当前主题引用路径
-    if (drag && themeStyle) {
+    if (themeStyle) {
         const THEME_ROOT = new URL(themeStyle.href).pathname.replace('theme.css', ''); // 当前主题根目录
         /* 通过颜色配置文件列表生成完整 URL 路径 */
         const colors_href = [];
@@ -85,7 +100,7 @@ setTimeout(() => {
         /* 加载配色文件 */
         window.theme.updateStyle(window.theme.IDs.STYLE_COLOR, color_href);
 
-        if (isPhone()) {
+        if (window.theme.clientMode == "mobile") {
             // 如果是手机端，就直接给标题栏塞个图标，不然样式不对
             const doc = new DOMParser().parseFromString(`<svg id="${window.theme.IDs.BUTTON_TOOLBAR_CHANGE_COLOR}" class="toolbar__icon"><use xlink:href="#iconTheme"></use></svg>`, 'text/html')
             const svg_change_color = doc.getElementById(window.theme.IDs.BUTTON_TOOLBAR_CHANGE_COLOR)
@@ -95,7 +110,7 @@ setTimeout(() => {
                 setLocalStorageVal(window.theme.IDs.LOCAL_STORAGE_COLOR_HREF, color_href);
                 window.theme.updateStyle(window.theme.IDs.STYLE_COLOR, color_href);
             });
-            drag.insertAdjacentElement('afterend', svg_change_color);
+            if (drag) drag.insertAdjacentElement('afterend', svg_change_color);
             return;
         }
 
@@ -110,10 +125,11 @@ setTimeout(() => {
             setLocalStorageVal(window.theme.IDs.LOCAL_STORAGE_COLOR_HREF, color_href);
             window.theme.updateStyle(window.theme.IDs.STYLE_COLOR, color_href);
         });
-        // REF [JS DOM 编程复习笔记 -- insertAdjacentHTML（九） - 知乎](https://zhuanlan.zhihu.com/p/425616377)
-        drag.insertAdjacentElement('afterend', button_change_color);
-        drag.insertAdjacentHTML('afterend', `<div class="protyle-toolbar__divider"></div>`);
-
+        if (drag) {
+            // REF [JS DOM 编程复习笔记 -- insertAdjacentHTML（九） - 知乎](https://zhuanlan.zhihu.com/p/425616377)
+            drag.insertAdjacentElement('afterend', button_change_color);
+            drag.insertAdjacentHTML('afterend', `<div class="protyle-toolbar__divider"></div>`);
+        }
     }
 }, 0);
 
