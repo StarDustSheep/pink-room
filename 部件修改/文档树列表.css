@@ -20,9 +20,10 @@
 }
 
 /* 点击文档树emoji不弹出修改窗口（防止误触） */
-span.b3-list-item__icon.b3-tooltips.b3-tooltips__n {
+/* 有人需要此功能，加回来 */
+/* span.b3-list-item__icon.b3-tooltips.b3-tooltips__n {
     pointer-events: none;
-}
+} */
 
 /* 笔记本之间的间隔 */
 .sy__file ul.b3-list.b3-list--background {
