@@ -47,7 +47,6 @@
 @import url("部件修改/加载界面.css");
 
 
-
 /* ——————样式修改 针对编辑器内文档内元素进行修改—————— */
 @import url("样式修改/多级标题.css");
 @import url("样式修改/文档标题.css");
@@ -64,6 +63,7 @@
 @import url("样式修改/块图标.css");
 @import url("样式修改/列表块.css");
 @import url("样式修改/加载动画.css");
+@import url("样式修改/滑块.css");
 
 
 

@@ -15,9 +15,9 @@
 }
 
 /* 设置文档树前面的＞符号颜色为灰色以不抢夺笔记本标题文字的视觉吸引力 */
-.fn__flex-1.fn__flex-column.file-tree .b3-list-item__arrow {
+/* .fn__flex-1.fn__flex-column.file-tree .b3-list-item__arrow {
     color: #8080804d;
-}
+} */
 
 /* 点击文档树emoji不弹出修改窗口（防止误触） */
 /* 有人需要此功能，加回来 */
@@ -57,14 +57,34 @@
 .b3-list--background .b3-list-item--focus .b3-list-item__text,
 .b3-list--background .b3-list-item--focus .b3-list-item__graphic,
 .b3-list--background .b3-list-item--focus .b3-list-item__icon svg {
-    color: var(--b3-theme-on-background);
+    /* color: var(--b3-theme-on-background); */
+    color: #287b00;
 }
+
+
+/* 页签切换面板中不用绿色，绿色太亮了 */
+.switch-doc .b3-list-item.b3-list-item--focus{
+   background-color: #beeb8a !important;
+}
+
+/* 缩小页签列表中的间距 */
+.switch-doc .b3-list:last-child .b3-list-item{
+    border-radius:0;
+    margin-bottom:0 !important;  
+    padding: 0.1em 0 0.1em 0;   
+    box-shadow: inset 0 -1px 0 #d2bdbd;
+}
+
+
+
+
+
 
 
 
 /* 背景色 */
 .b3-list--background .b3-list-item--focus {
-    background-color: #d7f4ffb0 !important;
+    background-color: #e9ffbd  !important;
 }
 .sy__backlink .b3-list--background .b3-list-item--focus {
     background-color: #ffbdb4b0 !important;
@@ -83,67 +103,6 @@
 }
 
 /* 背景 */
-
-/* 文档树辅助线（来自于Rem Craft主题） */
-.b3-list:not(.b3-list--border) .b3-list-item+ul {
-    box-shadow: 13px 0px var(--b3-list-item-background-color) inset, 14px 0 rgba(231, 231, 231, 1) inset;
-}
-
-.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item {
-    margin-left: 6px
-}
-
-.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul {
-    box-shadow: 13px 0 var(--b3-list-item-background-color) inset, 14px 0 rgba(231, 231, 231, 1) inset, 35px 0 var(--b3-list-item-background-color) inset, 36px 0 rgba(231, 231, 231, 1) inset
-}
-
-.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item {
-    margin-left: 12px
-}
-
-.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul {
-    box-shadow: 13px 0 var(--b3-list-item-background-color) inset, 14px 0 rgba(231, 231, 231, 1) inset, 35px 0 var(--b3-list-item-background-color) inset, 36px 0 rgba(231, 231, 231, 1) inset, 57px 0 var(--b3-list-item-background-color) inset, 58px 0 rgba(231, 231, 231, 1) inset
-}
-
-.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item {
-    margin-left: 18px
-}
-
-.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul {
-    box-shadow: 13px 0 var(--b3-list-item-background-color) inset, 14px 0 rgba(231, 231, 231, 1) inset, 35px 0 var(--b3-list-item-background-color) inset, 36px 0 rgba(231, 231, 231, 1) inset, 57px 0 var(--b3-list-item-background-color) inset, 58px 0 rgba(231, 231, 231, 1) inset, 79px 0 var(--b3-list-item-background-color) inset, 80px 0 rgba(231, 231, 231, 1) inset
-}
-
-.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item {
-    margin-left: 24px
-}
-
-.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul {
-    box-shadow: 13px 0 var(--b3-list-item-background-color) inset, 14px 0 rgba(231, 231, 231, 1) inset, 35px 0 var(--b3-list-item-background-color) inset, 36px 0 rgba(231, 231, 231, 1) inset, 57px 0 var(--b3-list-item-background-color) inset, 58px 0 rgba(231, 231, 231, 1) inset, 79px 0 var(--b3-list-item-background-color) inset, 80px 0 rgba(231, 231, 231, 1) inset, 101px 0 var(--b3-list-item-background-color) inset, 102px 0 rgba(231, 231, 231, 1) inset
-}
-
-.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item {
-    margin-left: 30px
-}
-
-.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul {
-    box-shadow: 13px 0 var(--b3-list-item-background-color) inset, 14px 0 rgba(231, 231, 231, 1) inset, 35px 0 var(--b3-list-item-background-color) inset, 36px 0 rgba(231, 231, 231, 1) inset, 57px 0 var(--b3-list-item-background-color) inset, 58px 0 rgba(231, 231, 231, 1) inset, 79px 0 var(--b3-list-item-background-color) inset, 80px 0 rgba(231, 231, 231, 1) inset, 101px 0 var(--b3-list-item-background-color) inset, 102px 0 rgba(231, 231, 231, 1) inset, 123px 0 var(--b3-list-item-background-color) inset, 124px 0 rgba(231, 231, 231, 1) inset
-}
-
-.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item {
-    margin-left: 36px
-}
-
-.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul {
-    box-shadow: 13px 0 var(--b3-list-item-background-color) inset, 14px 0 rgba(231, 231, 231, 1) inset, 35px 0 var(--b3-list-item-background-color) inset, 36px 0 rgba(231, 231, 231, 1) inset, 57px 0 var(--b3-list-item-background-color) inset, 58px 0 rgba(231, 231, 231, 1) inset, 79px 0 var(--b3-list-item-background-color) inset, 80px 0 rgba(231, 231, 231, 1) inset, 101px 0 var(--b3-list-item-background-color) inset, 102px 0 rgba(231, 231, 231, 1) inset, 123px 0 var(--b3-list-item-background-color) inset, 124px 0 rgba(231, 231, 231, 1) inset, 145px 0 var(--b3-list-item-background-color) inset, 146px 0 rgba(231, 231, 231, 1) inset
-}
-
-.b3-list:not(.b3-list--border) .b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item+ul>.b3-list-item {
-    margin-left: 42px
-}
-
-
-
-
 
 
 /* 将鼠标放置在文档树中笔记本右侧的引用数字上能打开一个窗口，下方代码将其中的元素正常放置而不是居中放置 */
@@ -188,7 +147,7 @@
 
 /* 鼠标划过列表项时的底色 */
 .b3-list--background .b3-list-item:hover:not(.b3-list-item--focus){
-    background-color: #ffd9d6;
+    background-color: #94f7ed;
 }
 
 
@@ -207,7 +166,7 @@
 
 /* 颜色用蓝的*/
 .b3-list--background .b3-list-item:hover .b3-list-item__text, .b3-list--background .b3-list-item:hover .b3-list-item__graphic, .b3-list--background .b3-list-item:hover .b3-list-item__icon svg{
-    color: var(--b3-theme-primary);
+    color: inherit;
 }
 
 

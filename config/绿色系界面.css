@@ -288,3 +288,25 @@
 .b3-select{
     background-color: #f8e4d654;
 }
+
+.protyle-hint.b3-list.b3-list--background .b3-list-item__text {
+    color: #1b4501;
+}
+
+.switch-doc .b3-list:last-child .b3-list-item{
+    box-shadow: inset 0 -1px 0 #bdcdd2;
+}
+
+.layout-tab-container:has(.search__header), .b3-dialog__container:has(.search__header) {
+    background-color: var(--room-surface-dimcolor);
+}
+.b3-dialog__container:has(.search__header) {
+    box-shadow: 0 0 0 0.22em #d9e9d2,0 0 0 0.28em #83ad79,var(--b3-dialog-shadow);
+}
+.b3-dialog__container:not(:has(.card__main)) {
+    border: 1px solid #c0d1c2;
+}
+
+.search__header .block__icon {
+    background-color: #f4ffec;
+}

@@ -7,10 +7,6 @@
     padding-left: 5px;
 }
 
-.fn__flex-1.fn__flex.config__panel .b3-tab-bar.b3-list.b3-list--background{
-    border-right: 1px solid #8080804a;
-}
-
 
 /* 出现文本框的地方背景直接用白色 */
 .b3-text-field, .pcr-app .pcr-interaction .pcr-result{
@@ -48,8 +44,10 @@
 
 .config__panel>.b3-tab-bar .b3-list-item {
     line-height: 38px;
-    margin: 0 0.5em 0 0.5em !important;
-    border-radius: 0.3em;
+    margin: 0 0.5em 0.4em 0.5em !important;
+    border-radius: 0.2em;
+    background-color: white;
+    box-shadow: 0 0 0 1px #c9bdb1;
 }
 
 
@@ -62,4 +60,38 @@
     background-color: #f5bcc070;
     transform: translate(0px, -2px);
     box-shadow: 0 0 0.15em 0.05em #a69094;
+}
+
+
+.config__panel>.b3-tab-bar .config__tab-title>.b3-list-item__graphic{
+    height: 23px;
+    width: 23px;
+    padding-left: 0px;
+
+}
+
+.config__panel>.b3-tab-bar .config__tab-title{
+font-size: 1.3em;
+color: #a78882;
+}
+
+
+
+
+.config__tab-container--top {
+    margin-top: 0px;
+}
+
+.config__tab-container--full {
+    margin-top: 0;
+}
+
+.config-account__center--text{
+    background-color: transparent;
+}
+
+
+/* 增大设置界面中资源面板中列表和左边的间距，默认情况下过于狭窄 */
+.config-assets__list {
+    margin-left: 0.6em;
 }

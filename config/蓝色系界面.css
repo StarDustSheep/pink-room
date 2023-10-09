@@ -289,3 +289,31 @@
 .b3-text-field, .pcr-app .pcr-interaction .pcr-result {
     box-shadow: inset 0 0 0 0.6px #648567c2;
 }
+
+.protyle-hint.b3-list.b3-list--background .b3-list-item__text {
+    color: #011245;
+}
+.switch-doc .b3-list:last-child .b3-list-item{
+    box-shadow: inset 0 -1px 0 #bdcdd2;
+}
+
+.b3-dialog__container:has(.search__header){
+    box-shadow: 0 0 0 0.22em #dcf2f9,0 0 0 0.28em #79a8ad,var(--b3-dialog-shadow);
+}
+
+.b3-dialog__container:not(:has(.card__main)){
+    border: 1px solid #c0ccd1;
+}
+
+.search__header .block__icon{
+    background-color: #f3faff;
+}
+
+.b3-list--background .b3-list-item--focus{
+    background-color: #e9ffbd  !important;
+}
+
+.protyle-hint.b3-list.b3-list--background  mark {
+    background-color: rgb(223 200 255);
+    color: #17004b;
+}

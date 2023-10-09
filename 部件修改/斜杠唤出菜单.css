@@ -1,11 +1,14 @@
+/* ————此处修改斜杠唤出菜单和[[唤出的块引搜索面板———— */
+
+
 /* 修改提示菜单样式 */
 .hint--menu>div:not(.hint--menu>div:has(.emojis)){
     column-count: 4;
     column-width: 30px !important;
     column-gap: 15px;
-    min-width: 56em !important;
+    min-width: 41em !important;
     max-height: 600px !important;
-    padding: 4px;
+    padding: 6px;
     background-color: #fffcfb;
     border-radius: 4px;
 }
@@ -48,11 +51,11 @@
     font-size: 90%;
     border-width: 1px;
     border-style: solid; 
-    border-color: var(--b3-theme-surface-lighter);
+    border-color: transparent;
     box-sizing: border-box;
     vertical-align: middle;
     padding: 2px 8px !important;
-    margin-top: 3px !important;
+    margin-bottom: 5px !important;
     border-radius: 0px;
     width: 100% !important;
 }
@@ -61,9 +64,56 @@
 /* 按[[唤出的hint菜单中的项目 */
 .protyle-hint.b3-list.b3-list--background .b3-list-item{
     width: 100% !important;
-    border: 1px solid var(--b3-theme-surface-lighter);
+    outline: 1px solid var(--b3-theme-surface-lighter);
     border-left: none;
     border-radius: 0px !important;
     background-color: #ffffff;
     border-top: none;
+}
+
+
+
+
+.protyle-hint.b3-list.b3-list--background .b3-list-item:hover{
+    background-color:#e6f9f4;
+    color: #4374a9;
+}
+
+.protyle-hint{
+    border-radius: 0.5em;
+    padding: 0px 0;
+}
+
+.protyle-hint.b3-list.b3-list--background .b3-list-item{
+    padding: 0.4em 0.3em 0.4em 0.3em;
+}
+
+.protyle-hint.b3-list.b3-list--background .b3-list-item__text{
+    color: #450101;
+}
+
+.b3-list-item--two .b3-list-item__meta {
+    margin-left: 5px;
+    color: #3f7c95;
+}
+
+
+.protyle-hint.b3-list.b3-list--background .b3-list-item.b3-list-item--focus .b3-list-item__hinticon{
+    color: #3f7c95;
+}
+
+.protyle-hint.b3-list.b3-list--background .b3-list-item.b3-list-item--focus .b3-list-item__text{
+    color: #35a100;
+}
+
+
+.protyle-hint.b3-list.b3-list--background  mark {
+    background-color: rgb(206 239 255);
+    color: #00394b;
+}
+
+
+.b3-list--background.hint--menu.protyle-hint{
+    max-height: 720px;
+    min-width: 770px;
 }

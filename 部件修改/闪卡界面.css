@@ -13,4 +13,5 @@
 
 .b3-dialog__container:has(.card__main){
     background-color: transparent;
+    border-radius: 0.8em;
 }

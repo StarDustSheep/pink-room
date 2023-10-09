@@ -14,7 +14,7 @@
 }
 
 /* 内边框线 */
-.bq::after {
+.bq::after,blockquote::after{
     content: "";
     height: calc(100% - 8px);
     width: calc(100% - 8px);
@@ -30,7 +30,7 @@
     pointer-events: none;
 }
 
-.bq{
+.bq,blockquote{
     position:relative
 }
 

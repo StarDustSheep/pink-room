@@ -86,3 +86,10 @@
     min-height: 30px !important;
     background-color: transparent !important;
 }
+
+
+.search__header .block__icon {
+    opacity: 1;
+    background-color: #ffecec;
+    border-radius: 0.3em;
+}
