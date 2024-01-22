@@ -64,3 +64,16 @@
     padding-left: 9px;
     padding-right: 2px;
 }
+
+
+
+/* 使代码块、行内代码等显示代码的地方，中英文使用不同的字体 */
+@font-face {
+    font-family: "HEI";
+    src: local("微软雅黑"), local('PingFang SC'), local('Heiti SC'), local('Droidsansfallback');
+    unicode-range: u+4e00-9f5a, u+30;
+  }
+  
+  .fn__code, .b3-typography code:not(.hljs), .b3-typography span[data-type~=code], .protyle-wysiwyg code:not(.hljs), .protyle-wysiwyg span[data-type~=code], .b3-typography .hljs, .protyle-wysiwyg .hljs{
+      font-family: "HEI", var(--b3-font-family-code) ;
+  }

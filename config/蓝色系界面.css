@@ -317,3 +317,11 @@
     background-color: rgb(223 200 255);
     color: #17004b;
 }
+
+/* 给图片设置边框 */
+[custom-tpbk] img{
+    outline-color: #2a5c85cb;
+}
+
+
+

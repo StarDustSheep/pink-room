@@ -310,3 +310,8 @@
 .search__header .block__icon {
     background-color: #f4ffec;
 }
+
+/* 给图片设置边框 */
+[custom-tpbk] img{
+    outline-color: #55852acb;
+}
