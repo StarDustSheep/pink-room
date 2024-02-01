@@ -95,3 +95,9 @@ color: #a78882;
 .config-assets__list {
     margin-left: 0.6em;
 }
+
+
+/* 设置面板中用于分隔的线条 */
+.config__tab-container .b3-label:not(.b3-label--inner){
+    box-shadow: 0 15px 0 0 #fafafa,0 16px 0 0 var(--b3-border-color);
+}
