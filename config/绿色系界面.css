@@ -25,6 +25,9 @@
     --room-surface-dimcolor: hsl(79deg 43% 86%);
     --room-grid-background: hsl(72deg 20% 93%);
     --room-border-color: #c7df90;
+
+    /* 闪卡标记颜色 */
+    --room-falshcard-mark-color: #e099bc;
 }
 
 /* 顶栏 */
@@ -314,4 +317,10 @@
 /* 给图片设置边框 */
 [custom-tpbk] img{
     outline-color: #55852acb;
+}
+
+
+/* 闪卡边框使用对应的颜色 */
+.card__main{
+    border: var(--room-green-menu-border);
 }

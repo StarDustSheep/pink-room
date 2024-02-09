@@ -73,4 +73,7 @@
     --b3-pdf-background6: hsl(207deg 64% 83%);
     --b3-pdf-background7: hsl(249deg 71% 88%);
     
+
+    /* 使用相对单位的半径以适应多种缩放的界面 */
+    --b3-border-radius: 0.38em;
 }
