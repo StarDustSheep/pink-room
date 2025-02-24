@@ -2,8 +2,14 @@
 :root{
     
     --b3-theme-background: #fefdfd;
+
+    /* 修改提示气泡字色 */
     --b3-tooltips-color:#ffffff;
+    /* 修改提示气泡的背景色 */
     --b3-tooltips-background:#834e68;
+    /* 修改提示气泡的次要字色 */
+    --b3-tooltips-second-color: #ddfcff;
+
     --b3-border-color: #9d2e2e55;
 
 
@@ -76,4 +82,8 @@
 
     /* 使用相对单位的半径以适应多种缩放的界面 */
     --b3-border-radius: 0.38em;
+
+
+
+
 }

@@ -1,0 +1,83 @@
+
+/* 为块标工具提示气泡加上显示延迟和缓入缓出动画 */
+@keyframes tooltipFadeIn {
+    from {
+        opacity: 0 !important;
+    }
+    to {
+        opacity: 1 !important;
+    }
+}
+
+.tooltip {
+    animation-name: tooltipFadeIn;
+    animation-duration: 100ms; 
+    animation-delay: 400ms;   
+}
+
+
+/* 块标工具提示气泡样式修改 */
+.tooltip:has(span:nth-child(15)) {
+    user-select: none;
+    position: fixed;
+    z-index: 1000000;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: normal;
+    -webkit-font-smoothing: subpixel-antialiased;
+    color: var(--b3-tooltips-color);
+    word-wrap: break-word;
+    background-color: var(--b3-tooltips-background);
+    border-radius: var(--b3-border-radius);
+    line-height: 17px;
+    max-width: 320px;
+    animation-duration: 150ms;
+    animation-fill-mode: both;
+    animation-name: zoomIn;
+    max-height: 90vh;
+    overflow: auto;
+    box-sizing: border-box;
+    white-space: break-spaces;
+
+
+    color: #96898d;
+    background-color: hwb(0 94% 4% / 1);
+    box-shadow: 0 0 0px 1px #c4aebc, 0 0 2px 1px #bfb0b0e6;
+    line-height: 1.4rem;
+    font-size: 0.8rem;
+}
+
+
+
+
+.tooltip:has(span:nth-child(15)) span:nth-child(1){
+    color:#8792db;
+}
+
+.tooltip:has(span:nth-child(15)) span:nth-child(3){
+    color:#eb8888;
+}
+
+.tooltip:has(span:nth-child(15)) span:nth-child(5){
+    color:#ea9276;
+}
+
+.tooltip:has(span:nth-child(15)) span:nth-child(7){
+    color:#78d7c2;
+}
+
+.tooltip:has(span:nth-child(15)) span:nth-child(9){
+    color: #89d766 !important;
+}
+
+.tooltip:has(span:nth-child(15)) span:nth-child(11){
+    color: #799cd3 !important;
+}
+
+.tooltip:has(span:nth-child(15)) span:nth-child(13){
+    color: #d478ce !important;
+}
+
+.tooltip:has(span:nth-child(15)) span:nth-child(15){
+    color: #6acdd4 !important;
+}

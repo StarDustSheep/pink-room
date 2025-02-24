@@ -156,3 +156,10 @@ fn__flex-column fn__flex fn__flex-1{
     padding-top: 5px;
     min-height: 90%;
 }
+
+
+/* 使侧边栏的阴影不那么深，不然分割太强，界面太“沉重” */
+[data-type="wnd"] .fn__flex.fn__none+.layout-tab-container.fn__flex-1::after {
+    box-shadow: inset 0 0 0px 1px rgb(223 203 203);
+    border-radius: 0.5rem;
+}

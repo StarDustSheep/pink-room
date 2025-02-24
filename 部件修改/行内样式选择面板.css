@@ -4,12 +4,12 @@
 /* 为所有背景色图标设置一些统一属性 */
 .color__square[data-type="color"]:before{
     position: absolute;
-    font-size: 80%;
+    font-size: 55%;
     z-index: 2;
-    top: 16px;
+    top: 50%;
     margin-left: 0px;
-    font-weight: bold;
-    color:var(--b3-theme-on-surface);
+    font-weight:bold;
+    color: #959595;
 }
 
 
@@ -63,13 +63,26 @@
 /* 为所有背景色数字图标图标设置一些统一属性 */
 .color__square[data-type="backgroundColor"]:before{
     position: absolute;
-    font-size: 80%;
+    font-size: 59%;
     z-index: 2;
-    top: 16px;
+    top: 50%;
+    left: -5%;
     margin-left: 0px;
     font-weight:bold;
-    color:var(--b3-theme-on-surface)
+    font-style:italic;
+    color: #ffffff;
+    text-shadow: 0px 1px 1px gray, 1px 0px 1px gray, -1px 0px 1px gray, 0px -1px 1px gray;
 }
+
+/* 鼠标悬浮后增大图标尺寸以提高显眼度 */
+.color__square:hover:not(.color__square--list):not(.color__square--current){
+    scale:110%;
+}
+/* 鼠标悬浮后增大序号数字尺寸以提高显眼度 */
+.color__square:hover:not(.color__square--list):not(.color__square--current):before{
+    font-size: 60%;
+}
+
 
 /* 为每个底色图标设置编号 */
 .color__square[style="background-color:var(--b3-font-background1)"]:before{ 
@@ -117,7 +130,7 @@
 
 /* 增加字色、底色方块图标的下边距以放下上面的文字 */
 .protyle-font>.fn__flex{
-    margin-bottom: 15px;
+    margin-bottom: 4px;
 }
 /* 使部分同级元素没有下边距，如有边距则有无用且多余的空白空间 */
 /* .protyle-font > div:nth-child(8){

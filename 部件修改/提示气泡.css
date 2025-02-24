@@ -1,0 +1,5 @@
+
+/* 使我的主题的换色按钮的提示气泡能正确显示在工具栏的外侧 */
+body.body--win32 .toolbar {
+    overflow: visible;
+}
