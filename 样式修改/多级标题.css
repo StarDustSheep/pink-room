@@ -29,7 +29,7 @@
 .h3 > :first-child::before{
     background: url('../icon/headings/h3.svg');
     left: 0em;
-    bottom: 0.12em;
+    bottom: 0.08em;
 }
 .h3 > :first-child{
     padding-left: 0.634em;
@@ -38,7 +38,7 @@
 .h4 > :first-child::before{
     background: url('../icon/headings/h4.svg');
     left: 0.04em;
-    bottom: 0.16em;
+    bottom: 0.08em;
 }
 .h4 > :first-child{
     padding-left: 0.7em;
@@ -48,7 +48,7 @@
 .h5 > :first-child::before{
     background: url('../icon/headings/h5.svg');
     left: 0.05em;
-    bottom: 0.34em;
+    bottom: 0.08em;
 }
 .h5 > :first-child{
     padding-left: 0.77em;
@@ -63,7 +63,7 @@
 .h6 > :first-child::before{
     background: url('../icon/headings/h6.svg');
     left: 0.08em;
-    bottom: 0.5em;
+    bottom: 0.08em;
 }
 .h6 > :first-child{
     padding-left: 0.8em;
