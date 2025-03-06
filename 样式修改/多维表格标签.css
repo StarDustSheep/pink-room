@@ -1,0 +1,138 @@
+:root[data-theme-mode="light"] [style*="color"][style*="var(--b3-font-color1)"].b3-chip {
+    color: rgb(146 15 1) !important;
+    background-color: #f6baba !important;
+}
+
+
+:root[data-theme-mode="light"] button[style*="color"][style*="var(--b3-font-color1)"].color__square {
+    color: rgb(146 15 1) !important;
+    background-color: #f6baba !important;
+}
+
+
+
+:root[data-theme-mode="light"] [style*="color"][style*="var(--b3-font-color2)"].b3-chip {
+    color: rgb(151 107 28) !important;
+    background-color: #f0d77e !important;
+}
+
+:root[data-theme-mode="light"] button[style*="color"][style*="var(--b3-font-color2)"].color__square {
+    color: rgb(151 107 28) !important;
+    background-color: #f0d77e !important;
+}
+
+
+
+:root[data-theme-mode="light"] [style*="color"][style*="var(--b3-font-color3)"].b3-chip {
+    color: rgb(70 104 165) !important;
+    background-color: rgb(178 222 255) !important;
+}
+
+:root[data-theme-mode="light"] button[style*="color"][style*="var(--b3-font-color3)"].color__square {
+    color: rgb(70 104 165) !important;
+    background-color: rgb(178 222 255) !important;
+}
+
+
+
+
+
+:root[data-theme-mode="light"] [style*="color"][style*="var(--b3-font-color4)"].b3-chip {
+    color: rgb(54 138 32) !important;
+    background-color: rgb(198 247 139) !important;
+}
+:root[data-theme-mode="light"] button[style*="color"][style*="var(--b3-font-color4)"].color__square {
+    color: rgb(54 138 32) !important;
+    background-color: rgb(198 247 139) !important;
+}
+
+
+
+:root[data-theme-mode="light"] [style*="color"][style*="var(--b3-font-color5)"].b3-chip {
+    color: rgb(76 76 76) !important;
+    background-color: #d4d4d4 !important;
+}
+:root[data-theme-mode="light"] button[style*="color"][style*="var(--b3-font-color5)"].color__square {
+    color: rgb(76 76 76) !important;
+    background-color: #d4d4d4 !important;
+}
+
+
+
+:root[data-theme-mode="light"] [style*="color"][style*="var(--b3-font-color6)"].b3-chip {
+    color: rgb(13 109 101) !important;
+    background-color: #8de3e9 !important;
+}
+:root[data-theme-mode="light"] button[style*="color"][style*="var(--b3-font-color6)"].color__square {
+    color: rgb(13 109 101) !important;
+    background-color: #8de3e9 !important;
+}
+
+
+:root[data-theme-mode="light"] [style*="color"][style*="var(--b3-font-color7)"].b3-chip {
+    color: rgb(157 85 0) !important;
+    background-color: #f7be84 !important;
+}
+:root[data-theme-mode="light"] button[style*="color"][style*="var(--b3-font-color7)"].color__square {
+    color: rgb(157 85 0) !important;
+    background-color: #f7be84 !important;
+}
+
+
+
+:root[data-theme-mode="light"] [style*="color"][style*="var(--b3-font-color8)"].b3-chip {
+    color: rgb(165 20 114) !important;
+    background-color: #ffc7dd !important;
+}
+:root[data-theme-mode="light"] button[style*="color"][style*="var(--b3-font-color8)"].color__square {
+    color: rgb(165 20 114) !important;
+    background-color: #ffc7dd !important;
+}
+
+
+
+:root[data-theme-mode="light"] [style*="color"][style*="var(--b3-font-color9)"].b3-chip {
+    color: rgb(151 25 159) !important;
+    background-color: #f4bdff !important;
+}
+:root[data-theme-mode="light"] button[style*="color"][style*="var(--b3-font-color9)"].color__square {
+    color: rgb(151 25 159) !important;
+    background-color: #f4bdff !important;
+}
+
+
+:root[data-theme-mode="light"] [style*="color"][style*="var(--b3-font-color10)"].b3-chip {
+    color: rgb(48 122 169) !important;
+    background-color: #aef7f7 !important;
+}
+:root[data-theme-mode="light"] button[style*="color"][style*="var(--b3-font-color10)"].color__square {
+    color: rgb(48 122 169) !important;
+    background-color: #aef7f7 !important;
+}
+
+
+
+
+:root[data-theme-mode="light"] [style*="color"][style*="var(--b3-font-color11)"].b3-chip {
+    color: rgb(41 137 91) !important;
+    background-color: #c3f7e1 !important;
+}
+:root[data-theme-mode="light"] button[style*="color"][style*="var(--b3-font-color11)"].color__square {
+    color: rgb(41 137 91) !important;
+    background-color: #c3f7e1 !important;
+}
+
+
+
+:root[data-theme-mode="light"] [style*="color"][style*="var(--b3-font-color12)"].b3-chip {
+    color: rgb(151 126 0) !important;
+    background-color: #e3e840 !important;
+}
+:root[data-theme-mode="light"] button[style*="color"][style*="var(--b3-font-color12)"].color__square {
+    color: rgb(151 126 0) !important;
+    background-color: #e3e840 !important;
+}
+
+
+
+

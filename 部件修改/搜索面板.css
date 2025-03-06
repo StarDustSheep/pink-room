@@ -52,7 +52,6 @@
 /* 为了让搜索面板中文字输入区域不过于紧贴边缘而加上外边距。过于贴合的话用户可能不好理解文字输入区域的层级或者空间从属关系 */
 /* 如果不设置这个底色的话，文字输入区域四角剩下影响视觉的颜色 */
 .search__header{
-    margin: 5px 2px 0px 4px;
     background: var(--room-surface-dimcolor);
 }
 
@@ -92,4 +91,8 @@
     opacity: 1;
     background-color: #ffecec;
     border-radius: 0.3em;
+}
+
+.b3-form__icon.search__header {
+    padding: 3px 0 3px 0;
 }

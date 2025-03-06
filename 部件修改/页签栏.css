@@ -21,6 +21,18 @@
 }
 
 
+/* 调整数据库中的页签栏样式 */
+.av .fn__flex.layout-tab-bar .item{
+    margin-top:0px;
+    min-height: 1em;
+}
+
+.av__header .layout-tab-bar .item__graphic{
+    padding: 6px 5px 6px 7px;
+}
+
+
+
 .fn__flex.layout-tab-bar .item.item--focus{
     background-color: #fff4f4;
     box-shadow: inset 0 0 0px 1px rgb(200 135 135);

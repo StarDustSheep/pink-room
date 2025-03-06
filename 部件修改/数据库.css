@@ -1,0 +1,9 @@
+
+/* 调整鼠标库中折叠文字悬浮效果 */
+/* .fn__flex-1.fn__flex:has(.av [data-wrap="false"])~.tooltip{
+    color: #ffffff !important;
+    line-height: 1.6em;
+    padding: 0.7em;
+    box-shadow: 2px 2px 4px -1px #34363194;
+    border-radius: 5px;
+} */

@@ -81,7 +81,7 @@
 
 
 /* 给反链面板中的面包屑和正文间添加横线以作分割 */
-.sy__backlink .protyle::before {
+.sy__backlink .protyle:has(.protyle-breadcrumb__bar--nowrap)::before {
     content: "";
     height: 0.05em;
     width: 100%;
