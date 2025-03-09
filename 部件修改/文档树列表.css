@@ -54,10 +54,9 @@
 /* -----------------------------文档树focus------------------------------- */
 
 /* 颜色 */
-.b3-list--background .b3-list-item--focus .b3-list-item__text,
-.b3-list--background .b3-list-item--focus .b3-list-item__graphic,
-.b3-list--background .b3-list-item--focus .b3-list-item__icon svg {
-    /* color: var(--b3-theme-on-background); */
+.sy__file .b3-list--background .b3-list-item--focus .b3-list-item__text,
+.sy__file .b3-list--background .b3-list-item--focus .b3-list-item__graphic,
+.sy__file .b3-list--background .b3-list-item--focus .b3-list-item__icon svg {
     color: #287b00;
 }
 

@@ -25,7 +25,7 @@
     margin-bottom: 15px;
     border-bottom-left-radius: 1px;
     border-bottom-right-radius: 1px;
-    margin: 0px 10px 10px 18px;
+    margin: 0px 10px 10px 10px;
     outline: 1px solid #c5a2a2;
     box-shadow: 0px 3px 3px -2px #c3b4b4;
 }
@@ -37,7 +37,7 @@
     border-top-left-radius: 0px;
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
-    margin: 0px 10px 0px 18px !important;
+    margin: 0px 10px 0px 10px !important;
     outline: 1px solid #c5a2a2;
 }
 
@@ -62,10 +62,7 @@
     color: #310000bf !important;
 }
 
-/* 修改反链面板所见即所得区域左右内边距，减少空间浪费 */
-.sy__backlink .protyle-wysiwyg{
-    padding:0px 30px  2px 30px!important;
-}
+
 
 
 /* 反链面板，真反链和提及的顶部栏 */
@@ -80,15 +77,30 @@
 
 
 
-/* 给反链面板中的面包屑和正文间添加横线以作分割 */
-.sy__backlink .protyle:has(.protyle-breadcrumb__bar--nowrap)::before {
-    content: "";
-    height: 0.05em;
-    width: 100%;
-    background-color: #986e6e80;
-    position: absolute;
-    top: 29px;
+/*--- 给反链面板中的面包屑和正文间添加横线以作分割 ---*/
+/* 设置边框线 */
+.sy__backlink .protyle-breadcrumb__bar.protyle-breadcrumb__bar--nowrap {
+    border-bottom: 1px solid #ede4e4;
+    padding-left: 1.4em;
 }
+
+
+.sy__backlink .protyle>.protyle-content{
+    padding: 0 ;
+    scrollbar-gutter: auto;
+}
+
+
+.sy__backlink .protyle>.protyle-content>div{
+    padding: 0!important ;
+}
+
+
+.sy__backlink .protyle-content>.protyle-wysiwyg.protyle-wysiwyg--attr>*:not(.protyle-breadcrumb__bar){
+    margin-left: 1.4em;
+}
+
+
 
 
 /* 修改反链面板中面包屑文字大小，原因，该区域文字太大的话会抢走底下正文的注意力 */

@@ -10,7 +10,7 @@
 
 /* 出现文本框的地方背景直接用白色 */
 .b3-text-field, .pcr-app .pcr-interaction .pcr-result{
-    background-color: #fcf8f1;
+    background-color: #ffffff;
 }
 
 
@@ -100,4 +100,9 @@ color: #a78882;
 /* 设置面板中用于分隔的线条 */
 .config__tab-container .b3-label:not(.b3-label--inner){
     box-shadow: 0 15px 0 0 #fafafa,0 16px 0 0 var(--b3-border-color);
+}
+
+/* 集市里那个条，左边不加点边距的话会把容器的内阴影挡住的 */
+.config-bazaar__title{
+    margin-left: 4px;
 }

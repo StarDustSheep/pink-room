@@ -6,7 +6,7 @@
     position: absolute;
     font-size: 55%;
     z-index: 2;
-    top: 50%;
+    top: 70%;
     margin-left: 0px;
     font-weight:bold;
     color: #959595;
@@ -128,10 +128,11 @@
 }
 
 
-/* 增加字色、底色方块图标的下边距以放下上面的文字 */
-.protyle-font>.fn__flex{
-    margin-bottom: 4px;
+/* 增加字色、底色方块图标的垂直排列间距以放下上面的文字 */
+.protyle-font .fn__flex-wrap{
+    row-gap: 4px;
 }
+
 /* 使部分同级元素没有下边距，如有边距则有无用且多余的空白空间 */
 /* .protyle-font > div:nth-child(8){
     margin-bottom: 10px;

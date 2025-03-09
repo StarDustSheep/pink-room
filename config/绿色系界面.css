@@ -320,13 +320,28 @@
 }
 
 
-/* 闪卡边框使用对应的颜色 */
-.card__main{
-    border: var(--room-green-menu-border);
-}
 
 
 /* 使侧边栏的阴影不那么深，不然分割太强，界面太“沉重” */
 [data-type="wnd"] .fn__flex.fn__none+.layout-tab-container.fn__flex-1::after{
     box-shadow: inset 0 0 1px hsl(194deg 30% 40%);
+}
+
+
+/* 面板边框，默认的阴影模糊范围太大了，缩小点紧凑点 */
+.protyle-util {
+    box-shadow: 0 0 1px 1px #8cbb9c, 0 0 0.7rem 0.1em #8e8e8e8c, inset 0 0 0em 0.1em #ffffff;
+}
+
+
+[data-key="dialog-opencard"] .b3-dialog__container {
+    box-shadow: 0 0 0 0.08em #97b9a2, var(--b3-dialog-shadow);
+}
+
+
+/* 闪卡答题背景是纯白色，太单调，加点对比度低的密铺图案呈现墙纸效果增加点趣味性 */
+[data-key="dialog-opencard"].b3-dialog--open .b3-dialog__scrim {
+    background: radial-gradient(circle, transparent 20%, #90a486 20%, #90a486 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #90a486 20%, #90a486 80%, transparent 80%, transparent) 50px 50px, linear-gradient(#b2c09e 8px, transparent 8px) 0 -4px, linear-gradient(90deg, #b2c09e 8px, transparent 8px) -4px 0;
+    background-color: #90a486 !important;
+    background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px;
 }

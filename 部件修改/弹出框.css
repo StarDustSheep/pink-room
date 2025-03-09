@@ -5,15 +5,16 @@
 }
 
 .b3-dialog__container{
-    border-radius: 0;
+    overflow: hidden;
 }
 
-.b3-dialog__container:not(:has(.card__main)) {
+.b3-dialog__container {
     border-radius: 0.8em;
     border: 1px solid #d1c0c0;
     box-shadow: 0 0 0 0.22em #f3ebdd,0 0 0 0.28em #a3968c,var(--b3-dialog-shadow);
     background-color: #fbf9f1;;
 }
+
 
 
 

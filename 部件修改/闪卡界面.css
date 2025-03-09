@@ -1,17 +1,45 @@
 /* 闪卡界面后面的背景颜色 */
-/* 这里不得不用!important */
-.b3-dialog:has(.card__main) .b3-dialog__scrim{
-    background-color: grey !important;
+[data-key="dialog-opencard"]  .b3-dialog--open .b3-dialog__scrim{
+    background-color: #f1f1f1 !important;
 }
 
-
-.card__main{
+/*  使对话框圆润化 */
+[data-key="dialog-opencard"] .b3-dialog--open .b3-dialog__container{
+    border-radius: 0.8em;
     overflow: hidden;
     border: var(--room-pink-menu-border);
 }
 
+[data-key="dialog-opencard"] .b3-dialog--open .card__block{
 
-.b3-dialog__container:has(.card__main){
-    background-color: transparent;
-    border-radius: 0.8em;
+}
+
+.card__main{
+    overflow: hidden;
+    border-radius: 0;
+}
+
+
+[data-key="dialog-opencard"] .b3-dialog__container{
+    border-radius: var(--b3-border-radius-b);
+    border: var(--room-pink-menu-border);
+    box-shadow: 0 0 5px 0.18em #0000004d;
+}
+
+
+/* 闪卡交互按钮区域和上方的卡片区需要有一条分界线，不然的话两种浅色背景混在一起有些让人分不清 */
+.card__action {
+    border-top: 1px solid #bcbcbc;
+}
+/* 闪卡交互按钮 */
+.card__action .b3-button {
+    box-shadow: 0 0 0px 1px #8c8c8c82;
+}
+
+
+/* 闪卡答题背景是纯白色，太单调，加点对比度低的密铺图案呈现墙纸效果增加点趣味性 */
+[data-key="dialog-opencard"].b3-dialog--open .b3-dialog__scrim {
+    background: radial-gradient(circle, transparent 20%, #b8a0a7 20%, #b8a0a7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #b8a0a7 20%, #b8a0a7 80%, transparent 80%, transparent) 50px 50px, linear-gradient(#e2ccd2 8px, transparent 8px) 0 -4px, linear-gradient(90deg, #e2ccd2 8px, transparent 8px) -4px 0;
+    background-color: #b8a0a7 !important;
+    background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px;
 }
