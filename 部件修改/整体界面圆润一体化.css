@@ -108,10 +108,6 @@ fn__flex-column fn__flex fn__flex-1{
     padding-top: 5px;
 }
 
-/* 兼容性不好，暂时关闭 */
-/* .layout__center.fn__flex.fn__flex-1 .layout-tab-container.fn__flex-1:not(.layout-tab-container.fn__flex-1:has(#searchHistoryBtn)){
-    background-color: var(--room-surface-lightcolor);
-} */
 
 .fn__flex-column.fn__flex-shrink.layout--float,.fn__flex-column .layout__dockr.layout--float{
     background-color: var(--room-surface-lightcolor);

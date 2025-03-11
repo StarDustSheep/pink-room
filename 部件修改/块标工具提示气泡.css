@@ -17,7 +17,7 @@
 
 
 /* 块标工具提示气泡样式修改 */
-.tooltip:has(span:nth-child(15)) {
+.tooltip[TooltipType="gutters"] {
     user-select: none;
     position: fixed;
     z-index: 1000000;
@@ -50,34 +50,34 @@
 
 
 
-.tooltip:has(span:nth-child(15)) span:nth-child(1){
+.tooltip[TooltipType="gutters"]>span:nth-child(1){
     color:#8792db;
 }
 
-.tooltip:has(span:nth-child(15)) span:nth-child(3){
+.tooltip[TooltipType="gutters"]>span:nth-child(3){
     color:#eb8888;
 }
 
-.tooltip:has(span:nth-child(15)) span:nth-child(5){
+.tooltip[TooltipType="gutters"]>span:nth-child(5){
     color:#ea9276;
 }
 
-.tooltip:has(span:nth-child(15)) span:nth-child(7){
+.tooltip[TooltipType="gutters"]>span:nth-child(7){
     color:#78d7c2;
 }
 
-.tooltip:has(span:nth-child(15)) span:nth-child(9){
+.tooltip[TooltipType="gutters"]>span:nth-child(9){
     color: #89d766 !important;
 }
 
-.tooltip:has(span:nth-child(15)) span:nth-child(11){
+.tooltip[TooltipType="gutters"]>span:nth-child(11){
     color: #799cd3 !important;
 }
 
-.tooltip:has(span:nth-child(15)) span:nth-child(13){
+.tooltip[TooltipType="gutters"]>span:nth-child(13){
     color: #d478ce !important;
 }
 
-.tooltip:has(span:nth-child(15)) span:nth-child(15){
+.tooltip[TooltipType="gutters"]>span:nth-child(15){
     color: #6acdd4 !important;
 }

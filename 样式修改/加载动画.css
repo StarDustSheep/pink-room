@@ -4,12 +4,12 @@ img[src="/stage/loading-pure.svg"] {
 
 
 
-*:has(>*:has(>img[src="/stage/loading-pure.svg"])){
+div:has(>div:has(>img[src="/stage/loading-pure.svg"])){
   position: relative;
 }
 
 
-*:has(>img[src="/stage/loading-pure.svg"])::after {
+div:has(>img[src="/stage/loading-pure.svg"])::after {
     content: "loading";
     font-weight: bold;
     text-align: center;
@@ -49,14 +49,14 @@ img[src="/stage/loading-pure.svg"] {
     }
   }
 
-*:has(>img[src="/stage/loading-pure.svg"])::after {
+div:has(>img[src="/stage/loading-pure.svg"])::after {
     animation: rotate_1 2s linear infinite; /* 使用 rotate 动画，无限循环 */
   }
 
 
-/* [data-name="bazaar"] *:has(>img[src="/stage/loading-pure.svg"])::after {
+[data-name="bazaar"] div:has(>img[src="/stage/loading-pure.svg"])::after {
     animation: rotate_2 2s linear infinite; /* 使用 rotate 动画，无限循环 */
-  } */
+  }
 
 
 

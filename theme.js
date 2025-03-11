@@ -199,3 +199,39 @@ async function setLocalStorageVal(ikey, ival) {
 //     document.head.appendChild(script);
 // }
 // loadScript("D:/创作/fghrsh - live2d_demo-master/assets/autoload.js")
+
+
+
+
+// 修改块标悬浮提示气泡样式相关JS代码 
+(function () {
+    // 监听鼠标悬浮事件
+    document.addEventListener('mouseover', (event) => {
+        // 检查目标元素是否匹配选择器 .protyle-wysiwyg--select::after 或 .protyle-wysiwyg--hl::after
+        if (
+            event.target.matches('.protyle-gutters span')
+        ) {
+            // 获取 .tooltip 元素
+            const tooltipElement = document.querySelector('.tooltip');
+            if (tooltipElement) {
+                // 在程序的 JS 代码修改之前，为 .tooltip 元素添加属性 TooltipType="gutters"
+                tooltipElement.setAttribute('TooltipType', 'gutters');
+            }
+        }
+    });
+
+    // 监听鼠标移出事件
+    document.addEventListener('mouseout', (event) => {
+        // 检查目标元素是否匹配选择器 .protyle-wysiwyg--select::after 或 .protyle-wysiwyg--hl::after
+        if (
+            event.target.matches('.protyle-gutters span')
+        ) {
+            // 获取 .tooltip 元素
+            const tooltipElement = document.querySelector('.tooltip');
+            if (tooltipElement) {
+                // 当目标元素不再 :hover 后，移除 TooltipType 属性
+                tooltipElement.removeAttribute('TooltipType');
+            }
+        }
+    });
+})();

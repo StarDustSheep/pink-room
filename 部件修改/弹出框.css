@@ -64,8 +64,3 @@
 .switch-doc .b3-list--background .b3-list-item {
     margin-bottom: 8px !important;
 }
-
-
-.b3-dialog__container:has(.search__header){
-    box-shadow: 0 0 0 0.22em #f9dcdc,0 0 0 0.28em #ad7979,var(--b3-dialog-shadow);
-}

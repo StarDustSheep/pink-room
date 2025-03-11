@@ -22,7 +22,7 @@
 
 
 /* 部分用户导入的纯白背景的图标无法在浅色背景上看出来，加入阴影以彰显 */
-.emojis__item {
+.emojis__title[data-type="1"]+.emojis__content>.emojis__item>img, .emojis__title[data-type="0"]+.emojis__content>.emojis__item>img {
     filter: drop-shadow(0px 1px 1px black);
 }
 
@@ -34,7 +34,7 @@
     background-color: var(--room-border-color) !important;
 }
 
-.emojis>.fn__flex{
+.emojis__panel+.fn__flex{
     margin-top: 0.2em;
     gap: 5px;
     padding: 0 0.1em 0 0.1em;
@@ -51,6 +51,30 @@
     background-color: #fafafa !important;
     font-size: 1.4em;
 }
+
+
+/* 这里是为了文档树和文档标题上设置表情图标的界面*/
+.emojis{
+    padding: 3px 0;
+}
+[data-key="dialog-emojis"] .b3-dialog__container {
+    border-radius: 0.5em;
+    border: 0px ;
+    box-shadow: 0 0 0 0.22em #f9c1c5, 0 0 0 0.28em #a3968c, var(--b3-dialog-shadow);
+    background-color: #f9c1c5;
+}
+[data-type="tab-emoji"]>.fn__hr+.fn__flex{
+    margin-bottom: 4px;
+}
+[data-type="tab-emoji"]>.fn__hr{
+    height: 4px;
+}
+
+
+
+
+
+
 
 
 /* 为按/唤出的提示菜单整体设置一个比较舒适的圆角 */
